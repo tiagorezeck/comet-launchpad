@@ -47,16 +47,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        comet: {
+          orange: "hsl(var(--comet-orange))",
+          graphite: "hsl(var(--comet-graphite))",
+          black: "hsl(var(--comet-black))",
+          gray: "hsl(var(--comet-gray))",
         },
+      },
+      backgroundImage: {
+        'gradient-comet': 'var(--gradient-comet)',
+        'gradient-space': 'var(--gradient-space)',
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'comet': 'var(--shadow-comet)',
+        'glow': 'var(--shadow-glow)',
+        'card': 'var(--shadow-card)',
+      },
+      transitionProperty: {
+        'smooth': 'var(--transition-smooth)',
       },
       borderRadius: {
         lg: "var(--radius)",
