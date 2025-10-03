@@ -7,140 +7,159 @@ import teamImage from '@/assets/team-performance.jpg';
 const Sobre = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero */}
+      {/* Hero - Storytelling Emocional */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Sobre o <span className="bg-gradient-comet bg-clip-text text-transparent">Instituto COMET</span>
+              A História do <span className="bg-gradient-comet bg-clip-text text-transparent">COMET</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Mais de 10 anos transformando empresas e desenvolvendo líderes de alta performance
+              Como um consultor transformou sua experiência em uma metodologia que acelera empresas
             </p>
           </div>
         </div>
       </section>
 
-      {/* Nossa História */}
+      {/* A Jornada - Simples e Impactante */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">
-                Nossa História
-              </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
-                <p>
-                  O Instituto COMET nasceu da paixão por transformar empresas e desenvolver pessoas. Fundado por <span className="text-foreground font-semibold">Tiago Rezeck</span>, consultor com mais de uma década de experiência no desenvolvimento de líderes e na implementação de processos de gestão eficazes.
-                </p>
-                <p>
-                  Ao longo de sua trajetória, Tiago percebeu que muitas empresas enfrentavam os mesmos desafios: falta de organização, processos ineficientes, equipes desmotivadas e resultados inconsistentes. Foi dessa percepção que nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
-                </p>
-                <p>
-                  Hoje, o Instituto COMET é referência em consultoria empresarial, tendo impactado mais de <span className="text-primary font-semibold">20 empresas</span>, ajudando-as a se tornarem organizações sólidas, previsíveis e de alta performance.
-                </p>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-glow">
-                <img 
-                  src={teamImage} 
-                  alt="Equipe de alta performance" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Metodologia COMET */}
-      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Lightbulb className="h-16 w-16 text-primary mx-auto mb-6" />
-              <h2 className="text-4xl font-bold text-foreground mb-4">
-                A Metodologia COMET
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Um sistema completo e comprovado para transformação empresarial
-              </p>
-            </div>
-
-            <div className="bg-card rounded-xl p-8 border border-border shadow-card space-y-6">
-              <p className="text-lg text-foreground">
-                A Metodologia COMET é o resultado de anos de experiência prática em consultoria empresarial, combinando as melhores práticas de gestão com uma abordagem humanizada e personalizada.
-              </p>
-              
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-foreground">Como funciona:</h3>
-                <ul className="space-y-3">
-                  {[
-                    'Diagnóstico completo da situação atual da empresa',
-                    'Mapeamento de processos e identificação de gargalos',
-                    'Desenvolvimento de plano estratégico personalizado',
-                    'Implementação gradual com acompanhamento constante',
-                    'Capacitação de líderes e equipes',
-                    'Monitoramento de resultados e ajustes contínuos',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="bg-primary/10 rounded-full p-1 mt-1">
-                        <div className="bg-primary rounded-full w-2 h-2"></div>
-                      </div>
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+            {/* Foto + História */}
+            <div className="grid lg:grid-cols-5 gap-12 items-start mb-16">
+              <div className="lg:col-span-2">
+                <div className="sticky top-8">
+                  <div className="rounded-2xl overflow-hidden shadow-glow mb-6">
+                    <img 
+                      src={teamImage} 
+                      alt="Tiago Rezeck - Fundador Instituto COMET" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-foreground">Tiago Rezeck</h3>
+                    <p className="text-muted-foreground">Fundador • Mais de 10 anos transformando empresas</p>
+                  </div>
+                </div>
               </div>
+              
+              <div className="lg:col-span-3 space-y-8">
+                {/* História em 3 blocos emocionais */}
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary pl-6 space-y-3">
+                    <h3 className="text-2xl font-bold text-foreground">O Problema</h3>
+                    <p className="text-lg text-muted-foreground">
+                      Empresas com potencial enorme, mas presas. Processos caóticos, equipes desmotivadas, resultados imprevisíveis. O mesmo padrão se repetia em dezenas de negócios.
+                    </p>
+                  </div>
 
-              <div className="pt-6 border-t border-border">
-                <p className="text-lg text-primary font-semibold">
-                  Resultados comprovados: empresas mais organizadas, equipes engajadas e crescimento sustentável.
-                </p>
+                  <div className="border-l-4 border-primary pl-6 space-y-3">
+                    <h3 className="text-2xl font-bold text-foreground">A Descoberta</h3>
+                    <p className="text-lg text-muted-foreground">
+                      Não bastava dar conselhos. Era preciso um sistema que organizasse, desenvolvesse pessoas e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-primary pl-6 space-y-3">
+                    <h3 className="text-2xl font-bold text-foreground">Os Resultados</h3>
+                    <p className="text-lg text-muted-foreground">
+                      Mais de <span className="text-primary font-semibold">20 empresas transformadas</span>. Líderes que antes estavam perdidos hoje comandam times de alta performance. Negócios que eram imprevisíveis agora crescem de forma sólida e sustentável.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Quote Destacada */}
+                <div className="bg-card border-l-4 border-primary rounded-lg p-8 shadow-card">
+                  <p className="text-xl italic text-foreground mb-4">
+                    "Não existe empresa forte sem pessoas fortes. E não existe transformação real sem organização e processos claros."
+                  </p>
+                  <p className="text-sm text-muted-foreground">— Tiago Rezeck</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Missão, Visão e Valores */}
-      <section className="py-20">
+      {/* Valores COMET - Movido da Home */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Os Valores <span className="bg-gradient-comet bg-clip-text text-transparent">COMET</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Cada letra representa um pilar da nossa metodologia
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
-              {
-                icon: <Target className="h-12 w-12" />,
-                title: 'Missão',
-                content: 'Desenvolver pessoas, organizar empresas e transformar negócios para que alcancem novos níveis de desempenho e resultados.',
-              },
-              {
-                icon: <Eye className="h-12 w-12" />,
-                title: 'Visão',
-                content: 'Ser reconhecido como o principal parceiro de empresários na organização, crescimento e fortalecimento de seus negócios.',
-              },
-              {
-                icon: <Heart className="h-12 w-12" />,
-                title: 'Valores',
-                content: 'Colaboração, Organização, Melhoria Contínua, Excelência, Transformação, Autonomia e Sinergia.',
-              },
+              { letter: 'C', value: 'Colaboração', desc: 'Trabalhamos juntos para alcançar objetivos comuns' },
+              { letter: 'O', value: 'Organização', desc: 'Estruturamos processos para máxima eficiência' },
+              { letter: 'M', value: 'Melhoria Contínua', desc: 'Evoluímos constantemente em busca da excelência' },
+              { letter: 'E', value: 'Excelência', desc: 'Buscamos o mais alto padrão em tudo que fazemos' },
+              { letter: 'T', value: 'Transformação', desc: 'Promovemos mudanças significativas e duradouras' },
+              { letter: 'A', value: 'Autonomia', desc: 'Desenvolvemos a capacidade de autogestão' },
+              { letter: 'S', value: 'Sinergia', desc: 'Criamos força através da união de talentos' },
             ].map((item, index) => (
               <div 
-                key={index}
-                className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300"
+                key={index} 
+                className="bg-card rounded-lg p-6 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="text-primary mb-6">
-                  {item.icon}
+                <div className="text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-3">
+                  {item.letter}
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  {item.title}
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  {item.value}
                 </h3>
-                <p className="text-muted-foreground">
-                  {item.content}
+                <p className="text-sm text-muted-foreground">
+                  {item.desc}
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Missão, Visão e Propósito */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: <Target className="h-12 w-12" />,
+                  title: 'Missão',
+                  content: 'Desenvolver pessoas, organizar empresas e transformar negócios para que alcancem novos níveis de desempenho e resultados.',
+                },
+                {
+                  icon: <Eye className="h-12 w-12" />,
+                  title: 'Visão',
+                  content: 'Ser reconhecido como o principal parceiro de empresários na organização, crescimento e fortalecimento de seus negócios.',
+                },
+                {
+                  icon: <Heart className="h-12 w-12" />,
+                  title: 'Propósito',
+                  content: 'Ser um cometa que acelera a transformação das empresas, impulsionando pessoas, líderes e organizações rumo a novos patamares.',
+                },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300"
+                >
+                  <div className="text-primary mb-6">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {item.content}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

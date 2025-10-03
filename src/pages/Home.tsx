@@ -8,122 +8,106 @@ import spaceBackground from '@/assets/space-background.jpg';
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - Impacto Emocional */}
       <section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(10, 14, 18, 0.85), rgba(10, 14, 18, 0.85)), url(${spaceBackground})`,
+          backgroundImage: `linear-gradient(rgba(10, 14, 18, 0.7), rgba(10, 14, 18, 0.7)), url(${spaceBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-hero opacity-50"></div>
+        {/* Overlay com gradiente animado */}
+        <div className="absolute inset-0 bg-gradient-hero opacity-60 animate-pulse"></div>
+        
+        {/* Partículas de estrelas */}
+        <div className="absolute inset-0 opacity-30">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-primary rounded-full animate-pulse"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${2 + Math.random() * 2}s`,
+              }}
+            />
+          ))}
+        </div>
         
         <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Hero Content */}
-            <div className="space-y-8 text-center lg:text-left">
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                  <span className="bg-gradient-comet bg-clip-text text-transparent">
-                    Desenvolver Pessoas.
+          <div className="max-w-6xl mx-auto">
+            {/* Hero Content - Centrado e Impactante */}
+            <div className="text-center space-y-12 animate-fade-in">
+              {/* Headline Principal */}
+              <div className="space-y-6">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
+                  <span className="block text-foreground mb-2">
+                    Sua Empresa
                   </span>
-                  <br />
-                  <span className="text-foreground">
-                    Transformar Negócios.
+                  <span className="block bg-gradient-comet bg-clip-text text-transparent">
+                    Imparável
                   </span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                  O Instituto COMET acelera a transformação de empresas através de consultoria, mentoria e treinamentos especializados.
+                <p className="text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto font-light">
+                  Transforme caos em resultados. Desenvolva líderes que inspiram. Crie uma empresa de alta performance.
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <p className="text-lg text-foreground">
-                  Com mais de <span className="text-primary font-semibold">10 anos de experiência</span> e a exclusiva <span className="text-primary font-semibold">Metodologia COMET</span>, já impactamos mais de <span className="text-primary font-semibold">20 empresas</span>, transformando-as em organizações sólidas, previsíveis e de alta performance.
-                </p>
-                
-                <p className="text-base text-muted-foreground">
-                  Fundado por <span className="font-semibold text-foreground">Tiago Rezeck</span>, consultor especializado no desenvolvimento de líderes e implantação de processos de gestão que geram resultados reais e sustentáveis.
-                </p>
+              {/* Prova Social Rápida */}
+              <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto py-8">
+                {[
+                  { number: '+10', label: 'Anos de Experiência' },
+                  { number: '+20', label: 'Empresas Transformadas' },
+                  { number: '100%', label: 'Metodologia Exclusiva' },
+                ].map((stat, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="text-4xl md:text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="hero" size="xl" asChild>
+              {/* CTA Buttons - Impossíveis de Ignorar */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+                <Button variant="hero" size="xl" className="text-lg px-12 py-8 shadow-glow hover:shadow-comet transition-all" asChild>
                   <Link to="/contato">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    Agende uma Reunião
+                    <Calendar className="mr-3 h-6 w-6" />
+                    Agende uma Reunião Agora
                   </Link>
                 </Button>
                 
-                <Button variant="outline" size="xl" asChild>
+                <Button variant="outline" size="xl" className="text-lg px-12 py-8 border-2" asChild>
                   <a 
-                    href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Instituto%20COMET."
+                    href="https://wa.me/5511999999999?text=Olá!%20Quero%20transformar%20minha%20empresa%20com%20o%20Instituto%20COMET."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="mr-2 h-5 w-5" />
+                    <MessageCircle className="mr-3 h-6 w-6" />
                     Fale no WhatsApp
                   </a>
                 </Button>
               </div>
-            </div>
 
-            {/* Hero Image */}
-            <div className="relative lg:block hidden">
-              <div className="relative rounded-2xl overflow-hidden shadow-glow">
-                <img 
-                  src={heroImage} 
-                  alt="Consultor COMET em ação" 
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-              </div>
+              {/* Urgência */}
+              <p className="text-sm text-primary/80 font-medium">
+                ✨ Vagas limitadas para consultoria • Agende sua avaliação gratuita
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Valores Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Nossos Valores <span className="bg-gradient-comet bg-clip-text text-transparent">COMET</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Cada letra representa um pilar fundamental da nossa metodologia
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              { letter: 'C', value: 'Colaboração', desc: 'Trabalhamos juntos para alcançar objetivos comuns' },
-              { letter: 'O', value: 'Organização', desc: 'Estruturamos processos para máxima eficiência' },
-              { letter: 'M', value: 'Melhoria Contínua', desc: 'Evoluímos constantemente em busca da excelência' },
-              { letter: 'E', value: 'Excelência', desc: 'Buscamos o mais alto padrão em tudo que fazemos' },
-              { letter: 'T', value: 'Transformação', desc: 'Promovemos mudanças significativas e duradouras' },
-              { letter: 'A', value: 'Autonomia', desc: 'Desenvolvemos a capacidade de autogestão' },
-              { letter: 'S', value: 'Sinergia', desc: 'Criamos força através da união de talentos' },
-            ].map((item, index) => (
-              <div 
-                key={index} 
-                className="bg-card rounded-lg p-6 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-3">
-                  {item.letter}
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {item.value}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-3 bg-primary rounded-full animate-pulse"></div>
           </div>
         </div>
       </section>
@@ -183,22 +167,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Propósito */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <TrendingUp className="h-16 w-16 text-primary mx-auto mb-6" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Nosso Propósito
-            </h2>
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-              Ser um <span className="bg-gradient-comet bg-clip-text text-transparent font-semibold">cometa</span> que acelera a transformação das empresas, impulsionando pessoas, líderes e organizações rumo a novos patamares de desempenho e crescimento sustentável.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Formulário de Contato */}
       <section className="py-20">
