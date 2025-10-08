@@ -46,8 +46,8 @@ const Vendas = () => {
     {
       icon: <Users className="h-12 w-12" />,
       category: 'Treinamentos Online',
-      title: 'Equipes de Alta Performance',
-      description: 'Treinamento online ao vivo para capacitar equipes em colaboração, comunicação eficaz e cultura de resultados.',
+      title: 'Times de Alta Performance',
+      description: 'Treinamento online ao vivo para capacitar times em colaboração, comunicação eficaz e cultura de resultados.',
       benefits: [
         'Formato online ao vivo',
         'Interação em tempo real',
@@ -254,7 +254,7 @@ const Vendas = () => {
                 Solicite <span className="bg-gradient-comet bg-clip-text text-transparent">Informações</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Preencha o formulário e nossa equipe enviará detalhes completos sobre preços e condições
+                Preencha o formulário e nosso time enviará detalhes completos sobre preços e condições
               </p>
             </div>
             <ContactForm 

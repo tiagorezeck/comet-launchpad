@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Calendar, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 const Contato = () => {
-  const whatsappNumber = '5511999999999';
+  const whatsappNumber = '5524999382195';
   const whatsappMessage = encodeURIComponent('Olá! Gostaria de falar com o Instituto COMET sobre consultoria/mentoria.');
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -11,9 +11,9 @@ const Contato = () => {
     {
       icon: <Phone className="h-8 w-8" />,
       title: 'Telefone',
-      content: '(11) 99999-9999',
+      content: '(24) 99938-2195',
       action: 'Ligar agora',
-      link: 'tel:+5511999999999',
+      link: 'tel:+5524999382195',
     },
     {
       icon: <Mail className="h-8 w-8" />,
@@ -35,8 +35,8 @@ const Contato = () => {
     {
       icon: <Instagram className="h-6 w-6" />,
       name: 'Instagram',
-      handle: '@institutocomet',
-      link: 'https://www.instagram.com/institutocomet',
+      handle: '@tiagorezeckcomet',
+      link: 'https://www.instagram.com/tiagorezeckcomet/',
     },
     {
       icon: <Youtube className="h-6 w-6" />,
@@ -47,8 +47,8 @@ const Contato = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       name: 'LinkedIn',
-      handle: 'Instituto COMET',
-      link: 'https://www.linkedin.com/company/institutocomet',
+      handle: 'Tiago Rezeck',
+      link: 'https://www.linkedin.com/in/tiagorezeck/',
     },
   ];
 
@@ -103,18 +103,18 @@ const Contato = () => {
               ))}
             </div>
 
-            {/* Agendamento Direto */}
+            {/* WhatsApp Direto */}
             <div className="bg-gradient-hero rounded-xl p-8 border border-primary shadow-comet text-center">
-              <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
+              <MessageCircle className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Agende uma Reunião Online
+                Agende uma Reunião
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Prefere marcar uma conversa com hora marcada? Agende diretamente em nossa agenda online e escolha o melhor horário para você.
+                Prefere falar direto conosco? Entre em contato pelo WhatsApp e agende sua reunião de diagnóstico gratuito.
               </p>
               <Button variant="hero" size="lg" asChild>
-                <a href="https://calendly.com/institutocomet" target="_blank" rel="noopener noreferrer">
-                  Agendar Reunião Online
+                <a href="https://wa.me/5524999382195?text=Quero%20agendar%20uma%20reunião%20e%20ter%20um%20diagnóstico" target="_blank" rel="noopener noreferrer">
+                  Agendar via WhatsApp
                 </a>
               </Button>
             </div>
@@ -131,7 +131,7 @@ const Contato = () => {
                 Envie uma <span className="bg-gradient-comet bg-clip-text text-transparent">Mensagem</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Preencha o formulário e nossa equipe retornará em até 24 horas
+                Preencha o formulário e nosso time retornará em até 24 horas
               </p>
             </div>
             <ContactForm />

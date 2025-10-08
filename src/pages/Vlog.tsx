@@ -43,7 +43,7 @@ const Vlog = () => {
       id: 4,
       title: 'Como Criar uma Cultura de Alta Performance',
       category: 'Cultura',
-      description: 'Estratégias comprovadas para transformar a cultura da sua empresa e engajar equipes.',
+      description: 'Estratégias comprovadas para transformar a cultura da sua empresa e engajar times.',
       thumbnail: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800',
       duration: '18:15',
       views: '3.8K',
@@ -104,7 +104,7 @@ const Vlog = () => {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a 
-                  href="https://www.instagram.com/institutocomet" 
+                  href="https://www.instagram.com/tiagorezeckcomet/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

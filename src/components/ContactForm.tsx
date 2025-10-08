@@ -15,7 +15,7 @@ interface ContactFormProps {
 
 const ContactForm = ({ 
   title = "Dê o primeiro passo para transformar sua empresa", 
-  subtitle = "Preencha o formulário e nossa equipe entrará em contato",
+  subtitle = "Preencha o formulário e nosso time entrará em contato",
   buttonText = "Quero conversar com a COMET",
   compact = false
 }: ContactFormProps) => {

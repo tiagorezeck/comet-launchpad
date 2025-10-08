@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Link } from 'react-router-dom';
-import { Rocket, Target, Users, TrendingUp, Calendar, MessageCircle } from 'lucide-react';
-import heroImage from '@/assets/hero-consultant.jpg';
+import { Rocket, Target, Users, TrendingUp, Calendar, MessageCircle, Clock } from 'lucide-react';
+import consultoriaHero from '@/assets/consultoria-hero.png';
 import spaceBackground from '@/assets/space-background.jpg';
 
 const Home = () => {
@@ -55,6 +55,9 @@ const Home = () => {
                 <p className="text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto font-light">
                   Transforme caos em resultados. Desenvolva líderes que inspiram. Crie uma empresa de alta performance.
                 </p>
+                <p className="text-lg text-primary font-semibold mt-4">
+                  Especialistas em empresas de pequeno e médio porte em fase de crescimento
+                </p>
               </div>
 
               {/* Prova Social Rápida */}
@@ -78,15 +81,19 @@ const Home = () => {
               {/* CTA Buttons - Impossíveis de Ignorar */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
                 <Button variant="hero" size="xl" className="text-lg px-12 py-8 shadow-glow hover:shadow-comet transition-all" asChild>
-                  <Link to="/contato">
+                  <a 
+                    href="https://wa.me/5524999382195?text=Quero%20agendar%20uma%20reunião%20e%20ter%20um%20diagnóstico"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Calendar className="mr-3 h-6 w-6" />
                     Agende uma Reunião Agora
-                  </Link>
+                  </a>
                 </Button>
                 
                 <Button variant="outline" size="xl" className="text-lg px-12 py-8 border-2" asChild>
                   <a 
-                    href="https://wa.me/5511999999999?text=Olá!%20Quero%20transformar%20minha%20empresa%20com%20o%20Instituto%20COMET."
+                    href="https://wa.me/5524999382195?text=Olá!%20Quero%20transformar%20minha%20empresa%20com%20o%20Instituto%20COMET."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -120,7 +127,7 @@ const Home = () => {
               Como Podemos <span className="bg-gradient-comet bg-clip-text text-transparent">Ajudar</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Soluções completas baseadas na Metodologia COMET para transformar sua empresa
+              Soluções completas baseadas na Metodologia COMET, especializada em Desenvolvimento Humano e Organizacional (DHO), para transformação da sua empresa
             </p>
           </div>
 
@@ -141,7 +148,7 @@ const Home = () => {
               {
                 icon: <Users className="h-12 w-12" />,
                 title: 'Treinamentos Corporativos',
-                desc: 'Desenvolvimento de equipes de alta performance através de capacitações práticas em liderança, gestão e processos.',
+                desc: 'Desenvolvimento de times de alta performance através de capacitações práticas em liderança, gestão e processos.',
                 link: '/servicos'
               },
             ].map((service, index) => (
@@ -167,6 +174,55 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Seção Agenda + Clientes */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            {/* Vagas Limitadas */}
+            <div className="bg-gradient-hero rounded-xl p-10 border-2 border-primary shadow-glow mb-12 text-center">
+              <div className="inline-block bg-primary/10 rounded-full px-6 py-2 mb-6">
+                <div className="flex items-center gap-2 text-primary font-bold">
+                  <Clock className="h-5 w-5" />
+                  <span>VAGAS LIMITADAS</span>
+                </div>
+              </div>
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Apenas <span className="bg-gradient-comet bg-clip-text text-transparent">3 vagas disponíveis</span> para Outubro de 2025
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Nosso modelo de consultoria é baseado em atendimento personalizado e resultados garantidos. Por isso, limitamos o número de clientes ativos.
+              </p>
+              <Button variant="hero" size="xl" asChild>
+                <a 
+                  href="https://wa.me/5524999382195?text=Quero%20garantir%20minha%20vaga%20para%20consultoria"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Calendar className="mr-3 h-6 w-6" />
+                  Garanta sua Vaga Agora
+                </a>
+              </Button>
+            </div>
+
+            {/* Empresas que Confiaram */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-8">
+                Empresas que <span className="bg-gradient-comet bg-clip-text text-transparent">Confiaram no COMET</span>
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {[1, 2, 3, 4].map((num) => (
+                  <div 
+                    key={num}
+                    className="bg-card rounded-lg border border-border p-8 flex items-center justify-center min-h-[100px] hover:shadow-card transition-shadow"
+                  >
+                    <span className="text-muted-foreground font-semibold">Cliente {num}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Formulário de Contato */}
       <section className="py-20">

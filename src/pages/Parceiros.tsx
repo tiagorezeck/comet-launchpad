@@ -21,7 +21,7 @@ const Parceiros = () => {
       description: 'Projeto exclusivo focado em Desenvolvimento Humano Organizacional (DHO), combinando a expertise da COMET em gestão com a experiência de Jess Knoll em comportamento organizacional.',
       specialty: 'Desenvolvimento Humano Organizacional',
       benefits: [
-        'Engajamento e motivação de equipes',
+        'Engajamento e motivação de times',
         'Desenvolvimento de liderança humanizada',
         'Fortalecimento da cultura organizacional',
         'Programas de bem-estar corporativo',

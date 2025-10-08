@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Link } from 'react-router-dom';
 import { Award, Target, Eye, Heart, Lightbulb, TrendingUp } from 'lucide-react';
-import teamImage from '@/assets/team-performance.jpg';
+import tiagoRezeck from '@/assets/tiago-rezeck.png';
 
 const Sobre = () => {
   return (
@@ -28,14 +28,14 @@ const Sobre = () => {
             {/* Foto + História */}
             <div className="grid lg:grid-cols-5 gap-12 items-start mb-16">
               <div className="lg:col-span-2">
-                <div className="sticky top-8">
-                  <div className="rounded-2xl overflow-hidden shadow-glow mb-6">
-                    <img 
-                      src={teamImage} 
-                      alt="Tiago Rezeck - Fundador Instituto COMET" 
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
+                  <div className="sticky top-8">
+                    <div className="rounded-2xl overflow-hidden shadow-glow mb-6">
+                      <img 
+                        src={tiagoRezeck} 
+                        alt="Tiago Rezeck - Fundador Instituto COMET" 
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-foreground">Tiago Rezeck</h3>
                     <p className="text-muted-foreground">Fundador • Mais de 10 anos transformando empresas</p>
@@ -49,14 +49,14 @@ const Sobre = () => {
                   <div className="border-l-4 border-primary pl-6 space-y-3">
                     <h3 className="text-2xl font-bold text-foreground">O Problema</h3>
                     <p className="text-lg text-muted-foreground">
-                      Empresas com potencial enorme, mas presas. Processos caóticos, equipes desmotivadas, resultados imprevisíveis. O mesmo padrão se repetia em dezenas de negócios.
+                      Empresas com potencial enorme, mas presas. Processos caóticos, times desmotivados, resultados imprevisíveis. O mesmo padrão se repetia em dezenas de negócios.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-primary pl-6 space-y-3">
                     <h3 className="text-2xl font-bold text-foreground">A Descoberta</h3>
                     <p className="text-lg text-muted-foreground">
-                      Não bastava dar conselhos. Era preciso um sistema que organizasse, desenvolvesse pessoas e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
+                      Não bastava dar conselhos. Era preciso um sistema que organizasse, desenvolvesse pessoas (DHO) e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
                     </p>
                   </div>
 
@@ -93,31 +93,33 @@ const Sobre = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {[
-              { letter: 'C', value: 'Colaboração', desc: 'Trabalhamos juntos para alcançar objetivos comuns' },
-              { letter: 'O', value: 'Organização', desc: 'Estruturamos processos para máxima eficiência' },
-              { letter: 'M', value: 'Melhoria Contínua', desc: 'Evoluímos constantemente em busca da excelência' },
-              { letter: 'E', value: 'Excelência', desc: 'Buscamos o mais alto padrão em tudo que fazemos' },
-              { letter: 'T', value: 'Transformação', desc: 'Promovemos mudanças significativas e duradouras' },
-              { letter: 'A', value: 'Autonomia', desc: 'Desenvolvemos a capacidade de autogestão' },
-              { letter: 'S', value: 'Sinergia', desc: 'Criamos força através da união de talentos' },
-            ].map((item, index) => (
-              <div 
-                key={index} 
-                className="bg-card rounded-lg p-6 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-3">
-                  {item.letter}
+          <div className="overflow-x-auto pb-4">
+            <div className="grid grid-cols-7 gap-3 max-w-7xl mx-auto min-w-[800px]">
+              {[
+                { letter: 'C', value: 'Colaboração', desc: 'Trabalhamos juntos para alcançar objetivos comuns' },
+                { letter: 'O', value: 'Organização', desc: 'Estruturamos processos para máxima eficiência' },
+                { letter: 'M', value: 'Melhoria Contínua', desc: 'Evoluímos constantemente em busca da excelência' },
+                { letter: 'E', value: 'Excelência', desc: 'Buscamos o mais alto padrão em tudo que fazemos' },
+                { letter: 'T', value: 'Transformação', desc: 'Promovemos mudanças significativas e duradouras' },
+                { letter: 'A', value: 'Autonomia', desc: 'Desenvolvemos a capacidade de autogestão' },
+                { letter: 'S', value: 'Sinergia', desc: 'Criamos força através da união de talentos' },
+              ].map((item, index) => (
+                <div 
+                  key={index} 
+                  className="bg-card rounded-lg p-4 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center"
+                >
+                  <div className="text-4xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-2">
+                    {item.letter}
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground mb-2">
+                    {item.value}
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    {item.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {item.value}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -192,6 +194,10 @@ const Sobre = () => {
                 {
                   title: 'Proximidade com o Cliente',
                   desc: 'Acompanhamento próximo e personalizado, atuando como verdadeiros parceiros na jornada de transformação.',
+                },
+                {
+                  title: 'Especialização em PMEs',
+                  desc: 'Foco exclusivo em pequenas e médias empresas em fase de crescimento, com soluções adaptadas às suas necessidades e realidades.',
                 },
               ].map((item, index) => (
                 <div 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin } from 'lucide-react';
-import cometIcon from '@/assets/comet-icon.png';
+import cometIcon from '/comet-logo.png';
 
 const Footer = () => {
   return (
@@ -21,13 +21,13 @@ const Footer = () => {
               Desenvolvendo pessoas, organizando empresas e transformando negócios para alta performance.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/tiagorezeckcomet/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.youtube.com/@institutocomet" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/tiagorezeck/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Phone className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
-                <span>(11) 99999-9999</span>
+                <span>(24) 99938-2195</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />

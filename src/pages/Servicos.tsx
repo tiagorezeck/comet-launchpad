@@ -37,8 +37,8 @@ const Servicos = () => {
     {
       icon: <Users className="h-16 w-16" />,
       title: 'Treinamentos Corporativos',
-      subtitle: 'Equipes de alta performance',
-      description: 'Desenvolvemos programas de treinamento customizados para capacitar líderes e equipes nas competências essenciais para alta performance. Nossos treinamentos são práticos, dinâmicos e focados em resultados reais.',
+      subtitle: 'Times de alta performance',
+      description: 'Desenvolvemos programas de treinamento customizados para capacitar líderes e times nas competências essenciais para alta performance. Nossos treinamentos são práticos, dinâmicos e focados em resultados reais.',
       benefits: [
         'Treinamentos in company ou online',
         'Conteúdo personalizado para sua realidade',
@@ -47,7 +47,7 @@ const Servicos = () => {
         'Gestão de processos e pessoas',
         'Cultura de melhoria contínua',
       ],
-      results: 'Equipes mais engajadas, líderes preparados, comunicação eficaz e cultura organizacional fortalecida.',
+      results: 'Times mais engajados, líderes preparados, comunicação eficaz e cultura organizacional fortalecida.',
     },
   ];
 
@@ -61,7 +61,7 @@ const Servicos = () => {
               Nossos <span className="bg-gradient-comet bg-clip-text text-transparent">Serviços</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Soluções completas baseadas na Metodologia COMET para transformar sua empresa
+              Soluções completas baseadas na Metodologia COMET, especializada em Desenvolvimento Humano e Organizacional (DHO), para transformação da sua empresa
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ const Servicos = () => {
                 Pronto para <span className="bg-gradient-comet bg-clip-text text-transparent">Começar</span>?
               </h2>
               <p className="text-lg text-muted-foreground">
-                Preencha o formulário e nossa equipe entrará em contato para entender suas necessidades
+                Preencha o formulário e nosso time entrará em contato para entender suas necessidades
               </p>
             </div>
             <ContactForm />

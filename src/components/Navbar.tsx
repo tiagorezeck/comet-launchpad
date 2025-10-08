@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import cometIcon from '@/assets/comet-icon.png';
+import cometIcon from '/comet-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,13 @@ const Navbar = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contato">Agende uma Reunião</Link>
+              <a 
+                href="https://wa.me/5524999382195?text=Quero%20agendar%20uma%20reunião%20e%20ter%20um%20diagnóstico"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agende uma Reunião
+              </a>
             </Button>
           </div>
 
@@ -88,9 +94,14 @@ const Navbar = () => {
             ))}
             <div className="pt-4">
               <Button variant="hero" size="lg" className="w-full" asChild>
-                <Link to="/contato" onClick={() => setIsOpen(false)}>
+                <a 
+                  href="https://wa.me/5524999382195?text=Quero%20agendar%20uma%20reunião%20e%20ter%20um%20diagnóstico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                >
                   Agende uma Reunião
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
