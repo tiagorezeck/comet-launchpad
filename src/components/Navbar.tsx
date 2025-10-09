@@ -26,14 +26,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img src={cometIcon} alt="COMET" className="h-10 w-10 transition-transform group-hover:scale-110" />
-            <div>
-              <h1 className="text-2xl font-bold bg-gradient-comet bg-clip-text text-transparent">
-                Instituto COMET
-              </h1>
-              <p className="text-xs text-muted-foreground">Transformando Negócios</p>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={cometIcon} 
+              alt="Instituto COMET" 
+              className="h-14 w-14 transition-transform group-hover:scale-110" 
+            />
           </Link>
 
           {/* Desktop Navigation */}

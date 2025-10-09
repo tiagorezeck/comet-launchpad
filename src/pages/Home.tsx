@@ -1,120 +1,106 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
+import ClientCarousel from '@/components/ClientCarousel';
+import Testimonials from '@/components/Testimonials';
 import { Link } from 'react-router-dom';
-import { Rocket, Target, Users, TrendingUp, Calendar, MessageCircle, Clock } from 'lucide-react';
-import consultoriaHero from '@/assets/consultoria-hero.png';
-import spaceBackground from '@/assets/space-background.jpg';
+import { Rocket, Target, Users, Calendar, MessageCircle, Clock } from 'lucide-react';
+import heroBusiness from '@/assets/hero-business.jpg';
 
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Impacto Emocional */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(10, 14, 18, 0.7), rgba(10, 14, 18, 0.7)), url(${spaceBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        {/* Overlay com gradiente animado */}
-        <div className="absolute inset-0 bg-gradient-hero opacity-60 animate-pulse"></div>
-        
-        {/* Partículas de estrelas */}
-        <div className="absolute inset-0 opacity-30">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-primary rounded-full animate-pulse"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${2 + Math.random() * 2}s`,
-              }}
-            />
-          ))}
+      {/* Hero Section */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroBusiness} 
+            alt="Consultoria Empresarial" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70"></div>
         </div>
-        
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            {/* Hero Content - Centrado e Impactante */}
-            <div className="text-center space-y-12 animate-fade-in">
-              {/* Headline Principal */}
-              <div className="space-y-6">
-                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
-                  <span className="block text-foreground mb-2">
-                    Sua Empresa
-                  </span>
-                  <span className="block bg-gradient-comet bg-clip-text text-transparent">
-                    Imparável
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Text Content */}
+            <div className="space-y-8">
+              <div className="inline-block">
+                <span className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">
+                  ✨ Transformação Empresarial Comprovada
+                </span>
+              </div>
+
+              <div className="space-y-4">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  Transforme Sua Empresa em uma{' '}
+                  <span className="bg-gradient-comet bg-clip-text text-transparent">
+                    Máquina de Resultados
                   </span>
                 </h1>
                 
-                <p className="text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto font-light">
-                  Transforme caos em resultados. Desenvolva líderes que inspiram. Crie uma empresa de alta performance.
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Consultoria estratégica em Desenvolvimento Humano e Organizacional 
+                  para empresas que querem crescer de forma sustentável
                 </p>
-                <p className="text-lg text-primary font-semibold mt-4">
-                  Especialistas em empresas de pequeno e médio porte em fase de crescimento
+
+                <p className="text-base text-primary font-semibold">
+                  🎯 Especialistas em empresas de pequeno e médio porte em fase de crescimento
                 </p>
               </div>
 
-              {/* Prova Social Rápida */}
-              <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto py-8">
-                {[
-                  { number: '+10', label: 'Anos de Experiência' },
-                  { number: '+20', label: 'Empresas Transformadas' },
-                  { number: '100%', label: 'Metodologia Exclusiva' },
-                ].map((stat, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="text-4xl md:text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 py-6">
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl md:text-4xl font-bold text-primary">15+</div>
+                  <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
+                  <div className="text-sm text-muted-foreground">Empresas Atendidas</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl md:text-4xl font-bold text-primary">98%</div>
+                  <div className="text-sm text-muted-foreground">Satisfação</div>
+                </div>
               </div>
 
-              {/* CTA Buttons - Impossíveis de Ignorar */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-                <Button variant="hero" size="xl" className="text-lg px-12 py-8 shadow-glow hover:shadow-comet transition-all" asChild>
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  className="text-base"
+                  asChild
+                >
                   <a 
                     href="https://wa.me/5524999382195?text=Quero%20agendar%20uma%20reunião%20e%20ter%20um%20diagnóstico"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Calendar className="mr-3 h-6 w-6" />
                     Agende uma Reunião Agora
                   </a>
                 </Button>
                 
-                <Button variant="outline" size="xl" className="text-lg px-12 py-8 border-2" asChild>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="text-base border-primary/20 hover:border-primary"
+                  asChild
+                >
                   <a 
-                    href="https://wa.me/5524999382195?text=Olá!%20Quero%20transformar%20minha%20empresa%20com%20o%20Instituto%20COMET."
+                    href="https://wa.me/5524999382195?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="mr-3 h-6 w-6" />
-                    Fale no WhatsApp
+                    Fale Conosco
                   </a>
                 </Button>
               </div>
-
-              {/* Urgência */}
-              <p className="text-sm text-primary/80 font-medium">
-                ✨ Vagas limitadas para consultoria • Agende sua avaliação gratuita
-              </p>
             </div>
-          </div>
-        </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-primary rounded-full animate-pulse"></div>
+            {/* Right Side - Image space (already covered by background) */}
+            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
@@ -204,25 +190,29 @@ const Home = () => {
               </Button>
             </div>
 
-            {/* Empresas que Confiaram */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-8">
-                Empresas que <span className="bg-gradient-comet bg-clip-text text-transparent">Confiaram no COMET</span>
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[1, 2, 3, 4].map((num) => (
-                  <div 
-                    key={num}
-                    className="bg-card rounded-lg border border-border p-8 flex items-center justify-center min-h-[100px] hover:shadow-card transition-shadow"
-                  >
-                    <span className="text-muted-foreground font-semibold">Cliente {num}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Client Success Stories */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Empresas Que Transformamos
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Conheça algumas das empresas que alcançaram resultados extraordinários 
+              com a metodologia COMET
+            </p>
+          </div>
+
+          <ClientCarousel />
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Formulário de Contato */}
       <section className="py-20">

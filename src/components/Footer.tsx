@@ -9,16 +9,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={cometIcon} alt="COMET" className="h-10 w-10" />
-              <div>
-                <h3 className="text-xl font-bold bg-gradient-comet bg-clip-text text-transparent">
-                  Instituto COMET
-                </h3>
-              </div>
-            </div>
+            <Link to="/" className="inline-block mb-4">
+              <img 
+                src={cometIcon} 
+                alt="Instituto COMET" 
+                className="h-16 w-16 transition-transform hover:scale-110" 
+              />
+            </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Desenvolvendo pessoas, organizando empresas e transformando negócios para alta performance.
+              Especialistas em Desenvolvimento Humano e Organizacional, 
+              focados em transformar empresas em fase de crescimento.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/tiagorezeckcomet/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

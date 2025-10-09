@@ -1,8 +1,6 @@
-import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
-import { Link } from 'react-router-dom';
-import { Award, Target, Eye, Heart, Lightbulb, TrendingUp } from 'lucide-react';
-import tiagoRezeck from '@/assets/tiago-rezeck.png';
+import { Award, Target, Eye, Heart } from 'lucide-react';
+import tiagoRezeckHero from '@/assets/tiago-rezeck-hero.png';
 
 const Sobre = () => {
   return (
@@ -21,61 +19,67 @@ const Sobre = () => {
         </div>
       </section>
 
-      {/* A Jornada - Simples e Impactante */}
+      {/* A Jornada - Layout Compacto e Moderno */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Foto + História */}
-            <div className="grid lg:grid-cols-5 gap-12 items-start mb-16">
-              <div className="lg:col-span-2">
-                  <div className="sticky top-8">
-                    <div className="rounded-2xl overflow-hidden shadow-glow mb-6">
-                      <img 
-                        src={tiagoRezeck} 
-                        alt="Tiago Rezeck - Fundador Instituto COMET" 
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-foreground">Tiago Rezeck</h3>
-                    <p className="text-muted-foreground">Fundador • Mais de 10 anos transformando empresas</p>
-                  </div>
+          <div className="max-w-5xl mx-auto space-y-16">
+            {/* Foto + Apresentação em Grid Horizontal */}
+            <div className="grid md:grid-cols-5 gap-8 items-center">
+              <div className="md:col-span-2">
+                <div className="rounded-2xl overflow-hidden shadow-glow">
+                  <img 
+                    src={tiagoRezeckHero} 
+                    alt="Tiago Rezeck - Fundador Instituto COMET" 
+                    className="w-full aspect-video object-cover"
+                  />
                 </div>
               </div>
               
-              <div className="lg:col-span-3 space-y-8">
-                {/* História em 3 blocos emocionais */}
-                <div className="space-y-6">
-                  <div className="border-l-4 border-primary pl-6 space-y-3">
-                    <h3 className="text-2xl font-bold text-foreground">O Problema</h3>
-                    <p className="text-lg text-muted-foreground">
-                      Empresas com potencial enorme, mas presas. Processos caóticos, times desmotivados, resultados imprevisíveis. O mesmo padrão se repetia em dezenas de negócios.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-primary pl-6 space-y-3">
-                    <h3 className="text-2xl font-bold text-foreground">A Descoberta</h3>
-                    <p className="text-lg text-muted-foreground">
-                      Não bastava dar conselhos. Era preciso um sistema que organizasse, desenvolvesse pessoas (DHO) e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-primary pl-6 space-y-3">
-                    <h3 className="text-2xl font-bold text-foreground">Os Resultados</h3>
-                    <p className="text-lg text-muted-foreground">
-                      Mais de <span className="text-primary font-semibold">20 empresas transformadas</span>. Líderes que antes estavam perdidos hoje comandam times de alta performance. Negócios que eram imprevisíveis agora crescem de forma sólida e sustentável.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Quote Destacada */}
-                <div className="bg-card border-l-4 border-primary rounded-lg p-8 shadow-card">
-                  <p className="text-xl italic text-foreground mb-4">
-                    "Não existe empresa forte sem pessoas fortes. E não existe transformação real sem organização e processos claros."
-                  </p>
-                  <p className="text-sm text-muted-foreground">— Tiago Rezeck</p>
-                </div>
+              <div className="md:col-span-3 space-y-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                  Tiago Rezeck
+                </h3>
+                <p className="text-lg text-primary font-semibold">
+                  Fundador • Especialista em DHO
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Mais de 15 anos de experiência transformando empresas através do desenvolvimento de pessoas e organização estratégica. Criador da Metodologia COMET, já ajudou mais de 100 empresas a alcançarem alta performance.
+                </p>
               </div>
+            </div>
+
+            {/* Problema, Descoberta, Resultados - Cards Horizontais Compactos */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
+                <h3 className="text-xl font-bold text-foreground mb-3">O Problema</h3>
+                <p className="text-sm text-muted-foreground">
+                  Empresas com potencial enorme, mas presas. Processos caóticos, times desmotivados, resultados imprevisíveis.
+                </p>
+              </div>
+
+              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
+                <h3 className="text-xl font-bold text-foreground mb-3">A Descoberta</h3>
+                <p className="text-sm text-muted-foreground">
+                  Era preciso um sistema que organizasse, desenvolvesse pessoas (DHO) e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
+                </p>
+              </div>
+
+              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
+                <h3 className="text-xl font-bold text-foreground mb-3">Os Resultados</h3>
+                <p className="text-sm text-muted-foreground">
+                  Mais de <span className="text-primary font-semibold">100 empresas transformadas</span>. Líderes que comandam times de alta performance.
+                </p>
+              </div>
+            </div>
+
+            {/* Quote Destacada - Mais Compacta */}
+            <div className="bg-gradient-hero border-l-4 border-primary rounded-xl p-8 shadow-glow">
+              <p className="text-xl md:text-2xl italic text-foreground mb-4 text-center">
+                "Não existe empresa forte sem pessoas fortes. E não existe transformação real sem organização e processos claros."
+              </p>
+              <p className="text-sm text-muted-foreground text-center font-semibold">
+                — Tiago Rezeck
+              </p>
             </div>
           </div>
         </div>
