@@ -89,11 +89,11 @@ const Home = () => {
                   asChild
                 >
                   <a 
-                    href="https://wa.me/5524999382195?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria"
+                    href="https://wa.me/5524999382195?text=Olá,%20gostaria%20de%20falar%20com%20vocês"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Fale Conosco
+                    Fale no WhatsApp
                   </a>
                 </Button>
               </div>

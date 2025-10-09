@@ -1,6 +1,6 @@
 import ContactForm from '@/components/ContactForm';
 import { Award, Target, Eye, Heart } from 'lucide-react';
-import tiagoRezeckHero from '@/assets/tiago-rezeck-hero.png';
+import tiagoRezeck from '@/assets/tiago-rezeck.png';
 
 const Sobre = () => {
   return (
@@ -28,7 +28,7 @@ const Sobre = () => {
               <div className="md:col-span-2">
                 <div className="rounded-2xl overflow-hidden shadow-glow">
                   <img 
-                    src={tiagoRezeckHero} 
+                    src={tiagoRezeck} 
                     alt="Tiago Rezeck - Fundador Instituto COMET" 
                     className="w-full aspect-video object-cover"
                   />

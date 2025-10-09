@@ -1,6 +1,15 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight } from 'lucide-react';
+import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
+import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
+import consultoria1 from '@/assets/servicos/consultoria-1.jpg';
+import reuniao1 from '@/assets/servicos/reuniao-1.jpg';
+import workshop1 from '@/assets/servicos/workshop-1.jpg';
+import palestra1 from '@/assets/servicos/palestra-1.jpg';
+import diagnostico1 from '@/assets/servicos/diagnostico-1.jpg';
+import planejamento1 from '@/assets/servicos/planejamento-1.jpg';
+import acompanhamento1 from '@/assets/servicos/acompanhamento-1.jpg';
 
 const Servicos = () => {
   const services = [
@@ -143,12 +152,14 @@ const Servicos = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { step: '01', title: 'Contato Inicial', desc: 'Conversamos sobre seus desafios e objetivos' },
                 { step: '02', title: 'Diagnóstico', desc: 'Analisamos profundamente sua empresa' },
                 { step: '03', title: 'Proposta', desc: 'Apresentamos solução personalizada' },
                 { step: '04', title: 'Implementação', desc: 'Trabalhamos juntos nos resultados' },
+                { step: '05', title: 'Acompanhamento', desc: 'Seguimos corrigindo, ajustando e potencializando os resultados' },
+                { step: '06', title: 'Entrega', desc: 'Finalização do projeto proposto' },
               ].map((item, index) => (
                 <div 
                   key={index}
@@ -163,6 +174,61 @@ const Servicos = () => {
                   <p className="text-sm text-muted-foreground">
                     {item.desc}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Galeria de Serviços */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Nossos <span className="bg-gradient-comet bg-clip-text text-transparent">Serviços em Ação</span>
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Veja alguns dos serviços que prestamos aos nossos clientes
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { img: treinamento1, title: 'Treinamento de Liderança' },
+                { img: mentoria1, title: 'Mentoria Executiva' },
+                { img: consultoria1, title: 'Consultoria Estratégica' },
+                { img: reuniao1, title: 'Reunião de Planejamento' },
+                { img: workshop1, title: 'Workshop de Processos' },
+                { img: palestra1, title: 'Palestra Motivacional' },
+                { img: diagnostico1, title: 'Diagnóstico Empresarial' },
+                { img: planejamento1, title: 'Planejamento Estratégico' },
+                { img: acompanhamento1, title: 'Acompanhamento de Resultados' },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="group relative overflow-hidden rounded-xl border border-border shadow-card bg-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      <h3 className="text-xl font-bold text-foreground">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-card/95 backdrop-blur-sm">
+                    <h3 className="text-lg font-semibold text-foreground text-center">
+                      {item.title}
+                    </h3>
+                  </div>
                 </div>
               ))}
             </div>
