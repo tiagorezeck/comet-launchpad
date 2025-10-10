@@ -1,33 +1,30 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
-import { Handshake, Cog, Users, Target, CheckCircle2, Plus } from 'lucide-react';
+import { Handshake, CheckCircle2, Sparkles } from 'lucide-react';
+import automacLogo from '@/assets/partners/automac.png';
+import jessLogo from '@/assets/partners/jess.png';
+import farmerLogo from '@/assets/partners/farmer.png';
+import tresLogo from '@/assets/partners/tres.png';
 
 const Parceiros = () => {
   const partners = [
     {
+      logo: automacLogo,
       name: 'Automac',
-      description: 'Parceria estratégica em sistemas de automação empresarial e BPO financeiro.',
-      specialty: 'Automação e Processos Financeiros',
-      benefits: [
-        'Sistemas integrados de gestão',
-        'Automação de processos financeiros',
-        'BPO (Business Process Outsourcing)',
-        'Redução de custos operacionais',
-      ],
-      icon: <Cog className="h-16 w-16" />,
+      description: 'Empresa parceira principal em soluções de automação industrial e sistemas integrados de gestão empresarial.',
+      specialty: 'Automação e Sistemas de Gestão',
     },
     {
-      name: 'A Três - COMET + Jess Knoll',
-      description: 'Projeto exclusivo focado em Desenvolvimento Humano Organizacional (DHO), combinando a expertise da COMET em gestão com a experiência de Jess Knoll em comportamento organizacional.',
-      specialty: 'Desenvolvimento Humano Organizacional',
-      benefits: [
-        'Engajamento e motivação de times',
-        'Desenvolvimento de liderança humanizada',
-        'Fortalecimento da cultura organizacional',
-        'Programas de bem-estar corporativo',
-      ],
-      icon: <Users className="h-16 w-16" />,
-      highlight: true,
+      logo: jessLogo,
+      name: 'Jess Knoll',
+      description: 'Especialista em desenvolvimento humano, mapeamento de perfil comportamental e testes psicométricos para organizações.',
+      specialty: 'Desenvolvimento Humano e Perfil Comportamental',
+    },
+    {
+      logo: farmerLogo,
+      name: 'Farmer MKT Digital',
+      description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online para empresas.',
+      specialty: 'Marketing Digital e Tráfego Pago',
     },
   ];
 
@@ -61,62 +58,33 @@ const Parceiros = () => {
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="grid md:grid-cols-3 gap-8">
               {partners.map((partner, index) => (
                 <div 
                   key={index}
-                  className={`bg-card rounded-xl border ${partner.highlight ? 'border-2 border-primary shadow-comet' : 'border-border shadow-card'} overflow-hidden hover:shadow-glow transition-all duration-300`}
+                  className="bg-card rounded-xl border border-border shadow-card overflow-hidden hover:shadow-comet transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="p-8 md:p-10">
-                    <div className="grid md:grid-cols-3 gap-8">
-                      {/* Icon & Title */}
-                      <div className="md:col-span-1">
-                        <div className="text-primary mb-6">
-                          {partner.icon}
-                        </div>
-                        <h3 className="text-3xl font-bold text-foreground mb-2">
-                          {partner.name}
-                        </h3>
-                        {partner.highlight && (
-                          <div className="inline-block bg-gradient-comet text-white text-xs font-bold px-3 py-1 rounded-full mt-2">
-                            Parceria Exclusiva
-                          </div>
-                        )}
-                        <div className="mt-4">
-                          <div className="text-sm font-semibold text-primary">
-                            {partner.specialty}
-                          </div>
-                        </div>
-                      </div>
+                  <div className="p-8">
+                    {/* Logo */}
+                    <div className="h-24 flex items-center justify-center bg-background/50 rounded-lg p-6 mb-6">
+                      <img 
+                        src={partner.logo} 
+                        alt={partner.name}
+                        className="max-h-20 max-w-full object-contain"
+                      />
+                    </div>
 
-                      {/* Description & Benefits */}
-                      <div className="md:col-span-2 space-y-6">
-                        <p className="text-lg text-muted-foreground">
-                          {partner.description}
-                        </p>
-
-                        <div>
-                          <h4 className="text-lg font-semibold text-foreground mb-4">
-                            Benefícios da Parceria:
-                          </h4>
-                          <ul className="grid md:grid-cols-2 gap-3">
-                            {partner.benefits.map((benefit, idx) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                                <span className="text-foreground">{benefit}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div className="pt-4">
-                          <Button variant="comet" asChild>
-                            <a href="#contact-form">
-                              Descubra como esta parceria pode ajudar sua empresa
-                            </a>
-                          </Button>
-                        </div>
-                      </div>
+                    {/* Info */}
+                    <div className="space-y-4">
+                      <h3 className="text-2xl font-bold text-foreground text-center">
+                        {partner.name}
+                      </h3>
+                      <p className="text-sm text-primary font-semibold text-center">
+                        {partner.specialty}
+                      </p>
+                      <p className="text-muted-foreground text-center">
+                        {partner.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -126,49 +94,36 @@ const Parceiros = () => {
         </div>
       </section>
 
-      {/* A Três - Destaque Especial */}
+      {/* Projeto TRÊS - Destaque Especial */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 border border-primary shadow-glow">
+            <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 border-2 border-primary shadow-glow">
               <div className="text-center mb-8">
-                <Target className="h-16 w-16 text-primary mx-auto mb-6" />
+                <div className="h-32 flex items-center justify-center mb-6">
+                  <img 
+                    src={tresLogo} 
+                    alt="Projeto TRÊS"
+                    className="max-h-28 max-w-full object-contain"
+                  />
+                </div>
                 <h2 className="text-4xl font-bold text-foreground mb-4">
-                  Conheça o Projeto <span className="bg-gradient-comet bg-clip-text text-transparent">A Três</span>
+                  Conheça o projeto <span className="bg-gradient-comet bg-clip-text text-transparent">TRÊS</span>
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  COMET + Jess Knoll: A união perfeita entre gestão estratégica e desenvolvimento humano
+                  A união perfeita entre gestão estratégica e desenvolvimento humano
                 </p>
               </div>
 
-              <div className="space-y-6 text-center">
-                <p className="text-lg text-foreground">
-                  O projeto <span className="font-semibold text-primary">A Três</span> é uma iniciativa inovadora que combina:
+              <div className="space-y-6">
+                <p className="text-lg text-foreground text-center">
+                  O projeto <span className="font-bold text-primary">TRÊS</span> é uma iniciativa inovadora que combina a expertise do Instituto COMET em organização empresarial com a visão de Jess Knoll em comportamento humano, criando uma abordagem única de transformação organizacional.
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-6 text-left">
-                  <div className="bg-card rounded-lg p-6 border border-border">
-                    <h3 className="text-xl font-bold text-foreground mb-3">
-                      Expertise da COMET
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Estruturação de processos, gestão estratégica e organização empresarial
-                    </p>
-                  </div>
-                  <div className="bg-card rounded-lg p-6 border border-border">
-                    <h3 className="text-xl font-bold text-foreground mb-3">
-                      Visão de Jess Knoll
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Desenvolvimento humano, comportamento organizacional e cultura empresarial
-                    </p>
-                  </div>
-                </div>
-
-                <div className="pt-6">
-                  <Button variant="hero" size="xl" asChild>
+                <div className="pt-6 text-center">
+                  <Button variant="hero" size="lg" asChild>
                     <a href="#contact-form">
-                      Descubra como a Três pode transformar sua empresa
+                      Descubra como TRÊS pode transformar sua empresa
                     </a>
                   </Button>
                 </div>
@@ -178,39 +133,35 @@ const Parceiros = () => {
         </div>
       </section>
 
-      {/* Futuros Parceiros */}
+      {/* Torne-se Parceiro */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Plus className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Espaço para Novas <span className="bg-gradient-comet bg-clip-text text-transparent">Parcerias</span>
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Estamos sempre abertos a estabelecer novas parcerias estratégicas que agreguem valor aos nossos clientes e fortaleçam nosso ecossistema de soluções empresariais.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <div 
-                  key={num}
-                  className="bg-muted/30 rounded-lg border-2 border-dashed border-border p-8 flex items-center justify-center min-h-[120px]"
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-primary/10 via-background to-primary/5 rounded-2xl p-10 border border-primary/30 shadow-glow text-center">
+              <Sparkles className="h-16 w-16 text-primary mx-auto mb-6" />
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Torne-se um <span className="bg-gradient-comet bg-clip-text text-transparent">Parceiro COMET</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-6">
+                Faça parte da nossa rede de parceiros e amplie seus resultados com a COMET
+              </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                Se sua empresa atua com desenvolvimento humano, tecnologia, educação ou soluções corporativas, queremos conhecer você.
+              </p>
+              <Button variant="hero" size="lg" className="animate-pulse hover:animate-none" asChild>
+                <a 
+                  href="https://wa.me/5524999382195?text=Gostaria%20de%20ser%20parceiro%20do%20Instituto%20COMET" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 mx-auto w-fit"
                 >
-                  <span className="text-muted-foreground font-medium">
-                    Parceiro em breve
-                  </span>
-                </div>
-              ))}
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Torne-se um Parceiro COMET
+                </a>
+              </Button>
             </div>
-
-            <p className="text-lg text-foreground mb-6">
-              Sua empresa pode ser nossa próxima parceira?
-            </p>
-            <Button variant="comet" size="lg" asChild>
-              <a href="#contact-form">
-                Quero ser parceiro do Instituto COMET
-              </a>
-            </Button>
           </div>
         </div>
       </section>

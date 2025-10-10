@@ -29,8 +29,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center group">
             <img 
               src={cometIcon} 
-              alt="Instituto COMET" 
-              className="h-14 w-14 transition-transform group-hover:scale-110" 
+              alt="Instituto COMET Logo" 
+              className="h-16 w-auto transition-transform group-hover:scale-110 animate-fade-in" 
             />
           </Link>
 

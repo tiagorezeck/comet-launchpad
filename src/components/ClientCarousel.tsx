@@ -5,41 +5,39 @@ import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
+import sistekLogo from '@/assets/clients/client-1.png';
+import refrimanosLogo from '@/assets/clients/client-2.png';
+import farmacenterLogo from '@/assets/clients/client-3.png';
+import beijaflorLogo from '@/assets/clients/client-4.png';
+
 const clients = [
   {
-    logo: '/src/assets/clients/client-1.png',
-    name: 'TechSolutions Brasil',
-    sector: 'Tecnologia da Informação',
-    description: 'Reestruturação organizacional completa resultou em times alinhados e processos otimizados.',
-    metric: '45% ↑ produtividade',
+    logo: sistekLogo,
+    name: 'Sistek SP',
+    sector: 'Tecnologia',
+    description: 'Reestruturação organizacional completa com implementação de processos e desenvolvimento de liderança.',
+    metric: 'Transformação completa',
   },
   {
-    logo: '/src/assets/clients/client-2.png',
-    name: 'Indústria Moderna Ltda',
-    sector: 'Manufatura e Indústria',
-    description: 'Implementação de metodologia COMET transformou a cultura organizacional e engajamento.',
-    metric: '60% ↑ engajamento',
+    logo: refrimanosLogo,
+    name: 'Refrimanos',
+    sector: 'Refrigeração Industrial',
+    description: 'Otimização de processos produtivos e estruturação de gestão estratégica para alta performance.',
+    metric: 'Alta performance',
   },
   {
-    logo: '/src/assets/clients/client-3.png',
-    name: 'Comércio Vanguarda',
-    sector: 'Varejo e E-commerce',
-    description: 'Treinamento corporativo elevou as competências do time de vendas e liderança.',
-    metric: '35% ↑ vendas',
+    logo: farmacenterLogo,
+    name: 'Farmacenter',
+    sector: 'Farmacêutico',
+    description: 'Desenvolvimento de cultura organizacional e implementação de sistemas de gestão eficazes.',
+    metric: 'Crescimento sustentável',
   },
   {
-    logo: '/src/assets/clients/client-4.png',
-    name: 'Serviços Premium',
-    sector: 'Consultoria e Serviços',
-    description: 'Mentoria estratégica focada em crescimento sustentável e expansão de mercado.',
-    metric: '50% ↑ receita',
-  },
-  {
-    logo: '/src/assets/clients/client-5.png',
-    name: 'Saúde Integrada',
-    sector: 'Saúde e Bem-estar',
-    description: 'Desenvolvimento de lideranças e processos de gestão para escala operacional.',
-    metric: '40% ↑ eficiência',
+    logo: beijaflorLogo,
+    name: 'Beija-Flor Agropecuária',
+    sector: 'Agropecuário',
+    description: 'Estruturação de processos e desenvolvimento de equipes de alta performance no campo.',
+    metric: 'Eficiência operacional',
   },
 ];
 

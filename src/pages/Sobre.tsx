@@ -24,18 +24,16 @@ const Sobre = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Foto + Apresentação em Grid Horizontal */}
-            <div className="grid md:grid-cols-5 gap-8 items-center">
-              <div className="md:col-span-2">
-                <div className="rounded-2xl overflow-hidden shadow-glow">
-                  <img 
-                    src={tiagoRezeck} 
-                    alt="Tiago Rezeck - Fundador Instituto COMET" 
-                    className="w-full aspect-video object-cover"
-                  />
-                </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="rounded-2xl overflow-hidden shadow-glow group">
+                <img 
+                  src={tiagoRezeck} 
+                  alt="Tiago Rezeck - Fundador Instituto COMET" 
+                  className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               
-              <div className="md:col-span-3 space-y-4">
+              <div className="space-y-4">
                 <h3 className="text-3xl md:text-4xl font-bold text-foreground">
                   Tiago Rezeck
                 </h3>
@@ -49,23 +47,23 @@ const Sobre = () => {
             </div>
 
             {/* Problema, Descoberta, Resultados - Cards Horizontais Compactos */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
-                <h3 className="text-xl font-bold text-foreground mb-3">O Problema</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
+                <h3 className="text-lg font-bold text-foreground mb-2">O Problema</h3>
                 <p className="text-sm text-muted-foreground">
                   Empresas com potencial enorme, mas presas. Processos caóticos, times desmotivados, resultados imprevisíveis.
                 </p>
               </div>
 
-              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
-                <h3 className="text-xl font-bold text-foreground mb-3">A Descoberta</h3>
+              <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
+                <h3 className="text-lg font-bold text-foreground mb-2">A Descoberta</h3>
                 <p className="text-sm text-muted-foreground">
                   Era preciso um sistema que organizasse, desenvolvesse pessoas (DHO) e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
                 </p>
               </div>
 
-              <div className="bg-card border-l-4 border-primary rounded-lg p-6 shadow-card">
-                <h3 className="text-xl font-bold text-foreground mb-3">Os Resultados</h3>
+              <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
+                <h3 className="text-lg font-bold text-foreground mb-2">Os Resultados</h3>
                 <p className="text-sm text-muted-foreground">
                   Mais de <span className="text-primary font-semibold">100 empresas transformadas</span>. Líderes que comandam times de alta performance.
                 </p>
@@ -73,8 +71,8 @@ const Sobre = () => {
             </div>
 
             {/* Quote Destacada - Mais Compacta */}
-            <div className="bg-gradient-hero border-l-4 border-primary rounded-xl p-8 shadow-glow">
-              <p className="text-xl md:text-2xl italic text-foreground mb-4 text-center">
+            <div className="bg-gradient-hero border-l-4 border-primary rounded-xl p-6 shadow-glow">
+              <p className="text-lg md:text-xl italic text-foreground mb-3 text-center">
                 "Não existe empresa forte sem pessoas fortes. E não existe transformação real sem organização e processos claros."
               </p>
               <p className="text-sm text-muted-foreground text-center font-semibold">
@@ -181,7 +179,7 @@ const Sobre = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   title: 'Experiência Prática',
@@ -202,6 +200,10 @@ const Sobre = () => {
                 {
                   title: 'Especialização em PMEs',
                   desc: 'Foco exclusivo em pequenas e médias empresas em fase de crescimento, com soluções adaptadas às suas necessidades e realidades.',
+                },
+                {
+                  title: 'Aprendizado Contínuo e Inovação',
+                  desc: 'Nosso método está em constante evolução, incorporando novas práticas de desenvolvimento humano e tecnológico para gerar resultados reais.',
                 },
               ].map((item, index) => (
                 <div 

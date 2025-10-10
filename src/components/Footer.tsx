@@ -12,8 +12,8 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-4">
               <img 
                 src={cometIcon} 
-                alt="Instituto COMET" 
-                className="h-16 w-16 transition-transform hover:scale-110" 
+                alt="Instituto COMET Logo" 
+                className="h-20 w-auto transition-transform hover:scale-110" 
               />
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
