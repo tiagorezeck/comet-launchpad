@@ -97,9 +97,7 @@ const Home = () => {
           }, {
             icon: <Target className="h-12 w-12" />,
             title: 'Mentoria Estratégica',
-            desc: 'O ChatGPT disse:
-
-Acompanhamento estratégico e personalizado para empresários e líderes que buscam clareza, foco e resultados consistentes, utilizando ferramentas e técnicas aplicadas pelos maiores líderes e empresas de alta performance do mercado.',
+            desc: 'Acompanhamento estratégico e personalizado para empresários e líderes que buscam clareza, foco e resultados consistentes, utilizando ferramentas e técnicas aplicadas pelos maiores líderes e empresas de alta performance do mercado.',
             link: '/servicos'
           }, {
             icon: <Users className="h-12 w-12" />,
