@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Calendar, Instagram, Youtube, Linkedin } from 'lucide-react';
+import contatoHero from '@/assets/hero/contato-hero.jpg';
 
 const Contato = () => {
   const whatsappNumber = '5524999382195';
@@ -55,8 +56,14 @@ const Contato = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${contatoHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <MessageCircle className="h-16 w-16 text-primary mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">

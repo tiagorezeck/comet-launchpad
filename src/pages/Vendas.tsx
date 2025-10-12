@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { GraduationCap, Video, Users, Wrench, ShoppingCart, FileText } from 'lucide-react';
+import vendasHero from '@/assets/hero/vendas-hero.jpg';
 
 const Vendas = () => {
   const products = [
@@ -87,8 +88,14 @@ const Vendas = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${vendasHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <ShoppingCart className="h-16 w-16 text-primary mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">

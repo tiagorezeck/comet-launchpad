@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight } from 'lucide-react';
+import servicosHero from '@/assets/hero/servicos-hero.jpg';
 import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
 import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
 import consultoria1 from '@/assets/servicos/consultoria-1.jpg';
@@ -63,8 +64,14 @@ const Servicos = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${servicosHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Nossos <span className="bg-gradient-comet bg-clip-text text-transparent">Serviços</span>

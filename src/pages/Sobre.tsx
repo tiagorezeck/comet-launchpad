@@ -1,13 +1,20 @@
 import ContactForm from '@/components/ContactForm';
 import { Award, Target, Eye, Heart } from 'lucide-react';
 import tiagoRezeck from '@/assets/tiago-rezeck.png';
+import sobreHero from '@/assets/hero/sobre-hero.jpg';
 
 const Sobre = () => {
   return (
     <div className="min-h-screen">
       {/* Hero - Storytelling Emocional */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${sobreHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               A História do <span className="bg-gradient-comet bg-clip-text text-transparent">COMET</span>
