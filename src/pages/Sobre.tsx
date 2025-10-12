@@ -48,7 +48,7 @@ const Sobre = () => {
                   Fundador • Especialista em DHO
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Mais de 15 anos de experiência transformando empresas através do desenvolvimento de pessoas e organização estratégica. Criador da Metodologia COMET, já ajudou mais de 100 empresas a alcançarem alta performance.
+                  Com mais de 10 anos de experiência, ajuda empresários a organizar e expandir seus negócios por meio da gestão estratégica e do desenvolvimento de pessoas.Criador da Metodologia COMET, já transformou mais de 25 empresas e 250 pessoas, levando líderes e times à alta performance.
                 </p>
               </div>
             </div>
