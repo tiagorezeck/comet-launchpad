@@ -73,7 +73,7 @@ Era preciso um sistema funcional que desenvolvesse as pessoas, para que elas des
             {/* Quote Destacada - Mais Compacta */}
             <div className="bg-gradient-hero border-l-4 border-primary rounded-xl p-6 shadow-glow">
               <p className="text-lg md:text-xl italic text-foreground mb-3 text-center">
-                "Não existe empresa forte sem pessoas fortes. E não existe transformação real sem organização e processos claros."
+                "Empresas se transformam quando pessoas se desenvolvem: líderes preparados e times engajados fazem processos e resultados acontecerem."
               </p>
               <p className="text-sm text-muted-foreground text-center font-semibold">
                 — Tiago Rezeck
