@@ -50,9 +50,7 @@ Criador da Metodologia COMET, já transformou mais de 25 empresas e 250 pessoas,
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
                 <h3 className="text-lg font-bold text-foreground mb-2">O Problema</h3>
-                <p className="text-sm text-muted-foreground">
-                  Empresas com potencial enorme, mas presas. Processos caóticos, times desmotivados, resultados imprevisíveis.
-                </p>
+                <p className="text-sm text-muted-foreground">Atuando como consultor, logo percebi que muitas empresas com grande potencial estavam estagnadas, donos sem clareza dos problemas, líderes despreparados, times desmotivados e processos caóticos, o que tornava os resultados imprevisíveis. </p>
               </div>
 
               <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
