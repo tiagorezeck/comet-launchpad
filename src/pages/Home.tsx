@@ -26,18 +26,16 @@ const Home = () => {
               </div>
 
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
                   Desenvolver Pessoas{' '}
                   <span className="bg-gradient-comet bg-clip-text text-transparent">
                     Transformar Empresas
                   </span>
                 </h1>
                 
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">Consultoria estratégica, mentoria de liderança e treinamento de times de alta performance com Desenvolvimento Humano e Organizacional (DHO) para acelerar o crescimento da sua empresa.</p>
+                <p className="text-lg text-muted-foreground leading-relaxed md:text-base">Consultoria estratégica, mentoria de liderança e treinamento de times de alta performance com Desenvolvimento Humano e Organizacional (DHO) para acelerar o crescimento da sua empresa.</p>
 
-                <p className="text-base text-primary font-semibold">
-                  🎯 Especialistas em empresas de pequeno e médio porte em fase de crescimento
-                </p>
+                <p className="text-base text-primary font-semibold">🎯 O parceiro estratégico que sua empresa de pequeno e médio porte precisa para alavancar resultados.</p>
               </div>
 
               {/* Stats */}
