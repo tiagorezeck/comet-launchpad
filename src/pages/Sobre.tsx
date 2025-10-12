@@ -56,14 +56,16 @@ Criador da Metodologia COMET, já transformou mais de 25 empresas e 250 pessoas,
               <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
                 <h3 className="text-lg font-bold text-foreground mb-2">A Descoberta</h3>
                 <p className="text-sm text-muted-foreground">
-                  Era preciso um sistema que organizasse, desenvolvesse pessoas (DHO) e criasse resultados sustentáveis. Nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
+                  O ChatGPT disse:
+
+Era preciso um sistema funcional que desenvolvesse as pessoas, para que elas desenvolvessem os processos e organizassem o negócio, gerando resultados previsíveis. Por isso, nasceu a <span className="text-primary font-semibold">Metodologia COMET</span>.
                 </p>
               </div>
 
               <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
                 <h3 className="text-lg font-bold text-foreground mb-2">Os Resultados</h3>
                 <p className="text-sm text-muted-foreground">
-                  Mais de <span className="text-primary font-semibold">100 empresas transformadas</span>. Líderes que comandam times de alta performance.
+                 Em pouco tempo de existência, já <span className="text-primary font-semibold">transformamos empresas no Rio de Janeiro e em São Paulo,</span>. Mudando mentalidades, fortalecendo líderes e treinando times de alta performance.
                 </p>
               </div>
             </div>
