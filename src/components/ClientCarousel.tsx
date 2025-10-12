@@ -5,9 +5,9 @@ import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
-import sistekLogo from '@/assets/clients/logotipo sistek.png';
-import refrimanosLogo from '@/assets/clients/logotipo refrimanos.png';
-import farmacenterLogo from '@/assets/clients/logotipo farmacenter.png';
+import sistekLogo from '@/assets/clients/cliente-1.png';
+import refrimanosLogo from '@/assets/clients/cliente-2.png';
+import farmacenterLogo from '@/assets/clients/Cliente-3.png';
 import beijaflorLogo from '@/assets/clients/logotipo beijaflor.png';
 
 const clients = [
