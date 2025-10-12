@@ -92,17 +92,17 @@ const Home = () => {
             {[{
             icon: <Rocket className="h-12 w-12" />,
             title: 'Consultoria Empresarial',
-            desc: 'Diagnóstico completo e personalizado de todas as áreas da empresa, seguido de um plano estratégico que desenvolve pessoas para implementarem processos assertivos e expandir seu negócio com segurança.',
+            desc: 'Diagnóstico completo, planejamento estratégico e implementação de processos para organizar e expandir seu negócio com segurança.',
             link: '/servicos'
           }, {
             icon: <Target className="h-12 w-12" />,
             title: 'Mentoria Estratégica',
-            desc: 'Acompanhamento estratégico e personalizado para empresários e líderes que buscam clareza, foco e resultados consistentes, utilizando ferramentas e técnicas aplicadas pelos maiores líderes e empresas de alta performance do mercado.',
+            desc: 'Acompanhamento personalizado para empresários e líderes que buscam clareza, foco e resultados consistentes em suas decisões.',
             link: '/servicos'
           }, {
             icon: <Users className="h-12 w-12" />,
             title: 'Treinamento Corporativo',
-            desc: 'Desenvolvimento de times de alta performance por meio de treinamentos corporativos práticos e personalizados, focados em liderança, gestão, vendas, performance e perfil comportamental, unindo técnica e comportamento para gerar resultados reais.',
+            desc: 'Desenvolvimento de times de alta performance através de capacitações práticas em liderança, gestão e processos.',
             link: '/servicos'
           }].map((service, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 group">
                 <div className="text-primary mb-6 group-hover:scale-110 transition-transform">
