@@ -102,7 +102,7 @@ const Home = () => {
           }, {
             icon: <Users className="h-12 w-12" />,
             title: 'Treinamento Corporativo',
-            desc: 'Desenvolvimento de times de alta performance através de capacitações práticas em liderança, gestão e processos.',
+            desc: 'Desenvolvimento de times de alta performance através de capacitações técnicas e comportamentais como práticas em liderança, gestão, vendas e comportamento profissional.',
             link: '/servicos'
           }].map((service, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 group">
                 <div className="text-primary mb-6 group-hover:scale-110 transition-transform">
