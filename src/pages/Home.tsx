@@ -101,7 +101,7 @@ const Home = () => {
             link: '/servicos'
           }, {
             icon: <Users className="h-12 w-12" />,
-            title: 'Treinamentos Corporativos',
+            title: 'Treinamento Corporativo',
             desc: 'Desenvolvimento de times de alta performance através de capacitações práticas em liderança, gestão e processos.',
             link: '/servicos'
           }].map((service, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 group">
