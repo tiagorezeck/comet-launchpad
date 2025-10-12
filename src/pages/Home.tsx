@@ -27,9 +27,9 @@ const Home = () => {
 
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  Transforme Sua Empresa em uma{' '}
+                  Desenvolver Pessoas{' '}
                   <span className="bg-gradient-comet bg-clip-text text-transparent">
-                    Máquina de Resultados
+                    Transformar Empresas
                   </span>
                 </h1>
                 
