@@ -5,15 +5,15 @@ import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
-import sistekLogo from '@/assets/clients/logo sistek.png';
-import refrimanosLogo from '@/assets/clients/refrimanos.png';
-import farmacenterLogo from '@/assets/clients/logo farmacenter.png';
-import beijaflorLogo from '@/assets/clients/logo beijaflor.png';
+import sistekLogo from '@/assets/clients/logotipo sistek.png';
+import refrimanosLogo from '@/assets/clients/logotipo refrimanos.png';
+import farmacenterLogo from '@/assets/clients/logotipo farmacenter.png';
+import beijaflorLogo from '@/assets/clients/logotipo beijaflor.png';
 
 const clients = [
   {
     logo: sistekLogo,
-    name: 'Sistek SP',
+    name: 'Sistek IT Service',
     sector: 'Tecnologia',
     description: 'Reestruturação organizacional completa com implementação de processos e desenvolvimento de liderança.',
     metric: 'Transformação completa',
