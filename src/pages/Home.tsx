@@ -106,7 +106,7 @@ const Home = () => {
                 <div className="text-primary mb-6 group-hover:scale-110 transition-transform">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
+                <h3 className="font-bold text-foreground mb-4 text-xl">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground mb-6 text-justify text-base">
