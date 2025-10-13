@@ -158,7 +158,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-foreground mb-6 md:text-5xl">
-              Nossa parceria vai transformar sua empresa no<span className="bg-gradient-comet bg-clip-text text-transparent">Próximo Case de Sucesso!</span>
+              Transformaremos sua empresa no nosso <span className="bg-gradient-comet bg-clip-text text-transparent">Próximo Case de Sucesso!</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-10">
               Entre em contato e descubra como a Metodologia COMET pode transformar sua empresa
