@@ -1,22 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin } from 'lucide-react';
 import cometIcon from '/comet-logo.png';
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <img 
-                src={cometIcon} 
-                alt="Instituto COMET Logo" 
-                className="h-20 w-auto transition-transform hover:scale-110" 
-              />
+              <img src={cometIcon} alt="Instituto COMET Logo" className="h-20 w-auto transition-transform hover:scale-110" />
             </Link>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-4 text-justify text-sm">
               Especialistas em Desenvolvimento Humano e Organizacional, 
               focados em transformar empresas em fase de crescimento.
             </p>
@@ -108,8 +102,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
