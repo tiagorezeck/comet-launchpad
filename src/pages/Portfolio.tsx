@@ -6,14 +6,15 @@ import portfolioHero from '@/assets/hero/portfolio-hero.jpg';
 const Portfolio = () => {
   const cases = [
     {
-      company: 'Empresa de Tecnologia - Setor SaaS',
-      challenge: 'Crescimento rápido sem estrutura organizacional adequada, alta rotatividade de colaboradores e processos de vendas desorganizados.',
-      solution: 'Implementação da Metodologia COMET com foco em estruturação de processos comerciais, desenvolvimento de liderança e criação de cultura organizacional.',
+      company: 'Sistek It Service - Setor de TI',
+      challenge: 'Crise financeira, sem estrutura organizacional adequada, alta rotatividade de colaboradores e processos internos desorganizados.',
+      solution: 'Implementação da Metodologia COMET com foco em estruturação de processos comerciais, financeiros, marketinge e RH, desenvolvimento de liderança e criação de cultura organizacional.',
       results: [
-        'Redução de 45% na rotatividade de colaboradores',
+        'Redução de 45% na rotatividade',
+        '80% de Contratações Assertivas ',
         'Aumento de 80% na conversão de vendas',
-        'Implementação de 15 processos documentados',
-        'Time de liderança capacitado e alinhado',
+        'Implementação de  processos documentados',
+        'Desenvolvimento de liderança e mudança de cargos',
       ],
       icon: <Building2 className="h-12 w-12" />,
     },
