@@ -83,9 +83,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Como Podemos <span className="bg-gradient-comet bg-clip-text text-transparent">Ajudar</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Soluções completas baseadas na Metodologia COMET, especializada em Desenvolvimento Humano e Organizacional (DHO), para transformação da sua empresa
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Soluções completas e especializada em Desenvolvimento Humano e Organizacional (DHO), para transformação da sua empresa</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -111,7 +109,7 @@ const Home = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-4">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 text-justify text-lg">
+                <p className="text-muted-foreground mb-6 text-justify text-base">
                   {service.desc}
                 </p>
                 <Button variant="comet" asChild>
