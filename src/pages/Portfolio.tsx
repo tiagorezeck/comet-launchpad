@@ -2,67 +2,33 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Building2, TrendingUp, Users2, Target, CheckCircle2 } from 'lucide-react';
 import portfolioHero from '@/assets/hero/portfolio-hero.jpg';
-
 const Portfolio = () => {
-  const cases = [
-    {
-      company: 'Sistek It Service - Setor de TI',
-      challenge: 'Crise financeira, sem estrutura organizacional adequada, alta rotatividade de colaboradores e processos internos desorganizados.',
-      solution: 'Implementação da Metodologia COMET com foco em estruturação de processos comerciais, financeiros, marketinge e RH, desenvolvimento de liderança e criação de cultura organizacional.',
-      results: [
-        'Redução de 45% na rotatividade',
-        '80% de Contratações Assertivas ',
-        'Aumento de 80% na conversão de vendas',
-        'Implementação de  processos documentados',
-        'Desenvolvimento de liderança e mudança de cargos',
-      ],
-      icon: <Building2 className="h-12 w-12" />,
-    },
-    {
-      company: 'Indústria Metalúrgica - 50 Funcionários',
-      challenge: 'Baixa produtividade, desperdício de materiais, comunicação ineficaz entre setores e falta de indicadores de desempenho.',
-      solution: 'Consultoria completa com mapeamento de processos produtivos, implementação de KPIs, treinamento de líderes e criação de rotinas de gestão.',
-      results: [
-        'Aumento de 35% na produtividade',
-        'Redução de 28% no desperdício de materiais',
-        'Implementação de dashboard de indicadores',
-        'Comunicação fluida entre todos os setores',
-      ],
-      icon: <TrendingUp className="h-12 w-12" />,
-    },
-    {
-      company: 'Rede de Varejo - 3 Lojas',
-      challenge: 'Expansão sem planejamento, dificuldade em padronizar operações, conflitos na gestão familiar e resultados financeiros inconsistentes.',
-      solution: 'Mentoria estratégica para os sócios, desenvolvimento de governança familiar, padronização de processos e implantação de controles financeiros.',
-      results: [
-        'Abertura de mais 2 lojas com planejamento estruturado',
-        'Lucratividade aumentou 50% em 12 meses',
-        'Processos padronizados nas 5 unidades',
-        'Governança familiar estabelecida com clareza',
-      ],
-      icon: <Users2 className="h-12 w-12" />,
-    },
-  ];
-
-  const additionalServices = [
-    'Diagnóstico organizacional completo',
-    'Planejamento estratégico anual',
-    'Desenvolvimento de líderes',
-    'Estruturação de processos comerciais',
-    'Implementação de gestão por indicadores',
-    'Cultura organizacional e engajamento',
-    'Governança corporativa e familiar',
-    'Sucessão empresarial',
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const cases = [{
+    company: 'Sistek It Service - Setor de TI',
+    challenge: 'Crise financeira, sem estrutura organizacional adequada, alta rotatividade de colaboradores e processos internos desorganizados.',
+    solution: 'Implementação da Metodologia COMET com foco em estruturação de processos comerciais, financeiros, marketinge e RH, desenvolvimento de liderança e criação de cultura organizacional.',
+    results: ['Redução de 45% na rotatividade', '80% de Contratações Assertivas ', 'Aumento de 80% na conversão de vendas', 'Implementação de  processos documentados', 'Desenvolvimento de liderança e mudança de cargos'],
+    icon: <Building2 className="h-12 w-12" />
+  }, {
+    company: 'Indústria Metalúrgica - 50 Funcionários',
+    challenge: 'Baixa produtividade, desperdício de materiais, comunicação ineficaz entre setores e falta de indicadores de desempenho.',
+    solution: 'Consultoria completa com mapeamento de processos produtivos, implementação de KPIs, treinamento de líderes e criação de rotinas de gestão.',
+    results: ['Aumento de 35% na produtividade', 'Redução de 28% no desperdício de materiais', 'Implementação de dashboard de indicadores', 'Comunicação fluida entre todos os setores'],
+    icon: <TrendingUp className="h-12 w-12" />
+  }, {
+    company: 'Rede de Varejo - 3 Lojas',
+    challenge: 'Expansão sem planejamento, dificuldade em padronizar operações, conflitos na gestão familiar e resultados financeiros inconsistentes.',
+    solution: 'Mentoria estratégica para os sócios, desenvolvimento de governança familiar, padronização de processos e implantação de controles financeiros.',
+    results: ['Abertura de mais 2 lojas com planejamento estruturado', 'Lucratividade aumentou 50% em 12 meses', 'Processos padronizados nas 5 unidades', 'Governança familiar estabelecida com clareza'],
+    icon: <Users2 className="h-12 w-12" />
+  }];
+  const additionalServices = ['Diagnóstico organizacional completo', 'Planejamento estratégico anual', 'Desenvolvimento de líderes', 'Estruturação de processos comerciais', 'Implementação de gestão por indicadores', 'Cultura organizacional e engajamento', 'Governança corporativa e familiar', 'Sucessão empresarial'];
+  return <div className="min-h-screen">
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${portfolioHero})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${portfolioHero})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -108,11 +74,7 @@ const Portfolio = () => {
             </div>
 
             <div className="space-y-12">
-              {cases.map((caseItem, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-xl border border-border shadow-card overflow-hidden hover:shadow-comet transition-all duration-300"
-                >
+              {cases.map((caseItem, index) => <div key={index} className="bg-card rounded-xl border border-border shadow-card overflow-hidden hover:shadow-comet transition-all duration-300">
                   <div className="p-8 md:p-10">
                     <div className="flex items-start gap-6 mb-6">
                       <div className="text-primary flex-shrink-0">
@@ -152,18 +114,15 @@ const Portfolio = () => {
                           Resultados
                         </h4>
                         <ul className="space-y-2">
-                          {caseItem.results.map((result, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
+                          {caseItem.results.map((result, idx) => <li key={idx} className="flex items-start gap-2">
                               <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                               <span className="text-sm text-foreground">{result}</span>
-                            </li>
-                          ))}
+                            </li>)}
                         </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -183,17 +142,12 @@ const Portfolio = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              {additionalServices.map((service, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-lg p-4 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-1"
-                >
+              {additionalServices.map((service, index) => <div key={index} className="bg-card rounded-lg p-4 border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-foreground font-medium">{service}</span>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -203,7 +157,7 @@ const Portfolio = () => {
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl font-bold text-foreground mb-6 md:text-5xl">
               Vamos Escrever Juntos o Próximo <span className="bg-gradient-comet bg-clip-text text-transparent">Case de Sucesso</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">
@@ -222,15 +176,10 @@ const Portfolio = () => {
       <section id="contact-form" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <ContactForm 
-              title="Solicite uma proposta personalizada"
-              subtitle="Conte-nos sobre sua empresa e vamos criar uma solução sob medida"
-            />
+            <ContactForm title="Solicite uma proposta personalizada" subtitle="Conte-nos sobre sua empresa e vamos criar uma solução sob medida" />
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Portfolio;
