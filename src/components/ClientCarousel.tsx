@@ -81,7 +81,7 @@ const ClientCarousel = () => {
                     <img 
                       src={client.logo} 
                       alt={client.name}
-                      className="max-h-16 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+                      className="max-h-24 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity"
                     />
                   </div>
 
