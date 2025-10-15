@@ -5,10 +5,10 @@ import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
-import sistekLogo from '@/assets/clients/logo-sistek.png';
-import refrimanosLogo from '@/assets/clients/logo-refrimanos.png';
-import farmacenterLogo from '@/assets/clients/logo-farmacenter.png';
-import beijaflorLogo from '@/assets/clients/logo-beijaflor.png';
+import sistekLogo from '@/assets/clients/logosistek.png';
+import refrimanosLogo from '@/assets/clients/logorefrimanos.png';
+import farmacenterLogo from '@/assets/clients/logofarmacenter.png';
+import beijaflorLogo from '@/assets/clients/logobeijaflor.png';
 
 const clients = [
   {
