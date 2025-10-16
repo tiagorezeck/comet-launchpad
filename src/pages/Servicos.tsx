@@ -48,17 +48,8 @@ const Servicos = () => {
         'Técnicas de comunicação e negociação,',
         'Ferramentas de gestão para alta performance',
         'Formação de Time Forte e estrutura tática',
-        'Avaliação de números e previsibilidade de resultados',
-
-
-
-
-
-
-
-        
-        
-        'Accountability e acompanhamento de metas',
+        'Avaliação de números e previsibilidade de resultados',       
+        'Definição e acompanhamento de metas',
         'Acesso direto a experiência comprovada',
       ],
       results: 'Maior clareza estratégica, decisões mais assertivas, crescimento acelerado e desenvolvimento pessoal contínuo.',
