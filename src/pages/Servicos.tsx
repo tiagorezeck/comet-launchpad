@@ -39,14 +39,23 @@ const Servicos = () => {
       description: 'A mentoria estratégica é um acompanhamento personalizado para empresários e líderes que buscam orientação especializada para tomar decisões mais acertadas, superar desafios e acelerar o crescimento do negócio.',
       benefits: [
         'Sessões individuais ou em grupo',
-        'Análise aprofundada de desafios específicos',
-        'Orientação estratégica para tomada de decisão',
-        'Desenvolvimento de visão de longo prazo',
-        'Metodologias ativas e práticas',
-        'Desenvolvimento de liderança',
-        'Formação em análise de perfil comportamental',
-        'Técnicas e ferramentas para gestão e performance',
-        'Implementação de sistemas de gestão eficazes',
+        'Sessões individuais ou em grupo',
+        'Diagnóstico de objetivos e desafios de liderança',
+        'Análise de perfil comportamental por testes assessment (autoconhecimento e gestão de pessoas)',
+        'Mapeamento de competências CHAVES — Conhecimento, Habilidade, Atitude, Valores, Equilíbrio Emocional e Sociabilidade',
+        'Desenvolvimento de plano de evolução, visão estratégica e tática',
+        'Metodologias ativas e práticas de liderança',
+        'Desenvolvimento de habilidades em vendas e influência positiva',
+        'Técnicas de negociação, comunicação, feedback e delegação',
+        'Ferramentas de gestão, performance e alta performance de times',
+        'Formação de equipes fortes, acompanhamento e mensuração de resultados',
+
+
+
+
+
+
+
         
         
         'Accountability e acompanhamento de metas',
