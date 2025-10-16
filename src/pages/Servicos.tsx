@@ -40,8 +40,8 @@ const Servicos = () => {
       benefits: [
         'Sessões individuais ou em grupo',
         'Diagnóstico de objetivos e desafios de liderança',
-        'Análise de perfil comportamental por testes assessment
-        'Mapeamento de competências "CHAVES"
+        'Análise de perfil comportamental por testes assessment',
+        'Mapeamento de competências "CHAVES"',
         'Plano de evolução, visão estratégica e tática',
         'Metodologias ativas e práticas de liderança',
         'Desenvolvimento de habilidades "Vendas, Delegação, Feedback"',
