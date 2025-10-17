@@ -7,14 +7,16 @@ const Vendas = () => {
   const products = [
     {
       icon: <GraduationCap className="h-12 w-12" />,
-      category: 'Cursos Online',
-      title: 'Liderança de Alta Performance',
-      description: 'Curso completo para desenvolver habilidades essenciais de liderança, gestão de equipes e tomada de decisão estratégica.',
+      category: 'Mentoria Online',
+      title: 'Mentoria Individual de Gestão e Liderança',
+      description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana.
+Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
       benefits: [
-        'Conteúdo 100% online',
-        'Certificado de conclusão',
-        'Acesso vitalício',
-        'Material complementar',
+        'Encontros individuais e personalizados',
+        'Diagnóstico do perfil comportamental',
+        'Ferramentas práticas de liderança e gestão',
+        'Plano de ação estratégico com metas claras',
+        'Suporte e acompanhamento entre as sessões'
       ],
       price: 'Sob consulta',
     },
