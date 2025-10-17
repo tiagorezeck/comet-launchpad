@@ -22,7 +22,7 @@ const Vendas = () => {
     category: 'Treinamentos In Company',
     title: 'Times de Alta Performance',
     description: 'Programa presencial customizado para capacitar seu time, alinhado à cultura da empresa e às necessidades da equipe. Desenvolve habilidades técnicas e comportamentais, melhora produtividade, engajamento e colaboração, e gera resultados concretos para o negócio.',
-    benefits: ['['Levantamento de Necessidade de Treinamento (LNT)', 'Treinamentos comportamentais: equilíbrio emocional, motivação, alta produtividade', 'Treinamentos técnicos: vendas, negociação, formação de times, análise de perfil', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
+    benefits: ['Levantamento de Necessidade de Treinamento (LNT)', 'Treinamentos comportamentais: equilíbrio emocional, motivação, alta produtividade', 'Treinamentos técnicos: vendas, negociação, formação de times, análise de perfil', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
     price: 'Sob consulta'
   }, {
     icon: <Users className="h-12 w-12" />,
