@@ -40,10 +40,10 @@ const Vendas = () => {
     price: 'Sob consulta'
   }, {
     icon: <Wrench className="h-12 w-12" />,
-    category: 'Ferramentas de Gestão',
-    title: 'Dashboard de Indicadores',
-    description: 'Sistema completo para monitoramento de indicadores-chave de desempenho da sua empresa em tempo real.',
-    benefits: ['Dashboards personalizáveis', 'Integração com dados', 'Relatórios automáticos', 'Suporte técnico'],
+    category: 'Ferramentas de Análise de Perfil Comportamental',
+    title: 'Pessoal e Profissional',
+    description: 'Ferramentas exclusivas para mapear perfis, competências e emoções com precisão. Nossos testes oferecem análises detalhadas que ajudam líderes e equipes a compreenderem seus comportamentos, aprimorarem relacionamentos e potencializarem resultados individuais e coletivos.',
+    benefits: [['Teste DISC com análise detalhada', 'Teste de Perfil Mental', 'Teste de Quociente de Positividade (QP)', 'Teste de Sabotadores', 'Teste de Inteligência Emocional', 'Teste de Competências Profissionais', 'Relatórios completos e personalizados', 'Interpretação com especialista', 'Feedback individual', 'Plano de desenvolvimento pessoal'],
     price: 'Sob consulta'
   }];
   return <div className="min-h-screen">
