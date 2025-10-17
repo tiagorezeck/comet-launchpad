@@ -4,16 +4,16 @@ import { GraduationCap, Video, Users, Wrench, ShoppingCart, FileText } from 'luc
 import vendasHero from '@/assets/hero/vendas-hero.jpg';
 const Vendas = () => {
   const products = [{
-    icon: <GraduationCap className="h-12 w-12" />,
+    icon: <Video className="h-12 w-12" />,
     category: 'Mentoria Online',
     title: 'Mentoria Individual de Gestão e Liderança',
     description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana. Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
     benefits: ['Encontros individuais e personalizados', 'Diagnóstico do perfil comportamental', 'Ferramentas práticas de liderança e gestão', 'Plano de ação estratégico com metas claras', 'Suporte e acompanhamento entre as sessões'],
     price: 'Sob consulta'
   }, {
-    icon: <Video className="h-12 w-12" />,
+    icon: <GraduationCap className="h-12 w-12" />,
     category: 'Cursos Online',
-    title: 'Aulas ao vivo por Vídeo conferência',
+    title: 'Aulas por Vídeo conferência',
     description: 'Cursos entregues totalmente online, ao vivo, por videoconferência com professores experientes. Permitem interação em tempo real, esclarecimento de dúvidas, aplicação prática e aprendizado imediato, garantindo engajamento e resultados para cada participante.',
     benefits: ['Formando um Time Forte (contratação de talentos)', 'Análise de Perfil Comportamental (ferramentas Assessment)', 'Comunicação Assertiva (impacto e influência)', 'Equilíbrio Emocional', 'Vendas e Negociação', 'Liderança Transformadora'],
     price: 'Sob consulta'
@@ -25,11 +25,11 @@ const Vendas = () => {
     benefits: ['Levantamento de Necessidade de Treinamento (LNT)', 'Treinamentos comportamentais: equilíbrio emocional, motivação, alta produtividade', 'Treinamentos técnicos: vendas, negociação, formação de times, análise de perfil', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
     price: 'Sob consulta'
   }, {
-    icon: <Users className="h-12 w-12" />,
-    category: 'Treinamentos Online',
-    title: 'Times de Alta Performance',
-    description: 'Treinamento online ao vivo para capacitar times em colaboração, comunicação eficaz e cultura de resultados.',
-    benefits: ['Formato online ao vivo', 'Interação em tempo real', 'Gravações disponíveis', 'Material de apoio'],
+    icon: <Wrench className="h-12 w-12" />,
+    category: 'Kit Palestrante / Treinador',
+    title: 'Templantes e Palestras',
+    description: 'Pacote completo com materiais profissionais para quem deseja ministrar palestras, treinamentos e workshops com impacto e autoridade. Recursos visuais e práticos prontos para uso e personalização, economizando tempo e elevando a qualidade das suas apresentações.',
+    benefits: ['Mais de 150 palestras prontas para adaptação', 'Slides animados de alto impacto', 'Mockups profissionais', 'Mais de 1000 templates editáveis', 'Infográficos para apresentações', 'Modelos de roteiros e planos de aula', 'Templates de divulgação e marketing', 'Checklists e materiais de apoio', 'Guias de estrutura de palestras', 'Recursos prontos para personalização e uso imediato'],
     price: 'Sob consulta'
   }, {
     icon: <Wrench className="h-12 w-12" />,
@@ -40,7 +40,7 @@ const Vendas = () => {
     price: 'Sob consulta'
   }, {
     icon: <Wrench className="h-12 w-12" />,
-    category: 'Ferramentas de Análise de Perfil Comportamental',
+    category: 'Ferramentas de Análise de Perfil',
     title: 'Pessoal e Profissional',
     description: 'Ferramentas exclusivas para mapear perfis, competências e emoções com precisão. Nossos testes oferecem análises detalhadas que ajudam líderes e equipes a compreenderem seus comportamentos, aprimorarem relacionamentos e potencializarem resultados individuais e coletivos.',
     benefits: ['Teste DISC com análise detalhada', 'Teste de Perfil Mental', 'Teste de Quociente de Positividade (QP)', 'Teste de Sabotadores', 'Teste de Inteligência Emocional', 'Teste de Competências Profissionais', 'Relatórios completos e personalizados', 'Interpretação com especialista', 'Feedback individual', 'Plano de desenvolvimento pessoal'],
