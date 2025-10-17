@@ -13,9 +13,9 @@ const Vendas = () => {
   }, {
     icon: <Video className="h-12 w-12" />,
     category: 'Cursos Online',
-    title: 'Gestão de Processos na Prática',
-    description: 'Aprenda a mapear, documentar e otimizar processos empresariais para aumentar a eficiência e reduzir custos.',
-    benefits: ['Metodologias práticas', 'Cases reais', 'Templates prontos', 'Suporte por 90 dias'],
+    title: 'Aulas ao vivo por Vídeo conferência',
+    description: 'Cursos entregues totalmente online, ao vivo, por videoconferência com professores experientes. Permitem interação em tempo real, esclarecimento de dúvidas, aplicação prática e aprendizado imediato, garantindo engajamento e resultados para cada participante.',
+    benefits: ['Formando um Time Forte (contratação de talentos)', 'Análise de Perfil Comportamental (ferramentas Assessment)', 'Comunicação Assertiva (impacto e influência)', 'Equilíbrio Emocional', 'Vendas e Negociação', 'Liderança Transformadora'],
     price: 'Sob consulta'
   }, {
     icon: <Users className="h-12 w-12" />,
