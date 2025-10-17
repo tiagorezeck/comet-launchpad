@@ -36,7 +36,7 @@ const Servicos = () => {
       icon: <Target className="h-16 w-16" />,
       title: 'Mentoria Estratégica',
       subtitle: 'Clareza, foco e decisões assertivas',
-      description: 'A mentoria estratégica é um acompanhamento personalizado para empresários e líderes que buscam orientação especializada para tomar decisões mais acertadas, superar desafios e acelerar o crescimento do negócio.',
+      description: 'A Mentoria Estratégica COMET é um processo personalizado para empresários e profissionais que desejam desenvolver competências de liderança e alta performance. Por meio de sessões práticas e aplicação de testes assessment, o participante amplia seu autoconhecimento, aprimora habilidades de comunicação, vendas e negociação, e aprende a formar equipes fortes. Com base nas competências CHAVES — Conhecimento, Habilidade, Atitude, Valores, Equilíbrio Emocional e Sociabilidade. A mentoria conduz o líder do diagnóstico ao resultado, com foco em evolução real e sustentável.',
       benefits: [
         'Sessões individuais ou em grupo',
         'Diagnóstico de competências de gestão e liderança',
@@ -52,8 +52,9 @@ const Servicos = () => {
         'Definição e acompanhamento de metas',
         'Acesso direto a experiência comprovada',
       ],
-      results: 'Maior clareza estratégica, decisões mais assertivas, crescimento acelerado e desenvolvimento pessoal contínuo.',
-    },
+      results: 'Tornar-se um líder de verdade, com autoridade e presença para conduzir equipes',
+      'Desenvolver habilidades em comunicação, negociação e gestão de pessoas com excelência',
+      'Tomar decisões estratégicas com clareza, acelerando resultados e crescimento pessoal',
     {
       icon: <Users className="h-16 w-16" />,
       title: 'Treinamentos Corporativos',
