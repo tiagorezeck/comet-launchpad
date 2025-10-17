@@ -43,7 +43,7 @@ const Vendas = () => {
     category: 'Ferramentas de Análise de Perfil Comportamental',
     title: 'Pessoal e Profissional',
     description: 'Ferramentas exclusivas para mapear perfis, competências e emoções com precisão. Nossos testes oferecem análises detalhadas que ajudam líderes e equipes a compreenderem seus comportamentos, aprimorarem relacionamentos e potencializarem resultados individuais e coletivos.',
-    benefits: [['Teste DISC com análise detalhada', 'Teste de Perfil Mental', 'Teste de Quociente de Positividade (QP)', 'Teste de Sabotadores', 'Teste de Inteligência Emocional', 'Teste de Competências Profissionais', 'Relatórios completos e personalizados', 'Interpretação com especialista', 'Feedback individual', 'Plano de desenvolvimento pessoal'],
+    benefits: ['Teste DISC com análise detalhada', 'Teste de Perfil Mental', 'Teste de Quociente de Positividade (QP)', 'Teste de Sabotadores', 'Teste de Inteligência Emocional', 'Teste de Competências Profissionais', 'Relatórios completos e personalizados', 'Interpretação com especialista', 'Feedback individual', 'Plano de desenvolvimento pessoal'],
     price: 'Sob consulta'
   }];
   return <div className="min-h-screen">
