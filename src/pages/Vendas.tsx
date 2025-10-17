@@ -9,8 +9,7 @@ const Vendas = () => {
       icon: <GraduationCap className="h-12 w-12" />,
       category: 'Mentoria Online',
       title: 'Mentoria Individual de Gestão e Liderança',
-      description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana.
-Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
+      description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana. Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
       benefits: [
         'Encontros individuais e personalizados',
         'Diagnóstico do perfil comportamental',
