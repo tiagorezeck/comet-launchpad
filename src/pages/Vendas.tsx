@@ -35,8 +35,8 @@ const Vendas = () => {
     icon: <Wrench className="h-12 w-12" />,
     category: 'Ferramentas de Gestão',
     title: 'Kit Completo de Templates',
-    description: 'Conjunto de planilhas, templates e ferramentas prontas para implementar gestão profissional na sua empresa.',
-    benefits: ['Templates editáveis', 'Planilhas de KPIs', 'Modelos de documentos', 'Guia de implementação'],
+    description: 'Modelos e ferramentas prontas para facilitar a gestão da sua empresa. Materiais práticos e editáveis que otimizam processos, aumentam o controle das operações e trazem mais clareza na tomada de decisão, economizando tempo e melhorando resultados.',
+    benefits: ['Templates Editáveis', 'Modelos de Documentos','Planilhas de Vendas', 'Planilhas Financeiras', 'Planilhas de RH', 'Controle de Estoque', 'Planilhas de KPIs', 'Indicadores de Desempenho', 'Normas e Procedimentos Operacionais', 'Outros milhares de modelos'],
     price: 'Sob consulta'
   }, {
     icon: <Wrench className="h-12 w-12" />,
