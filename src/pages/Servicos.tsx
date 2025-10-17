@@ -11,83 +11,35 @@ import palestra1 from '@/assets/servicos/palestra-1.jpg';
 import diagnostico1 from '@/assets/servicos/diagnostico-1.jpg';
 import planejamento1 from '@/assets/servicos/planejamento-1.jpg';
 import acompanhamento1 from '@/assets/servicos/acompanhamento-1.jpg';
-
 const Servicos = () => {
-  const services = [
-    {
-      icon: <Rocket className="h-16 w-16" />,
-      title: 'Consultoria Empresarial',
-      subtitle: 'Organize e expanda seu negócio com segurança',
-      description: 'Nossa Consultoria Empresarial COMET tira você do operacional exaustivo e resolve os problemas que travam seu crescimento: perda de vendas, clientes sumindo, falta de controle financeiro e não ver o dinheiro no fim do mês. Atuamos lado a lado para estruturar processos, otimizar recursos, desenvolver líderes e times de alta performance, e criar um caminho estratégico, tático e operacional que transforma sua empresa e acelera resultados sustentáveis.',
-      benefits: [
-        'Diagnóstico completo da situação atual da empresa',
-        'Planejamento estratégico personalizado',
-        'Mapeamento e otimização de processos comerciais',
-        'Mapeamento e otimização de processos de marketing',
-        'Mapeamento e otimização de processos de RH',
-        'Mapeamento e otimização de processos financeiros',
-        'Mapeamento e otimização de processos logísticos',
-        'Mentoria de Gestão e Liderança para altos cargos',
-        'Técnicas e ferramentas para gestão e alta performance',
-        'Implementação de sistemas de gestão eficazes',
-        'Treinamento técnico e comportamental do time',
-        'Acompanhamento e suporte contínuo',
-        'Resultados mensuráveis e sustentáveis',
-      ],
-      results: 'Empresa organizada e estruturada, com planejamento estratégico, processos claros e previsíveis, cultura e clima organizacional positivos, ambiente de trabalho saudável, time forte e de alta performance, liderança preparada e competente, decisões mais assertivas, custos reduzidos, recursos otimizados e lucro crescente.',
-    },
-    {
-      icon: <Target className="h-16 w-16" />,
-      title: 'Mentoria Estratégica',
-      subtitle: 'Clareza, foco e decisões assertivas',
-      description: 'A Mentoria Estratégica COMET é um processo personalizado para empresários e profissionais que desejam desenvolver competências de liderança e alta performance. Por meio de sessões práticas e aplicação de testes assessment, o participante amplia seu autoconhecimento, aprimora habilidades de comunicação, vendas e negociação, e aprende a formar equipes fortes. Com base nas competências CHAVES — Conhecimento, Habilidade, Atitude, Valores, Equilíbrio Emocional e Sociabilidade. A mentoria conduz o líder do diagnóstico ao resultado, com foco em evolução real e sustentável.',
-      benefits: [
-        'Sessões individuais ou em grupo',
-        'Diagnóstico de competências de gestão e liderança',
-        'Análise de perfil comportamental assessment',
-        'Mapeamento de competências "CHAVES"',
-        'Plano de evolução, visão estratégica e tática',
-        'Metodologias ativas e práticas de liderança',
-        'Desenvolvimento de habilidades de gestão e liderança',
-        'Técnicas de comunicação e negociação,',
-        'Ferramentas de gestão para alta performance',
-        'Formação de Time Forte e estrutura tática',
-        'Avaliação de números e previsibilidade de resultados',       
-        'Definição e acompanhamento de metas',
-        'Acesso direto a experiência comprovada',
-      ],
-      results: 'Tornar-se um líder de verdade, com autoridade e presença para conduzir equipes. Desenvolver habilidades em comunicação, negociação e gestão de pessoas com excelência. Tomar decisões estratégicas com clareza, acelerando resultados e crescimento pessoal',
-    },
-    {
-      icon: <Users className="h-16 w-16" />,
-      title: 'Treinamentos Corporativos',
-      subtitle: 'Times de alta performance',
-      description: 'Desenvolvemos programas de treinamento customizados para capacitar líderes e times nas competências essenciais para alta performance. Nossos treinamentos são práticos, dinâmicos e focados em resultados reais.',
-      benefits: [
-        'Treinamentos in company ou online',
-        'Conteúdo personalizado para sua realidade',
-        'Formações técnicas e comportamentais',
-        'Formação em Análise de Perfil Comportamental',
-        'Formação em Comercial e Vendas',
-        'Formação em Marketing Estratégico',
-        'Formação em Equilíbrio Emocional',
-        'Formação em Gestão Empresarial Sistêmica',
-        'Formação em Liderança',
-        'Palestras e Workshops dinamicos',
-        'Treinamentos Personalizados',
-      ],
-      results: 'Times mais engajados, líderes preparados, comunicação eficaz e cultura organizacional fortalecida.',
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const services = [{
+    icon: <Rocket className="h-16 w-16" />,
+    title: 'Consultoria Empresarial',
+    subtitle: 'Organize e expanda seu negócio com segurança',
+    description: 'Nossa Consultoria Empresarial COMET tira você do operacional exaustivo e resolve os problemas que travam seu crescimento: perda de vendas, clientes sumindo, falta de controle financeiro e não ver o dinheiro no fim do mês. Atuamos lado a lado para estruturar processos, otimizar recursos, desenvolver líderes e times de alta performance, e criar um caminho estratégico, tático e operacional que transforma sua empresa e acelera resultados sustentáveis.',
+    benefits: ['Diagnóstico completo da situação atual da empresa', 'Planejamento estratégico personalizado', 'Mapeamento e otimização de processos comerciais', 'Mapeamento e otimização de processos de marketing', 'Mapeamento e otimização de processos de RH', 'Mapeamento e otimização de processos financeiros', 'Mapeamento e otimização de processos logísticos', 'Mentoria de Gestão e Liderança para altos cargos', 'Técnicas e ferramentas para gestão e alta performance', 'Implementação de sistemas de gestão eficazes', 'Treinamento técnico e comportamental do time', 'Acompanhamento e suporte contínuo', 'Resultados mensuráveis e sustentáveis'],
+    results: 'Empresa organizada e estruturada, com planejamento estratégico, processos claros e previsíveis, cultura e clima organizacional positivos, ambiente de trabalho saudável, time forte e de alta performance, liderança preparada e competente, decisões mais assertivas, custos reduzidos, recursos otimizados e lucro crescente.'
+  }, {
+    icon: <Target className="h-16 w-16" />,
+    title: 'Mentoria Estratégica',
+    subtitle: 'Clareza, foco e decisões assertivas',
+    description: 'A Mentoria Estratégica COMET é um processo personalizado para empresários e profissionais que desejam desenvolver competências de liderança e alta performance. Por meio de sessões práticas e aplicação de testes assessment, o participante amplia seu autoconhecimento, aprimora habilidades de comunicação, vendas e negociação, e aprende a formar equipes fortes. Com base nas competências CHAVES — Conhecimento, Habilidade, Atitude, Valores, Equilíbrio Emocional e Sociabilidade. A mentoria conduz o líder do diagnóstico ao resultado, com foco em evolução real e sustentável.',
+    benefits: ['Sessões individuais ou em grupo', 'Diagnóstico de competências de gestão e liderança', 'Análise de perfil comportamental assessment', 'Mapeamento de competências "CHAVES"', 'Plano de evolução, visão estratégica e tática', 'Metodologias ativas e práticas de liderança', 'Desenvolvimento de habilidades de gestão e liderança', 'Técnicas de comunicação e negociação,', 'Ferramentas de gestão para alta performance', 'Formação de Time Forte e estrutura tática', 'Avaliação de números e previsibilidade de resultados', 'Definição e acompanhamento de metas', 'Acesso direto a experiência comprovada'],
+    results: 'Tornar-se um líder de verdade, com autoridade e presença para conduzir equipes. Desenvolver habilidades em comunicação, negociação e gestão de pessoas com excelência. Tomar decisões estratégicas com clareza, acelerando resultados e crescimento pessoal'
+  }, {
+    icon: <Users className="h-16 w-16" />,
+    title: 'Treinamentos Corporativos',
+    subtitle: 'Times de alta performance',
+    description: 'Desenvolvemos programas de treinamento customizados para capacitar líderes e times nas competências essenciais para alta performance. Nossos treinamentos são práticos, dinâmicos e focados em resultados reais.',
+    benefits: ['Treinamentos in company ou online', 'Conteúdo personalizado para sua realidade', 'Formações técnicas e comportamentais', 'Formação em Análise de Perfil Comportamental', 'Formação em Comercial e Vendas', 'Formação em Marketing Estratégico', 'Formação em Equilíbrio Emocional', 'Formação em Gestão Empresarial Sistêmica', 'Formação em Liderança', 'Palestras e Workshops dinamicos', 'Treinamentos Personalizados'],
+    results: 'Times mais engajados, líderes preparados, comunicação eficaz e cultura organizacional fortalecida.'
+  }];
+  return <div className="min-h-screen">
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${servicosHero})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${servicosHero})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -103,11 +55,7 @@ const Servicos = () => {
       </section>
 
       {/* Serviços Detalhados */}
-      {services.map((service, index) => (
-        <section 
-          key={index} 
-          className={`py-20 ${index % 2 === 1 ? 'bg-muted/30' : ''}`}
-        >
+      {services.map((service, index) => <section key={index} className={`py-20 ${index % 2 === 1 ? 'bg-muted/30' : ''}`}>
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -124,7 +72,7 @@ const Servicos = () => {
                       {service.subtitle}
                     </p>
                   </div>
-                  <p className="text-lg text-muted-foreground">
+                  <p className="text-lg text-muted-foreground text-justify">
                     {service.description}
                   </p>
                   
@@ -132,7 +80,7 @@ const Servicos = () => {
                     <h3 className="text-lg font-bold text-foreground mb-3">
                       Resultados Esperados
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-justify">
                       {service.results}
                     </p>
                   </div>
@@ -151,19 +99,16 @@ const Servicos = () => {
                     O que inclui:
                   </h3>
                   <ul className="space-y-4">
-                    {service.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
+                    {service.benefits.map((benefit, idx) => <li key={idx} className="flex items-start gap-3">
                         <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                         <span className="text-foreground">{benefit}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      ))}
+        </section>)}
 
       {/* Como Funciona */}
       <section className="py-20 bg-muted/30">
@@ -179,18 +124,31 @@ const Servicos = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { step: '01', title: 'Contato Inicial', desc: 'Conversamos sobre seus desafios e objetivos' },
-                { step: '02', title: 'Diagnóstico', desc: 'Analisamos profundamente sua empresa' },
-                { step: '03', title: 'Proposta', desc: 'Apresentamos solução personalizada' },
-                { step: '04', title: 'Implementação', desc: 'Trabalhamos juntos nos resultados' },
-                { step: '05', title: 'Acompanhamento', desc: 'Seguimos corrigindo, ajustando e potencializando os resultados' },
-                { step: '06', title: 'Entrega', desc: 'Finalização do projeto proposto' },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-lg p-6 border border-border shadow-card text-center"
-                >
+              {[{
+              step: '01',
+              title: 'Contato Inicial',
+              desc: 'Conversamos sobre seus desafios e objetivos'
+            }, {
+              step: '02',
+              title: 'Diagnóstico',
+              desc: 'Analisamos profundamente sua empresa'
+            }, {
+              step: '03',
+              title: 'Proposta',
+              desc: 'Apresentamos solução personalizada'
+            }, {
+              step: '04',
+              title: 'Implementação',
+              desc: 'Trabalhamos juntos nos resultados'
+            }, {
+              step: '05',
+              title: 'Acompanhamento',
+              desc: 'Seguimos corrigindo, ajustando e potencializando os resultados'
+            }, {
+              step: '06',
+              title: 'Entrega',
+              desc: 'Finalização do projeto proposto'
+            }].map((item, index) => <div key={index} className="bg-card rounded-lg p-6 border border-border shadow-card text-center">
                   <div className="text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-4">
                     {item.step}
                   </div>
@@ -200,8 +158,7 @@ const Servicos = () => {
                   <p className="text-sm text-muted-foreground">
                     {item.desc}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -221,27 +178,36 @@ const Servicos = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { img: treinamento1, title: 'Treinamento de Liderança' },
-                { img: mentoria1, title: 'Mentoria Executiva' },
-                { img: consultoria1, title: 'Consultoria Estratégica' },
-                { img: reuniao1, title: 'Reunião de Planejamento' },
-                { img: workshop1, title: 'Workshop de Processos' },
-                { img: palestra1, title: 'Palestra Motivacional' },
-                { img: diagnostico1, title: 'Diagnóstico Empresarial' },
-                { img: planejamento1, title: 'Planejamento Estratégico' },
-                { img: acompanhamento1, title: 'Acompanhamento de Resultados' },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="group relative overflow-hidden rounded-xl border border-border shadow-card bg-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1"
-                >
+              {[{
+              img: treinamento1,
+              title: 'Treinamento de Liderança'
+            }, {
+              img: mentoria1,
+              title: 'Mentoria Executiva'
+            }, {
+              img: consultoria1,
+              title: 'Consultoria Estratégica'
+            }, {
+              img: reuniao1,
+              title: 'Reunião de Planejamento'
+            }, {
+              img: workshop1,
+              title: 'Workshop de Processos'
+            }, {
+              img: palestra1,
+              title: 'Palestra Motivacional'
+            }, {
+              img: diagnostico1,
+              title: 'Diagnóstico Empresarial'
+            }, {
+              img: planejamento1,
+              title: 'Planejamento Estratégico'
+            }, {
+              img: acompanhamento1,
+              title: 'Acompanhamento de Resultados'
+            }].map((item, index) => <div key={index} className="group relative overflow-hidden rounded-xl border border-border shadow-card bg-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img 
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
+                    <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -255,8 +221,7 @@ const Servicos = () => {
                       {item.title}
                     </h3>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -278,8 +243,6 @@ const Servicos = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Servicos;
