@@ -20,9 +20,15 @@ const Vendas = () => {
   }, {
     icon: <Users className="h-12 w-12" />,
     category: 'Treinamentos In Company',
-    title: 'Desenvolvimento de Líderes',
-    description: 'Programa presencial customizado para desenvolver líderes dentro da sua empresa, adaptado à sua cultura e necessidades.',
-    benefits: ['Conteúdo personalizado', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
+    title: 'Times de Alta Performance',
+    description: 'Programa presencial customizado para capacitar seu time, alinhado à cultura da empresa e às necessidades reais da equipe. Ao contratar um treinamento corporativo, sua empresa aumenta a produtividade e a eficiência do time, melhora a comunicação, o engajamento e o trabalho em equipe, reduz erros operacionais e fortalece a cultura interna. Além disso, desenvolve habilidades técnicas e comportamentais alinhadas aos objetivos do negócio, gerando retorno direto com colaboradores mais preparados, motivados e capazes de entregar resultados consistentes.',
+    benefits: ['Levantamento de Necessidade de Treinamento (LNT) para identificar gaps e prioridades do time',
+'Treinamentos comportamentais: equilíbrio emocional, mudança de mentalidade, alta produtividade, autoresponsabilidade, motivação',
+'Treinamentos técnicos: vendas, negociação, formação de times, análise de perfil comportamental',
+'Facilitadores experientes com prática comprovada',
+'Metodologias ativas: exercícios, simulações e cases reais',
+'Acompanhamento pós-treinamento para aplicar habilidades e comportamentos no dia a dia']
+
     price: 'Sob consulta'
   }, {
     icon: <Users className="h-12 w-12" />,
