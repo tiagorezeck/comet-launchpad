@@ -2,98 +2,56 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { GraduationCap, Video, Users, Wrench, ShoppingCart, FileText } from 'lucide-react';
 import vendasHero from '@/assets/hero/vendas-hero.jpg';
-
 const Vendas = () => {
-  const products = [
-    {
-      icon: <GraduationCap className="h-12 w-12" />,
-      category: 'Mentoria Online',
-      title: 'Mentoria Individual de Gestão e Liderança',
-      description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana. Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
-      benefits: [
-        'Encontros individuais e personalizados',
-        'Diagnóstico do perfil comportamental',
-        'Ferramentas práticas de liderança e gestão',
-        'Plano de ação estratégico com metas claras',
-        'Suporte e acompanhamento entre as sessões'
-      ],
-      price: 'Sob consulta',
-    },
-    {
-      icon: <Video className="h-12 w-12" />,
-      category: 'Cursos Online',
-      title: 'Gestão de Processos na Prática',
-      description: 'Aprenda a mapear, documentar e otimizar processos empresariais para aumentar a eficiência e reduzir custos.',
-      benefits: [
-        'Metodologias práticas',
-        'Cases reais',
-        'Templates prontos',
-        'Suporte por 90 dias',
-      ],
-      price: 'Sob consulta',
-    },
-    {
-      icon: <Users className="h-12 w-12" />,
-      category: 'Treinamentos In Company',
-      title: 'Desenvolvimento de Líderes',
-      description: 'Programa presencial customizado para desenvolver líderes dentro da sua empresa, adaptado à sua cultura e necessidades.',
-      benefits: [
-        'Conteúdo personalizado',
-        'Facilitadores experientes',
-        'Metodologias ativas',
-        'Acompanhamento pós-treinamento',
-      ],
-      price: 'Sob consulta',
-    },
-    {
-      icon: <Users className="h-12 w-12" />,
-      category: 'Treinamentos Online',
-      title: 'Times de Alta Performance',
-      description: 'Treinamento online ao vivo para capacitar times em colaboração, comunicação eficaz e cultura de resultados.',
-      benefits: [
-        'Formato online ao vivo',
-        'Interação em tempo real',
-        'Gravações disponíveis',
-        'Material de apoio',
-      ],
-      price: 'Sob consulta',
-    },
-    {
-      icon: <Wrench className="h-12 w-12" />,
-      category: 'Ferramentas de Gestão',
-      title: 'Kit Completo de Templates',
-      description: 'Conjunto de planilhas, templates e ferramentas prontas para implementar gestão profissional na sua empresa.',
-      benefits: [
-        'Templates editáveis',
-        'Planilhas de KPIs',
-        'Modelos de documentos',
-        'Guia de implementação',
-      ],
-      price: 'Sob consulta',
-    },
-    {
-      icon: <Wrench className="h-12 w-12" />,
-      category: 'Ferramentas de Gestão',
-      title: 'Dashboard de Indicadores',
-      description: 'Sistema completo para monitoramento de indicadores-chave de desempenho da sua empresa em tempo real.',
-      benefits: [
-        'Dashboards personalizáveis',
-        'Integração com dados',
-        'Relatórios automáticos',
-        'Suporte técnico',
-      ],
-      price: 'Sob consulta',
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const products = [{
+    icon: <GraduationCap className="h-12 w-12" />,
+    category: 'Mentoria Online',
+    title: 'Mentoria Individual de Gestão e Liderança',
+    description: 'Acompanhamento personalizado para empresários e líderes que desejam desenvolver uma gestão sólida, estratégica e humana. Voltada para quem busca clareza, foco e resultados consistentes, a mentoria trabalha autoconhecimento, liderança de times, gestão de processos e desenvolvimento de competências essenciais para alcançar alta performance.',
+    benefits: ['Encontros individuais e personalizados', 'Diagnóstico do perfil comportamental', 'Ferramentas práticas de liderança e gestão', 'Plano de ação estratégico com metas claras', 'Suporte e acompanhamento entre as sessões'],
+    price: 'Sob consulta'
+  }, {
+    icon: <Video className="h-12 w-12" />,
+    category: 'Cursos Online',
+    title: 'Gestão de Processos na Prática',
+    description: 'Aprenda a mapear, documentar e otimizar processos empresariais para aumentar a eficiência e reduzir custos.',
+    benefits: ['Metodologias práticas', 'Cases reais', 'Templates prontos', 'Suporte por 90 dias'],
+    price: 'Sob consulta'
+  }, {
+    icon: <Users className="h-12 w-12" />,
+    category: 'Treinamentos In Company',
+    title: 'Desenvolvimento de Líderes',
+    description: 'Programa presencial customizado para desenvolver líderes dentro da sua empresa, adaptado à sua cultura e necessidades.',
+    benefits: ['Conteúdo personalizado', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
+    price: 'Sob consulta'
+  }, {
+    icon: <Users className="h-12 w-12" />,
+    category: 'Treinamentos Online',
+    title: 'Times de Alta Performance',
+    description: 'Treinamento online ao vivo para capacitar times em colaboração, comunicação eficaz e cultura de resultados.',
+    benefits: ['Formato online ao vivo', 'Interação em tempo real', 'Gravações disponíveis', 'Material de apoio'],
+    price: 'Sob consulta'
+  }, {
+    icon: <Wrench className="h-12 w-12" />,
+    category: 'Ferramentas de Gestão',
+    title: 'Kit Completo de Templates',
+    description: 'Conjunto de planilhas, templates e ferramentas prontas para implementar gestão profissional na sua empresa.',
+    benefits: ['Templates editáveis', 'Planilhas de KPIs', 'Modelos de documentos', 'Guia de implementação'],
+    price: 'Sob consulta'
+  }, {
+    icon: <Wrench className="h-12 w-12" />,
+    category: 'Ferramentas de Gestão',
+    title: 'Dashboard de Indicadores',
+    description: 'Sistema completo para monitoramento de indicadores-chave de desempenho da sua empresa em tempo real.',
+    benefits: ['Dashboards personalizáveis', 'Integração com dados', 'Relatórios automáticos', 'Suporte técnico'],
+    price: 'Sob consulta'
+  }];
+  return <div className="min-h-screen">
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${vendasHero})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${vendasHero})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -114,11 +72,7 @@ const Vendas = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-xl border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col"
-                >
+              {products.map((product, index) => <div key={index} className="bg-card rounded-xl border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col">
                   {/* Header */}
                   <div className="bg-muted/30 p-6 border-b border-border">
                     <div className="text-primary mb-4">
@@ -134,7 +88,7 @@ const Vendas = () => {
 
                   {/* Content */}
                   <div className="p-6 flex-1 flex flex-col">
-                    <p className="text-muted-foreground mb-6">
+                    <p className="text-muted-foreground mb-6 text-justify text-sm">
                       {product.description}
                     </p>
 
@@ -144,14 +98,12 @@ const Vendas = () => {
                         O que você recebe:
                       </h4>
                       <ul className="space-y-2">
-                        {product.benefits.map((benefit, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm">
+                        {product.benefits.map((benefit, idx) => <li key={idx} className="flex items-start gap-2 text-sm">
                             <div className="bg-primary/10 rounded-full p-1 mt-0.5">
                               <div className="bg-primary rounded-full w-1.5 h-1.5"></div>
                             </div>
                             <span className="text-muted-foreground">{benefit}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                     </div>
 
@@ -176,8 +128,7 @@ const Vendas = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -197,24 +148,17 @@ const Vendas = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  title: 'Pacote Starter',
-                  description: 'Ideal para empresários que estão começando a estruturar sua gestão',
-                  includes: ['2 Cursos Online', 'Kit de Templates', 'Suporte por 30 dias'],
-                  highlight: 'Economia de 25%',
-                },
-                {
-                  title: 'Pacote Business',
-                  description: 'Solução completa para empresas em crescimento',
-                  includes: ['Todos os Cursos Online', 'Treinamento In Company', 'Ferramentas Completas', 'Consultoria 3 meses'],
-                  highlight: 'Economia de 40%',
-                },
-              ].map((pack, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-xl border-2 border-primary shadow-comet p-8"
-                >
+              {[{
+              title: 'Pacote Starter',
+              description: 'Ideal para empresários que estão começando a estruturar sua gestão',
+              includes: ['2 Cursos Online', 'Kit de Templates', 'Suporte por 30 dias'],
+              highlight: 'Economia de 25%'
+            }, {
+              title: 'Pacote Business',
+              description: 'Solução completa para empresas em crescimento',
+              includes: ['Todos os Cursos Online', 'Treinamento In Company', 'Ferramentas Completas', 'Consultoria 3 meses'],
+              highlight: 'Economia de 40%'
+            }].map((pack, index) => <div key={index} className="bg-card rounded-xl border-2 border-primary shadow-comet p-8">
                   <div className="mb-6">
                     <div className="inline-block bg-gradient-comet text-white text-sm font-bold px-4 py-1 rounded-full mb-4">
                       {pack.highlight}
@@ -232,12 +176,10 @@ const Vendas = () => {
                       O que inclui:
                     </h4>
                     <ul className="space-y-2">
-                      {pack.includes.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
+                      {pack.includes.map((item, idx) => <li key={idx} className="flex items-start gap-2">
                           <FileText className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                           <span className="text-foreground">{item}</span>
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
 
@@ -246,8 +188,7 @@ const Vendas = () => {
                       Solicitar Proposta
                     </a>
                   </Button>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -265,15 +206,10 @@ const Vendas = () => {
                 Preencha o formulário e nosso time enviará detalhes completos sobre preços e condições
               </p>
             </div>
-            <ContactForm 
-              title="Quero saber mais sobre produtos e cursos"
-              buttonText="Enviar solicitação"
-            />
+            <ContactForm title="Quero saber mais sobre produtos e cursos" buttonText="Enviar solicitação" />
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Vendas;
