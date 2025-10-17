@@ -52,9 +52,7 @@ const Servicos = () => {
         'Definição e acompanhamento de metas',
         'Acesso direto a experiência comprovada',
       ],
-      results: 'Tornar-se um líder de verdade, com autoridade e presença para conduzir equipes',
-      'Desenvolver habilidades em comunicação, negociação e gestão de pessoas com excelência',
-      'Tomar decisões estratégicas com clareza, acelerando resultados e crescimento pessoal',
+      results: 'Tornar-se um líder de verdade, com autoridade e presença para conduzir equipes. Desenvolver habilidades em comunicação, negociação e gestão de pessoas com excelência. Tomar decisões estratégicas com clareza, acelerando resultados e crescimento pessoal',
     {
       icon: <Users className="h-16 w-16" />,
       title: 'Treinamentos Corporativos',
