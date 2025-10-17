@@ -34,7 +34,7 @@ const Servicos = () => {
         'Acompanhamento e suporte contínuo',
         'Resultados mensuráveis e sustentáveis',
       ],
-      results: 'Empresa organizada e estruturada, com planejamento estratégico, processos claros e previsíveis, cultura e clima organizacional positivos, ambiente de trabalho saudável, Time forte e de alta performance, liderança preparada e competente, decisões mais assertivas, custos reduzidos, recursos otimizados e lucro crescente.',
+      results: 'Empresa organizada e estruturada, com planejamento estratégico, processos claros e previsíveis, cultura e clima organizacional positivos, ambiente de trabalho saudável, time forte e de alta performance, liderança preparada e competente, decisões mais assertivas, custos reduzidos, recursos otimizados e lucro crescente.',
     },
     {
       icon: <Target className="h-16 w-16" />,
