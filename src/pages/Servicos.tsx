@@ -131,9 +131,7 @@ const Servicos = () => {
       <h4 className="font-semibold">{pillar.title}</h4>
       <p className="text-gray-600">{pillar.description}</p>
     </div>
-  ))}
-</div>
-              ].map((pilar, index) => (
+               ].map((pilar, index) => (
                 <div 
                   key={index}
                   className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
