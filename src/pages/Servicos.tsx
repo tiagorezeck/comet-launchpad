@@ -104,12 +104,12 @@ const Servicos = () => {
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
-              title: 'Treinamento e Desenvolvimento Contínuo',
+              title: 'Treinamento e Evolução Contínua',
               description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
-              title: 'Ação e Performance',
+              title: 'Ação e Alta Performance',
               description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
             }, {
               letter: 'S',
