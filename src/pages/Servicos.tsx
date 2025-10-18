@@ -84,7 +84,7 @@ const Servicos = () => {
               {[{
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
-              title: 'Cultura Forte',
+              title: 'Cultura Organizacional Forte',
               description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
             }, {
               letter: 'O',
@@ -104,17 +104,17 @@ const Servicos = () => {
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
-              title: 'Treinamento e Desenvolvimento Contínuo',
+              title: 'Treinamento e Evolução Contínua',
               description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
-              title: 'Ação e Performance',
+              title: 'Ação e Alta Performance',
               description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
-              title: 'Sucesso nos Resultados',
+              title: 'Sustentabilidade e Resultados',
               description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
             }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
