@@ -55,50 +55,75 @@ const Servicos = () => {
       </section>
 
       {/* Metodologia COMETAS */}
-<section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_50%)]"></div>
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
-  <div className="container mx-auto px-4 relative z-10">
-    <div className="max-w-6xl mx-auto">
-      {/* Header */}
-      <div className="text-center mb-16">
-        <div className="mb-6">
-          <h2 className="text-6xl md:text-7xl font-black tracking-wider mb-4">
-            <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg">
-              COMETAS
-            </span>
-          </h2>
-          <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
-        </div>
-        <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          Metodologia COMETAS
-        </p>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          A energia que move pessoas, transforma empresas e gera resultados extraordinários.
-        </p>
-      </div>
-      {/* Pilares Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-6">
-        {[
-          { letter: 'C', icon: <Heart className="h-5 w-5" />, title: 'Cultura Forte', description: 'Construímos valores sólidos que impulsionam engajamento e senso de pertencimento.' },
-          { letter: 'O', icon: <Cog className="h-5 w-5" />, title: 'Organização e Processos', description: 'Estruturamos fluxos claros que tornam a empresa mais produtiva e estratégica.' },
-          { letter: 'M', icon: <Brain className="h-5 w-5" />, title: 'Mentalidade e Liderança', description: 'Desenvolvemos líderes conscientes e fortalecemos o protagonismo da equipe.' },
-          { letter: 'E', icon: <Map className="h-5 w-5" />, title: 'Estratégia e Gestão', description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.' },
-          { letter: 'T', icon: <GraduationCap className="h-5 w-5" />, title: 'Treinamento Contínuo', description: 'Capacitamos pessoas em habilidades técnicas, comportamentais e emocionais.' },
-          { letter: 'A', icon: <Zap className="h-5 w-5" />, title: 'Ação e Performance', description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis.' },
-          { letter: 'S', icon: <Trophy className="h-5 w-5" />, title: 'Sucesso nos Resultados', description: 'Transformamos empresas com indicadores reais de crescimento e lucratividade.' }
-        ].map((pillar) => (
-          <div key={pillar.letter} className="bg-white p-2 rounded shadow text-center text-xs">
-            <div className="text-primary font-bold text-lg mb-1">{pillar.letter}</div>
-            <div className="mx-auto mb-1">{pillar.icon}</div>
-            <h4 className="font-semibold">{pillar.title}</h4>
-            <p className="text-gray-600">{pillar.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+      <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="mb-6">
+                <h2 className="text-6xl md:text-7xl font-black tracking-wider mb-4">
+                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg">
+                    COMETAS
+                  </span>
+                </h2>
+                <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
+              </div>
+              <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Metodologia COMETAS
+              </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                A energia que move pessoas, transforma empresas e gera resultados extraordinários.
+              </p>
+            </div>
+
+            {/* Pilares Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  letter: 'C',
+                  icon: <Heart className="h-10 w-10" />,
+                  title: 'Cultura Forte',
+                  description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
+                },
+                {
+                  letter: 'O',
+                  icon: <Cog className="h-10 w-10" />,
+                  title: 'Organização e Processos Inteligentes',
+                  description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
+                },
+                {
+                  letter: 'M',
+                  icon: <Brain className="h-10 w-10" />,
+                  title: 'Mentalidade Vencedora e Liderança',
+                  description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
+                },
+                {
+                  letter: 'E',
+                  icon: <Map className="h-10 w-10" />,
+                  title: 'Estratégia, Planejamento e Gestão',
+                  description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
+                },
+                {
+                  letter: 'T',
+                  icon: <GraduationCap className="h-10 w-10" />,
+                  title: 'Treinamento e Desenvolvimento Contínuo',
+                  description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
+                },
+                {
+                  letter: 'A',
+                  icon: <Zap className="h-10 w-10" />,
+                  title: 'Ação e Performance',
+                  description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
+                },
+                {
+                  letter: 'S',
+                  icon: <Trophy className="h-10 w-10" />,
+                  title: 'Sucesso nos Resultados',
+                  description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
+                }
               ].map((pilar, index) => (
                 <div 
                   key={index}
