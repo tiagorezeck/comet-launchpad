@@ -217,7 +217,7 @@ const Servicos = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-1 lg:grid-cols-6 gap-6">
+            <div className="grid md:grid-cols-1 lg:grid-cols-6 gap-12">
               {[{
               step: '01',
               title: 'Contato Inicial',
