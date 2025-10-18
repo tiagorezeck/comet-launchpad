@@ -20,7 +20,7 @@ const Parceiros = () => {
   }, {
     logo: farmerLogo,
     name: 'Farmer',
-    description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, leads e resultados de vendas.',
+    description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados e potencializar os resultados de vendas.',
     specialty: 'Marketing Digital'
   }];
   return <div className="min-h-screen">
