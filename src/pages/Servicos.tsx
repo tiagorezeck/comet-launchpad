@@ -58,8 +58,7 @@ const Servicos = () => {
       <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
@@ -78,7 +77,6 @@ const Servicos = () => {
                 A energia que move pessoas, transforma empresas e gera resultados extraordinários.
               </p>
             </div>
-
            {/* Pilares Grid */}
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-6">
   {[
