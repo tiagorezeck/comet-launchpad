@@ -16,7 +16,7 @@ const Parceiros = () => {
     logo: jessLogo,
     name: 'Jess Knoll',
     description: 'Especialista em comportamento humano, desenvolvimento pessoal e profissional, atuando com mapeamento de perfil comportamental e testes psicométricos para apoiar organizações e equipes a alcançarem melhores resultados.',
-    specialty: 'Desenvolvimento Humano e Perfil Comportamental'
+    specialty: 'Desenvolvimento Humano'
   }, {
     logo: farmerLogo,
     name: 'Farmer',
