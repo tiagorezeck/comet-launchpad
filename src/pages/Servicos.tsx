@@ -100,7 +100,7 @@ const Servicos = () => {
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
-              title: 'Treinamen
+              title: 'Treinamento e Evolução Contínua
               description: 'Desenvolvemos pessoas com competências técnicas e comportamentais que transformam a empresa.'
             }, {
               letter: 'A',
