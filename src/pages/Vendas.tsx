@@ -36,7 +36,7 @@ const Vendas = () => {
     category: 'Ferramentas de Gestão',
     title: 'Kit Completo de Templates',
     description: 'Modelos e ferramentas prontas para facilitar a gestão da sua empresa. Materiais práticos e editáveis que otimizam processos, aumentam o controle das operações e trazem mais clareza na tomada de decisão, economizando tempo e melhorando resultados.',
-    benefits: ['Templates Editáveis', 'Modelos de Documentos','Planilhas de Vendas', 'Planilhas Financeiras', 'Planilhas de RH', 'Controle de Estoque', 'Planilhas de KPIs', 'Indicadores de Desempenho', 'Normas e Procedimentos Operacionais', 'Outros milhares de modelos'],
+    benefits: ['Templates Editáveis', 'Modelos de Documentos', 'Planilhas de Vendas', 'Planilhas Financeiras', 'Planilhas de RH', 'Controle de Estoque', 'Planilhas de KPIs', 'Indicadores de Desempenho', 'Normas e Procedimentos Operacionais', 'Outros milhares de modelos'],
     price: 'Sob consulta'
   }, {
     icon: <Wrench className="h-12 w-12" />,
@@ -166,7 +166,7 @@ const Vendas = () => {
                     <h3 className="text-3xl font-bold text-foreground mb-2">
                       {pack.title}
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-justify text-sm">
                       {pack.description}
                     </p>
                   </div>
