@@ -97,13 +97,13 @@ const Parceiros = () => {
                   Conheça o projeto <span className="bg-gradient-comet bg-clip-text text-transparent">TRÊS</span>
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  A união perfeita entre gestão estratégica e desenvolvimento humano
+                  A união perfeita entre gestão estratégica organizacional e desenvolvimento humano
                 </p>
               </div>
 
               <div className="space-y-6">
                 <p className="text-lg text-foreground text-center">
-                  O projeto <span className="font-bold text-primary">TRÊS</span> é uma iniciativa inovadora que combina a expertise do Instituto COMET em organização empresarial com a visão de Jess Knoll em comportamento humano, criando uma abordagem única de transformação organizacional.
+                  O projeto <span className="font-bold text-primary">TRÊS</span> é uma iniciativa inovadora, desenvolvido em parceria, a três mãos, que promove uma transformação empresarial sistêmica, com foco no desenvolvimento de pessoas, donos, líderes e equipes, onde todas as áreas da empresa são desenvolvidas e alinhadas para gerar resultados mais previsíveis e consistentes.
                 </p>
 
                 <div className="pt-6 text-center">
