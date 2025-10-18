@@ -81,37 +81,37 @@ const Servicos = () => {
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
               title: 'Cultura Organizacional Forte',
-              description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
+              description: 'Construímos valores sólidos que promovem engajamento, confiança e pertencimento.'
             }, {
               letter: 'O',
               icon: <Cog className="h-6 w-6" />,
               title: 'Organização e Processos Inteligentes',
-              description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
+              description: 'Estruturamos fluxos claros e eficientes para tornar a empresa mais produtiva.'
             }, {
               letter: 'M',
               icon: <Brain className="h-6 w-6" />,
               title: 'Mentalidade Vencedora e Liderança',
-              description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
+              description: 'Formamos líderes preparados, decisores e que inspiram confiança através do exemplo.'
             }, {
               letter: 'E',
               icon: <Map className="h-6 w-6" />,
               title: 'Estratégia, Planejamento e Gestão',
-              description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
+              description: 'Definimos caminhos claros, unindo visão estratégica e indicadores para resultados concretos.'
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
-              title: 'Treinamento e Evolução Contínua',
-              description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
+              title: 'Treinamen
+              description: 'Desenvolvemos pessoas com competências técnicas e comportamentais que transformam a empresa.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
               title: 'Ação e Alta Performance',
-              description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
+              description: 'Implementamos planos práticos e acompanhamos a execução, garantindo resultados previsíveis.'
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
               title: 'Sucesso e Resultados Sustentaveis',
-              description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
+              description: 'Transformamos empresas através dos talentos, promovendo estabilidade, crescimento e resultados extraordinários.'
             }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
                   <div className="flex items-center gap-4 mb-4">
