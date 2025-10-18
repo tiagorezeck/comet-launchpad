@@ -149,14 +149,14 @@ const Vendas = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {[{
-              title: 'Pacote Starter',
-              description: 'Ideal para empresários que estão começando a estruturar sua gestão',
-              includes: ['2 Cursos Online', 'Kit de Templates', 'Suporte por 30 dias'],
-              highlight: 'Economia de 25%'
+              title: 'Pacote Ferramentas',
+              description: 'Ideal para empresários que estão estruturando sua gestão e querem aplicar soluções práticas, modelos prontos e ferramentas que otimizam tempo e aumentam a eficiência do negócio.',
+              includes: ['Ferramentas de Gestão', 'Kit Palestrante & Treinador', 'Ferramentas de Análise de Perfil Comportamental'],
+              highlight: 'Economia de 33%'
             }, {
-              title: 'Pacote Business',
-              description: 'Solução completa para empresas em crescimento',
-              includes: ['Todos os Cursos Online', 'Treinamento In Company', 'Ferramentas Completas', 'Consultoria 3 meses'],
+              title: 'Pacote Treinamento',
+              description: 'Desenvolva seu time com três treinamentos personalizados, focados em desempenho, engajamento e resultados, aplicáveis diretamente na rotina da operação.',
+              includes: ['3 Treinamentos In Company à sua escolha', 'Conteúdo adaptado à realidade da empresa', 'Metodologias ativas e práticas', 'Acompanhamento pós-treinamento'],
               highlight: 'Economia de 40%'
             }].map((pack, index) => <div key={index} className="bg-card rounded-xl border-2 border-primary shadow-comet p-8">
                   <div className="mb-6">
