@@ -139,7 +139,7 @@ const Servicos = () => {
             <div className="text-center">
               <Button variant="hero" size="lg" asChild>
                 <a href="#contact-form">
-                  Quero transformar minha empresa com COMETAS
+                  Quero transformar minha empresa agora
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
