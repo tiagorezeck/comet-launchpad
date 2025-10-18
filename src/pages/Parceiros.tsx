@@ -12,20 +12,20 @@ const Parceiros = () => {
     {
       logo: automacLogo,
       name: 'Automac',
-      description: 'Empresa parceira principal em soluções de automação industrial e sistemas integrados de gestão empresarial.',
+      description: 'Especializada em soluções de automação e sistemas integrados de gestão empresarial para empresas dos setores de food e varejo, oferecendo tecnologias e ferramentas que otimizam vendas, processos e eficiência operacional.',
       specialty: 'Automação e Sistemas de Gestão',
     },
     {
       logo: jessLogo,
       name: 'Jess Knoll',
-      description: 'Especialista em desenvolvimento humano, mapeamento de perfil comportamental e testes psicométricos para organizações.',
+      description: 'Especialista em comportamento humano, desenvolvimento pessoal e profissional, atuando com mapeamento de perfil comportamental e testes psicométricos para apoiar organizações e equipes a alcançarem melhores resultados.',
       specialty: 'Desenvolvimento Humano e Perfil Comportamental',
     },
     {
       logo: farmerLogo,
-      name: 'Farmer MKT Digital',
-      description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online para empresas.',
-      specialty: 'Marketing Digital e Tráfego Pago',
+      name: 'Farmer',
+      description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, leads e resultados de vendas.',
+      specialty: 'Marketing Digital',
     },
   ];
 
