@@ -76,7 +76,7 @@ const Servicos = () => {
             </div>
 
             {/* Pilares Grid */}
-            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-6">
+            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-2">
               {[{
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
