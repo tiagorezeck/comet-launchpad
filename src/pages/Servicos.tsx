@@ -105,8 +105,8 @@ const Servicos = () => {
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
-              title: 'Ação e Alta Performance',
-              description: 'Implementamos planos práticos e acompanhamos a execução, garantindo resultados previsíveis.'
+              title: 'Autonomia e Ações de Alta Performance',
+              description: Promovemos autonomia para que times encontre soluções, tomem decisões assertivas e execute com excelência.'
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
