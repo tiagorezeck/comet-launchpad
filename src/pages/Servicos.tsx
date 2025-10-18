@@ -70,7 +70,7 @@ const Servicos = () => {
                 <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
               </div>
               <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">Como acelerar seu crescimento na velocidade dos cometas</p>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-3xl mb-2">
                 A energia que move pessoas, transforma empresas e gera resultados extraordinários.
               </p>
             </div>
