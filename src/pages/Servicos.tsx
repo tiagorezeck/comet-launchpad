@@ -114,7 +114,7 @@ const Servicos = () => {
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
-              title: 'Sustentabilidade e Resultados',
+              title: 'Sucesso e Resultados Sustentaveis',
               description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
             }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
