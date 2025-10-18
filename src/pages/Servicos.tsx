@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
-import { Rocket, Target, Users, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Rocket, Target, Users, CheckCircle2, ArrowRight, Heart, Cog, Brain, Map, GraduationCap, Zap, Trophy } from 'lucide-react';
 import servicosHero from '@/assets/hero/servicos-hero.jpg';
 import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
 import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
@@ -50,6 +50,117 @@ const Servicos = () => {
             <p className="text-xl text-muted-foreground">
               Soluções completas baseadas na Metodologia COMET, especializada em Desenvolvimento Humano e Organizacional (DHO), para transformação da sua empresa
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Metodologia COMETAS */}
+      <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="mb-6">
+                <h2 className="text-6xl md:text-7xl font-black tracking-wider mb-4">
+                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg">
+                    COMETAS
+                  </span>
+                </h2>
+                <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
+              </div>
+              <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Metodologia COMETAS
+              </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                A energia que move pessoas, transforma empresas e gera resultados extraordinários.
+              </p>
+            </div>
+
+            {/* Pilares Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  letter: 'C',
+                  icon: <Heart className="h-10 w-10" />,
+                  title: 'Cultura Forte',
+                  description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
+                },
+                {
+                  letter: 'O',
+                  icon: <Cog className="h-10 w-10" />,
+                  title: 'Organização e Processos Inteligentes',
+                  description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
+                },
+                {
+                  letter: 'M',
+                  icon: <Brain className="h-10 w-10" />,
+                  title: 'Mentalidade Vencedora e Liderança',
+                  description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
+                },
+                {
+                  letter: 'E',
+                  icon: <Map className="h-10 w-10" />,
+                  title: 'Estratégia, Planejamento e Gestão',
+                  description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
+                },
+                {
+                  letter: 'T',
+                  icon: <GraduationCap className="h-10 w-10" />,
+                  title: 'Treinamento e Desenvolvimento Contínuo',
+                  description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
+                },
+                {
+                  letter: 'A',
+                  icon: <Zap className="h-10 w-10" />,
+                  title: 'Ação e Performance',
+                  description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
+                },
+                {
+                  letter: 'S',
+                  icon: <Trophy className="h-10 w-10" />,
+                  title: 'Sucesso nos Resultados',
+                  description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
+                }
+              ].map((pilar, index) => (
+                <div 
+                  key={index}
+                  className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
+                >
+                  {/* Letter Badge */}
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-16 h-16 rounded-full bg-gradient-comet flex items-center justify-center shadow-comet group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-3xl font-black text-white">
+                        {pilar.letter}
+                      </span>
+                    </div>
+                    <div className="text-primary group-hover:text-accent transition-colors duration-300">
+                      {pilar.icon}
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                    {pilar.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {pilar.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <Button variant="hero" size="lg" asChild>
+                <a href="#contact-form">
+                  Quero transformar minha empresa com COMETAS
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
