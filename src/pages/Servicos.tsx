@@ -76,7 +76,7 @@ const Servicos = () => {
             </div>
 
             {/* Pilares Grid */}
-            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-2">
+            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-6">
               {[{
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
@@ -217,7 +217,7 @@ const Servicos = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-1 lg:grid-cols-6 gap-2">
               {[{
               step: '01',
               title: 'Contato Inicial',
@@ -246,7 +246,7 @@ const Servicos = () => {
                   <div className="text-5xl font-bold bg-gradient-comet bg-clip-text text-transparent mb-4">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">
+                  <h3 className="font-bold text-foreground mb-2 text-base">
                     {item.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">
