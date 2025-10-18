@@ -80,7 +80,7 @@ const Servicos = () => {
             </div>
 
             {/* Pilares Grid */}
-            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-1 mb-16">
+            <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-6">
               {[{
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
@@ -104,12 +104,12 @@ const Servicos = () => {
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
-              title: 'Treinamento e Evolução Contínua',
+              title: 'Treinamento e Desenvolvimento Contínuo',
               description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
-              title: 'Ação e Alta Performance',
+              title: 'Ação e Performance',
               description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
             }, {
               letter: 'S',
@@ -130,10 +130,10 @@ const Servicos = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300 text-lg">
+                  <h3 className="text-foreground mb-3 group-hover:text-primary transition-colors duration-300 text-base font-bold text-center">
                     {pilar.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-justify text-sm">
+                  <p className="text-muted-foreground leading-relaxed text-sm text-center">
                     {pilar.description}
                   </p>
                 </div>)}
