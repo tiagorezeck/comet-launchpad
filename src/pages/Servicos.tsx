@@ -81,54 +81,42 @@ const Servicos = () => {
 
             {/* Pilares Grid */}
             <div className="grid md:grid-cols-1 lg:grid-cols-7 gap-3 mb-6">
-              {[
-                {
-                  letter: 'C',
-                  icon: <Heart className="h-6 w-6" />,
-                  title: 'Cultura Forte',
-                  description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
-                },
-                {
-                  letter: 'O',
-                  icon: <Cog className="h-6 w-6" />,
-                  title: 'Organização e Processos Inteligentes',
-                  description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
-                },
-                {
-                  letter: 'M',
-                  icon: <Brain className="h-6 w-6" />,
-                  title: 'Mentalidade Vencedora e Liderança',
-                  description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
-                },
-                {
-                  letter: 'E',
-                  icon: <Map className="h-6 w-6" />,
-                  title: 'Estratégia, Planejamento e Gestão',
-                  description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
-                },
-                {
-                  letter: 'T',
-                  icon: <GraduationCap className="h-6 w-6" />,
-                  title: 'Treinamento e Desenvolvimento Contínuo',
-                  description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
-                },
-                {
-                  letter: 'A',
-                  icon: <Zap className="h-6 w-6" />,
-                  title: 'Ação e Performance',
-                  description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
-                },
-                {
-                  letter: 'S',
-                  icon: <Trophy className="h-6 w-6" />,
-                  title: 'Sucesso nos Resultados',
-                  description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
-                }
-              ].map((pilar, index) => (
-                <div 
-                  key={index}
-                  className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
-                >
+              {[{
+              letter: 'C',
+              icon: <Heart className="h-6 w-6" />,
+              title: 'Cultura Forte',
+              description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
+            }, {
+              letter: 'O',
+              icon: <Cog className="h-6 w-6" />,
+              title: 'Organização e Processos Inteligentes',
+              description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
+            }, {
+              letter: 'M',
+              icon: <Brain className="h-6 w-6" />,
+              title: 'Mentalidade Vencedora e Liderança',
+              description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
+            }, {
+              letter: 'E',
+              icon: <Map className="h-6 w-6" />,
+              title: 'Estratégia, Planejamento e Gestão',
+              description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
+            }, {
+              letter: 'T',
+              icon: <GraduationCap className="h-6 w-6" />,
+              title: 'Treinamento e Desenvolvimento Contínuo',
+              description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
+            }, {
+              letter: 'A',
+              icon: <Zap className="h-6 w-6" />,
+              title: 'Ação e Performance',
+              description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
+            }, {
+              letter: 'S',
+              icon: <Trophy className="h-6 w-6" />,
+              title: 'Sucesso nos Resultados',
+              description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
+            }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-gradient-comet flex items-center justify-center shadow-comet group-hover:scale-110 transition-transform duration-300">
@@ -142,14 +130,13 @@ const Servicos = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300 text-lg">
                     {pilar.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-justify text-sm">
                     {pilar.description}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* CTA */}
