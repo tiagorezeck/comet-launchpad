@@ -65,15 +65,11 @@ const Servicos = () => {
             <div className="text-center mb-16">
               <div className="mb-6">
                 <h2 className="text-6xl md:text-7xl font-black tracking-wider mb-4">
-                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg">
-                    COMETAS
-                  </span>
+                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg text-5xl">METODOLOGIA COMET</span>
                 </h2>
                 <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
               </div>
-              <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Metodologia COMETAS
-              </p>
+              <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">Como acelerar seu crescimento na velocidade dos cometas</p>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 A energia que move pessoas, transforma empresas e gera resultados extraordinários.
               </p>
