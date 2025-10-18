@@ -80,47 +80,47 @@ const Servicos = () => {
             </div>
 
             {/* Pilares Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-7 gap-3 mb-6">
               {[
                 {
                   letter: 'C',
-                  icon: <Heart className="h-10 w-10" />,
+                  icon: <Heart className="h-6 w-6" />,
                   title: 'Cultura Forte',
                   description: 'Construímos valores sólidos que impulsionam engajamento, confiança e senso de pertencimento.'
                 },
                 {
                   letter: 'O',
-                  icon: <Cog className="h-10 w-10" />,
+                  icon: <Cog className="h-6 w-6" />,
                   title: 'Organização e Processos Inteligentes',
                   description: 'Estruturamos fluxos claros e eficientes que tornam a empresa mais produtiva e estratégica.'
                 },
                 {
                   letter: 'M',
-                  icon: <Brain className="h-10 w-10" />,
+                  icon: <Brain className="h-6 w-6" />,
                   title: 'Mentalidade Vencedora e Liderança',
                   description: 'Desenvolvemos líderes conscientes, com atitude positiva, foco em soluções e visão estratégica, fortalecendo o protagonismo da equipe.'
                 },
                 {
                   letter: 'E',
-                  icon: <Map className="h-10 w-10" />,
+                  icon: <Map className="h-6 w-6" />,
                   title: 'Estratégia, Planejamento e Gestão',
                   description: 'Traçamos caminhos consistentes para alcançar metas reais, unindo visão e execução.'
                 },
                 {
                   letter: 'T',
-                  icon: <GraduationCap className="h-10 w-10" />,
+                  icon: <GraduationCap className="h-6 w-6" />,
                   title: 'Treinamento e Desenvolvimento Contínuo',
                   description: 'Capacitamos pessoas com foco em habilidades técnicas, comportamentais e emocionais, promovendo evolução constante.'
                 },
                 {
                   letter: 'A',
-                  icon: <Zap className="h-10 w-10" />,
+                  icon: <Zap className="h-6 w-6" />,
                   title: 'Ação e Performance',
                   description: 'Implantamos planos práticos e acompanhamos a execução, garantindo resultados visíveis e mensuráveis.'
                 },
                 {
                   letter: 'S',
-                  icon: <Trophy className="h-10 w-10" />,
+                  icon: <Trophy className="h-6 w-6" />,
                   title: 'Sucesso nos Resultados',
                   description: 'Transformamos empresas com indicadores reais de crescimento, clima organizacional fortalecido e aumento da lucratividade.'
                 }
