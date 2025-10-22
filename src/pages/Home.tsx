@@ -4,7 +4,7 @@ import ClientCarousel from '@/components/ClientCarousel';
 import Testimonials from '@/components/Testimonials';
 import { Link } from 'react-router-dom';
 import { Rocket, Target, Users, Calendar, MessageCircle, Clock } from 'lucide-react';
-import heroBusiness from '@/assets/hero-business2.jpg';
+import heroBusiness2 from '@/assets/hero-business2.jpg';
 const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
