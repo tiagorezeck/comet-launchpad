@@ -7,19 +7,19 @@ const Portfolio = () => {
     company: 'Sistek It Service - Setor de TI',
     challenge: 'Crise financeira, sem estrutura organizacional adequada, alta rotatividade de colaboradores e processos internos desorganizados.',
     solution: 'Implementação da Metodologia COMET com foco em estruturação de processos comerciais, financeiros, marketinge e RH, desenvolvimento de liderança e criação de cultura organizacional.',
-    results: ['Redução de 45% na rotatividade', '80% de Contratações Assertivas ', 'Aumento de 95% de novos leads', 'Implementação de  processos documentados', 'Desenvolvimento de liderança e mudança de cargos'],
+    results: ['Redução de 45% na rotatividade', '80% de Contratações Assertivas ', 'Aumento de 80% na conversão de vendas', 'Implementação de  processos documentados', 'Desenvolvimento de liderança e mudança de cargos'],
     icon: <Building2 className="h-12 w-12" />
   }, {
-    company: 'Refrimanos',
-    challenge: 'Baixa produtividade, estoque desorganização, Marketing ineficaz e falta de indicadores de desempenho.',
-    solution: 'Consultoria completa com mapeamento de processos produtivos, implementação de KPIs, treinamento de colaboradores e mentoria líderes com criação de rotinas de gestão.',
-    results: ['Troca de 25% dos colaboradores', 'Aumento de 35% na produtividade', 'Redução de 28% de materiais sem venda', 'Implementação de dashboard de indicadores', 'Gestão a vista e decisões assertivas'],
+    company: 'Indústria Metalúrgica - 50 Funcionários',
+    challenge: 'Baixa produtividade, desperdício de materiais, comunicação ineficaz entre setores e falta de indicadores de desempenho.',
+    solution: 'Consultoria completa com mapeamento de processos produtivos, implementação de KPIs, treinamento de líderes e criação de rotinas de gestão.',
+    results: ['Aumento de 35% na produtividade', 'Redução de 28% no desperdício de materiais', 'Implementação de dashboard de indicadores', 'Comunicação fluida entre todos os setores'],
     icon: <TrendingUp className="h-12 w-12" />
   }, {
-    company: 'Farmacenter',
-    challenge: 'Financeiro sem controle,  Falta de planejamento, perde de vendas, gestores sem expertise na área, resultados inconsistentes.',
-    solution: 'Mentoria estratégica para o gerenteos, estratégias comerciais, padronização de processos e implantação de controles financeiros.',
-    results: ['Planejamento comercial estruturado', 'Lucratividade aumentou 20% em 3 meses', 'Processos padronizados de indicadores', 'Metas bem definidas e com clareza'],
+    company: 'Rede de Varejo - 3 Lojas',
+    challenge: 'Expansão sem planejamento, dificuldade em padronizar operações, conflitos na gestão familiar e resultados financeiros inconsistentes.',
+    solution: 'Mentoria estratégica para os sócios, desenvolvimento de governança familiar, padronização de processos e implantação de controles financeiros.',
+    results: ['Abertura de mais 2 lojas com planejamento estruturado', 'Lucratividade aumentou 50% em 12 meses', 'Processos padronizados nas 5 unidades', 'Governança familiar estabelecida com clareza'],
     icon: <Users2 className="h-12 w-12" />
   }];
   const additionalServices = ['Diagnóstico estratégico completo', 'Planejamento estratégico e metas por área', 'Análise SWOT e benchmarking', 'Pesquisa de mercado e clima organizacional', 'Estruturação da cultura organizacional', 'Desenvolvimento de líderes e times', 'Reestruturação de processos comerciais e operacionais', 'Implantação de gestão por indicadores', 'Projetos de RH e DHO', 'Recrutamento, T&D e plano de carreira', 'Avaliação de perfil comportamental (DISC)', 'Levantamento de Necessidades de Treinamento (LNT)', 'Formações técnicas e comportamentais', 'Treinamentos em liderança, gestão e vendas', 'Programas de desenvolvimento sob medida', 'Palestras e workshops corporativos', 'Mentoria empresarial e de liderança', 'Mentoria de performance comercial', 'Acompanhamento estratégico contínuo', 'Expansão e crescimento sustentável do negócio'];
