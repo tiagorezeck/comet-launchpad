@@ -2,15 +2,15 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight, Heart, Cog, Brain, Map, GraduationCap, Zap, Trophy } from 'lucide-react';
 import servicosHero from '@/assets/hero/servicos-hero.jpg';
-import consultoria from '@/assets/servicos/Consultoria.png';
-import mentoriae from '@/assets/servicos/Mentoriae.png';
-import treinamentos from '@/assets/servicos/Treinamentos.png';
-import palestra from '@/assets/servicos/Palestra.png';
-import treinamentoc from '@/assets/servicos/Treinamentoc.png';
-import mentoriai from '@/assets/servicos/Mentoriai.png';
-import testes from '@/assets/servicos/Testes.png';
-import avaliacao from '@/assets/servicos/Avaliacao.png';
-import curso from '@/assets/servicos/Curso.png';
+import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
+import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
+import consultoria1 from '@/assets/servicos/consultoria-1.jpg';
+import reuniao1 from '@/assets/servicos/reuniao-1.jpg';
+import workshop1 from '@/assets/servicos/workshop-1.jpg';
+import palestra1 from '@/assets/servicos/palestra-1.jpg';
+import diagnostico1 from '@/assets/servicos/diagnostico-1.jpg';
+import planejamento1 from '@/assets/servicos/planejamento-1.jpg';
+import acompanhamento1 from '@/assets/servicos/acompanhamento-1.jpg';
 const Servicos = () => {
   const services = [{
     icon: <Rocket className="h-16 w-16" />,
@@ -273,31 +273,31 @@ const Servicos = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[{
-              img: consultoria,
+              img: treinamento1,
               title: 'Treinamento de Liderança'
             }, {
-              img: mentoriae,
+              img: mentoria1,
               title: 'Mentoria Executiva'
             }, {
-              img: treinamentos,
+              img: consultoria1,
               title: 'Consultoria Estratégica'
             }, {
-              img: palestra,
+              img: reuniao1,
               title: 'Reunião de Planejamento'
             }, {
-              img: treinamentoc,
+              img: workshop1,
               title: 'Workshop de Processos'
             }, {
-              img: mentoriai,
+              img: palestra1,
               title: 'Palestra Motivacional'
             }, {
-              img: testes,
+              img: diagnostico1,
               title: 'Diagnóstico Empresarial'
             }, {
-              img: avaliacao,
+              img: planejamento1,
               title: 'Planejamento Estratégico'
             }, {
-              img: cursos,
+              img: acompanhamento1,
               title: 'Acompanhamento de Resultados'
             }].map((item, index) => <div key={index} className="group relative overflow-hidden rounded-xl border border-border shadow-card bg-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
                   <div className="aspect-[4/3] overflow-hidden">
