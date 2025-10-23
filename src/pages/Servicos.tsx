@@ -274,28 +274,28 @@ const Servicos = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[{
               img: treinamento1,
-              title: 'Treinamento de Liderança'
+              title: 'Consultoria Estratégica'
             }, {
               img: mentoria1,
               title: 'Mentoria Executiva'
             }, {
               img: consultoria1,
-              title: 'Consultoria Estratégica'
+              title: 'Treinamento Corporativo'
             }, {
               img: reuniao1,
-              title: 'Reunião de Planejamento'
+              title: 'Avaliação Comportamental'
             }, {
               img: workshop1,
-              title: 'Workshop de Processos'
+              title: 'Palestra Time Forte'
             }, {
               img: palestra1,
-              title: 'Palestra Motivacional'
+              title: 'Curso de Formação'
             }, {
               img: diagnostico1,
-              title: 'Diagnóstico Empresarial'
+              title: 'Treinamento Comportamental'
             }, {
               img: planejamento1,
-              title: 'Planejamento Estratégico'
+              title: 'Mentoria Individual'
             }, {
               img: acompanhamento1,
               title: 'Acompanhamento de Resultados'
