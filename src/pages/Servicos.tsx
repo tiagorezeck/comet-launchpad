@@ -2,15 +2,15 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight, Heart, Cog, Brain, Map, GraduationCap, Zap, Trophy } from 'lucide-react';
 import servicosHero from '@/assets/hero/servicos-hero.jpg';
-import Consultoria from '@/assets/servicos/Consultoria.jpg';
-import Mentoriae from '@/assets/servicos/Mentoriae.jpg';
-import Treinamentos from '@/assets/servicos/Treinamentos.jpg';
-import Palestra from '@/assets/servicos/Palestra.jpg';
-import Treinamento from '@/assets/servicos/Treinamento.jpg';
-import Testes from '@/assets/servicos/Testes.jpg';
-import Mentoriai from '@/assets/servicos/Mentoriai.jpg';
-import Curso from '@/assets/servicos/Curso.jpg';
-import Diagnostico from '@/assets/servicos/Diagnostico.jpg';
+import Consultoria from '@/assets/servicos/Consultoria.png';
+import Mentoriae from '@/assets/servicos/Mentoriae.png';
+import Treinamentos from '@/assets/servicos/Treinamentos.png';
+import Palestra from '@/assets/servicos/Palestra.png';
+import Treinamento from '@/assets/servicos/Treinamento.png';
+import Testes from '@/assets/servicos/Testes.png';
+import Mentoriai from '@/assets/servicos/Mentoriai.png';
+import Curso from '@/assets/servicos/Curso.png';
+import Diagnostico from '@/assets/servicos/Diagnostico.png';
 const Servicos = () => {
   const services = [{
     icon: <Rocket className="h-16 w-16" />,
