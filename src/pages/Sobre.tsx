@@ -30,7 +30,7 @@ const Sobre = () => {
             {/* Foto + Apresentação em Grid Horizontal */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="rounded-2xl overflow-hidden shadow-glow group">
-                <img src={tiagoRezeck} alt="Tiago Rezeck - Fundador Instituto COMET" className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-205" />
+                <img src={tiagoRezeck} alt="Tiago Rezeck - Fundador Instituto COMET" className="w-full aspect-video object-cover transition-transform duration-800 group-hover:scale-205" />
               </div>
               
               <div className="space-y-4">
