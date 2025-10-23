@@ -15,7 +15,7 @@ const Vlog = () => {
       title: 'Como Desenvolver Líderes de Alta Performance',
       category: 'Liderança',
       description: 'Descubra as 5 competências essenciais que todo líder precisa dominar para alcançar resultados extraordinários.',
-      thumbnail: 'https://www.youtube.com/watch?v=sWp7FYbCnjo&t=25s,
+      thumbnail: 'https://www.youtube.com/watch?v=sWp7FYbCnjo&t=25s',
       duration: '12:34',
       views: '2.5K',
       icon: <Users className="h-6 w-6" />,
