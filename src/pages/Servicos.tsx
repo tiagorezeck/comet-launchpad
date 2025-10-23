@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight, Heart, Cog, Brain, Map, GraduationCap, Zap, Trophy } from 'lucide-react';
 import servicosHero from '@/assets/hero/servicos-hero.jpg';
-import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
+import treinamento1 from '@/assets/servicos/Consultoria.png';
 import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
 import consultoria1 from '@/assets/servicos/consultoria-1.jpg';
 import reuniao1 from '@/assets/servicos/reuniao-1.jpg';
