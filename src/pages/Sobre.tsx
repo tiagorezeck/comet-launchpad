@@ -30,7 +30,7 @@ const Sobre = () => {
             {/* Foto + Apresentação em Grid Horizontal */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="rounded-2xl overflow-hidden shadow-glow group">
-                <img src={tiagoRezeck} alt="Tiago Rezeck - Fundador Instituto COMET" className="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"/>
+                <img src={tiagoRezeck} alt="Tiago Rezeck - Fundador Instituto COMET" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               
               <div className="space-y-4">
@@ -40,7 +40,9 @@ const Sobre = () => {
                 <p className="text-lg text-primary font-semibold">
                   Fundador • Especialista em DHO
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed text-justify">Com mais de 10 anos de experiência em Consultoria, ajudo empresários a organizar e expandir seus negócios por meio da gestão estratégica e do desenvolvimento de pessoas. Já participei da transformação de mais de 25 empresas e 300 pessoas e, inspirado em transformar vidas e empresas, criei a Metodologia COMET — um ecossistema de ASTROS, onde o líder é o Sol que guia os times como uma chuva de cometas, movidos por uma motivação ardente e em constante ascensão rumo a resultados extraordinários.</p>
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">Com mais de 10 anos de experiência, ajuda empresários a organizar e expandir seus negócios por meio da gestão estratégica e do desenvolvimento de pessoas. 
+
+Criador da Metodologia COMET, já transformou mais de 25 empresas e 250 pessoas, levando líderes e times à alta performance.</p>
               </div>
             </div>
 
