@@ -40,10 +40,7 @@ const Sobre = () => {
                 <p className="text-lg text-primary font-semibold">
                   Fundador • Especialista em DHO
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed text-justify">Com mais de 10 anos de experiência em Consultoria, Tiago Rezeck ajuda empresários a organizar e expandir seus negócios por meio da gestão estratégica e do desenvolvimento de pessoas.
-Tendo um MBA em Gestão Estratégica de Negócios, Graduado em Recursos Humanos e com formações em diversas áreas como Vendas, Marketing, Financeiro, Gestão Empresarial e Liderança.
-Já participou da transformação de mais de 25 empresas e mais de 300 pessoas, sempre movido pelo propósito de despertar a energia que impulsiona o sucesso.
-Inspirado em transformar vidas e empresas, criou a Metodologia COMET — um ecossistema de ASTROS, onde o líder é o Sol, que irradia a luz que guia os times como uma chuva de cometas, movidos por uma motivação ardente, em constante ascensão rumo a resultados extraordinários.</p>
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">Com mais de 10 anos de experiência em Consultoria, ajudo empresários a organizar e expandir seus negócios por meio da gestão estratégica e do desenvolvimento de pessoas. Já participei da transformação de mais de 25 empresas e 300 pessoas e, inspirado em transformar vidas e empresas, criei a Metodologia COMET — um ecossistema de ASTROS, onde o líder é o Sol que guia os times como uma chuva de cometas, movidos por uma motivação ardente e em constante ascensão rumo a resultados extraordinários.</p>
               </div>
             </div>
 
