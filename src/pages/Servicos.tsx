@@ -2,15 +2,15 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Rocket, Target, Users, CheckCircle2, ArrowRight, Heart, Cog, Brain, Map, GraduationCap, Zap, Trophy } from 'lucide-react';
 import servicosHero from '@/assets/hero/servicos-hero.jpg';
-import Consultoria from '@/assets/servicos/Consultoria.png';
-import Mentoriae from '@/assets/servicos/Mentoriae.png';
-import Treinamentos from '@/assets/servicos/Treinamentos.png';
-import Palestra from '@/assets/servicos/Palestra.png';
-import Treinamento from '@/assets/servicos/Treinamento.png';
-import Testes from '@/assets/servicos/Testes.png';
-import Mentoriai from '@/assets/servicos/Mentoriai.png';
-import Curso from '@/assets/servicos/Curso.png';
-import Diagnostico from '@/assets/servicos/Diagnostico.png';
+import treinamento1 from '@/assets/servicos/treinamento-1.jpg';
+import mentoria1 from '@/assets/servicos/mentoria-1.jpg';
+import consultoria1 from '@/assets/servicos/consultoria-1.jpg';
+import reuniao1 from '@/assets/servicos/reuniao-1.jpg';
+import workshop1 from '@/assets/servicos/workshop-1.jpg';
+import palestra1 from '@/assets/servicos/palestra-1.jpg';
+import diagnostico1 from '@/assets/servicos/diagnostico-1.jpg';
+import planejamento1 from '@/assets/servicos/planejamento-1.jpg';
+import acompanhamento1 from '@/assets/servicos/acompanhamento-1.jpg';
 const Servicos = () => {
   const services = [{
     icon: <Rocket className="h-16 w-16" />,
@@ -273,31 +273,31 @@ const Servicos = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[{
-              img: Consultoria,
-              title: 'Consultoria Empresarial'
+              img: treinamento1,
+              title: 'Treinamento de Liderança'
             }, {
-              img: Mentoriae,
+              img: mentoria1,
               title: 'Mentoria Executiva'
             }, {
-              img: Treinamentos,
-              title: 'Treinamento Corporativo'
+              img: consultoria1,
+              title: 'Consultoria Estratégica'
             }, {
-              img: Palestra,
-              title: 'Palestra Time Forte'
+              img: reuniao1,
+              title: 'Reunião de Planejamento'
             }, {
-              img: Treinamento,
-              title: 'Treinamento Comportamental'
+              img: workshop1,
+              title: 'Workshop de Processos'
             }, {
-              img: Testes,
-              title: 'Teste de Perfil Comportamental'
+              img: palestra1,
+              title: 'Palestra Motivacional'
             }, {
-              img: Mentoriai,
-              title: 'Mentoria Individual'
+              img: diagnostico1,
+              title: 'Diagnóstico Empresarial'
             }, {
-              img: Curso,
-              title: 'Curso de Formação'
+              img: planejamento1,
+              title: 'Planejamento Estratégico'
             }, {
-              img: Diagnóstico,
+              img: acompanhamento1,
               title: 'Acompanhamento de Resultados'
             }].map((item, index) => <div key={index} className="group relative overflow-hidden rounded-xl border border-border shadow-card bg-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
                   <div className="aspect-[4/3] overflow-hidden">
