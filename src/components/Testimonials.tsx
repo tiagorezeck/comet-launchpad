@@ -2,7 +2,7 @@ import { Star } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import avatar1 from '@/assets/testimonials/avatar-1.jpg';
 import avatar2 from '@/assets/testimonials/avatar-2.jpg';
-import avatar3 from '@/assets/testimonials/avatar-3.jpg';
+import amanda from '@/assets/testimonials/amanda.jpg';
 
 const testimonials = [
   {
@@ -22,7 +22,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    photo: avatar3,
+    photo: amanda,
     quote: 'Gostaria de destacar o impacto significativo que a consultoria do Tiago teve em minha atuação profissional na área de RH. Com sua orientação especializada, pude desenvolver uma visão mais ampla e assertiva, o que resultou em uma melhoria de 87% na seleção de novos colaboradores para a empresa. Além disso, tive a oportunidade de ser escolhida por ele em um processo seletivo competitivo, onde pude demonstrar minhas habilidades e competências. O treinamento em DISC foi particularmente valioso, pois me proporcionou ferramentas eficazes para análise e resolução de problemas de forma rápida e eficiente. Agradeço a oportunidade de ter trabalhado com ele e recomendo seus serviços para qualquer profissional que busque aprimorar suas habilidades e principalmente resultados.',
     name: 'Amanda Gomes',
     role: 'Analista de RH',
