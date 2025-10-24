@@ -33,7 +33,7 @@ const Testimonials = () => {
             Histórias de Transformações Reais
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Resultados reais de empresas que transformaram seus resultados com o Instituto COMET
+            Resultados reais de profissionais que transformaram sua mentalidade, competência e performance com o Instituto COMET
           </p>
         </div>
 
