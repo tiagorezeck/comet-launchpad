@@ -30,10 +30,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            O Que Nossos Clientes Dizem
+            Histórias de Transformações Reais
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Resultados reais de empresas que transformaram sua gestão com o Instituto COMET
+            Resultados reais de empresas que transformaram seus resultados com o Instituto COMET
           </p>
         </div>
 
