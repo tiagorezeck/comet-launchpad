@@ -133,7 +133,7 @@ const Home = () => {
                 </div>
               </div>
               <h2 className="text-4xl font-bold text-foreground mb-4">
-                Apenas <span className="bg-gradient-comet bg-clip-text text-transparent">3 vagas disponíveis</span> para Outubro de 2025
+                Apenas <span className="bg-gradient-comet bg-clip-text text-transparent">5 vagas disponíveis</span> para o Ano de 2025
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Nosso modelo de consultoria é baseado em atendimento personalizado e resultados garantidos. Por isso, limitamos o número de clientes ativos.
