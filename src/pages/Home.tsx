@@ -49,8 +49,8 @@ const Home = () => {
                   <div className="text-sm text-muted-foreground">Empresas Atendidas</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-3xl md:text-4xl font-bold text-primary">95%</div>
-                  <div className="text-sm text-muted-foreground">Satisfação</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary">+300</div>
+                  <div className="text-sm text-muted-foreground">Pessoas Transformadas</div>
                 </div>
               </div>
 
