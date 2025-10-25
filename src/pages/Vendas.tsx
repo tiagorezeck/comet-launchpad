@@ -20,7 +20,7 @@ const Vendas = () => {
   }, {
     icon: <Users className="h-12 w-12" />,
     category: 'Treinamentos In Company',
-    title: 'Formação: Times Forte, Resultado e Alta Performance',
+    title: 'Times Forte: Resultado e Alta Performance',
     description: 'Programa presencial customizado para capacitar seu time, alinhado à cultura da empresa e às necessidades da equipe. Desenvolve habilidades técnicas e comportamentais, melhora produtividade, engajamento e colaboração, e gera resultados concretos para o negócio.',
     benefits: ['Levantamento de Necessidade de Treinamento (LNT)', 'Treinamentos comportamentais: equilíbrio emocional, motivação, alta produtividade', 'Treinamentos técnicos: vendas, negociação, formação de times, análise de perfil', 'Facilitadores experientes', 'Metodologias ativas', 'Acompanhamento pós-treinamento'],
     price: 'Sob consulta'
