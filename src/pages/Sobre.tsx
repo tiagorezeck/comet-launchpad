@@ -161,7 +161,7 @@ const Sobre = () => {
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground text-base text-justify">
+                  <p className="text-muted-foreground text-justify text-base font-semibold">
                     {item.content}
                   </p>
                 </div>)}
