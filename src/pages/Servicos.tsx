@@ -86,7 +86,7 @@ const Servicos = () => {
               letter: 'O',
               icon: <Cog className="h-6 w-6" />,
               title: 'Organização e Processos Inteligentes',
-              description: 'Estruturamos fluxos claros e eficientes para tornar a empresa mais produtiva.'
+              description: 'Estruturamos fluxos claros e eficientes para tornar a empresa mais organizada e produtiva.'
             }, {
               letter: 'M',
               icon: <Brain className="h-6 w-6" />,
