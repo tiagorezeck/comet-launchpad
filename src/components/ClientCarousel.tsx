@@ -4,85 +4,65 @@ import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-
 import sistekLogo from '@/assets/clients/logosistek.png';
 import refrimanosLogo from '@/assets/clients/logorefrimanos.png';
 import farmacenterLogo from '@/assets/clients/logofarmacenter.png';
 import beijaflorLogo from '@/assets/clients/logobeijaflor.png';
-
-const clients = [
-  {
-    logo: sistekLogo,
-    name: 'Sistek IT Service',
-    sector: 'Tecnologia',
-    description: 'Reestruturação organizacional completa, cultura, processo, normas e procedimentos, contratação de talentos, planejamento estratégico (comercial, financeiro, marketing, Rh) treinamentos e palestras e desenvolvimento de liderança.',
-    metric: 'Transformação e Organização',
-  },
-  {
-    logo: refrimanosLogo,
-    name: 'Refrimanos',
-    sector: 'Refrigeração Industrial',
-    description: 'Planejamento estratégico, otimização de processos internos, seleção de talentos, organização de estoque, treinamentos técnico e comportamental para alta performance.',
-    metric: 'Crescimento de Faturamento',
-  },
-  {
-    logo: farmacenterLogo,
-    name: 'Farmacenter',
-    sector: 'Farmacêutico',
-    description: 'Desenvolvimento de cultura organizacional, gestão a vista, contratação de talentos e estratégias comerciais.',
-    metric: 'Crescimento sustentável',
-  },
-  {
-    logo: beijaflorLogo,
-    name: 'Beija-Flor Agropecuária',
-    sector: 'Agropecuário',
-    description: 'Estruturação de processos e desenvolvimento de time, contratação de talentos, planejamento financeiro, resstruturação de compras.',
-    metric: 'Eficiência operacional',
-  },
-];
-
+const clients = [{
+  logo: sistekLogo,
+  name: 'Sistek IT Service',
+  sector: 'Tecnologia',
+  description: 'Reestruturação organizacional completa, cultura, processo, normas e procedimentos, contratação de talentos, planejamento estratégico (comercial, financeiro, marketing, Rh) treinamentos e palestras e desenvolvimento de liderança.',
+  metric: 'Transformação e Organização'
+}, {
+  logo: refrimanosLogo,
+  name: 'Refrimanos',
+  sector: 'Refrigeração Industrial',
+  description: 'Planejamento estratégico, otimização de processos internos, seleção de talentos, organização de estoque, treinamentos técnico e comportamental para alta performance.',
+  metric: 'Crescimento de Faturamento'
+}, {
+  logo: farmacenterLogo,
+  name: 'Farmacenter',
+  sector: 'Farmacêutico',
+  description: 'Desenvolvimento de cultura organizacional, gestão a vista, contratação de talentos e estratégias comerciais.',
+  metric: 'Crescimento sustentável'
+}, {
+  logo: beijaflorLogo,
+  name: 'Beija-Flor Agropecuária',
+  sector: 'Agropecuário',
+  description: 'Estruturação de processos e desenvolvimento de time, contratação de talentos, planejamento financeiro, resstruturação de compras.',
+  metric: 'Eficiência operacional'
+}];
 const ClientCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      loop: true,
-      align: 'start',
-    },
-    [Autoplay({ delay: 6000, stopOnInteraction: true })]
-  );
-
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'start'
+  }, [Autoplay({
+    delay: 6000,
+    stopOnInteraction: true
+  })]);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
-
   useEffect(() => {
     if (!emblaApi) return;
-
     const onSelect = () => {
       setCanScrollPrev(emblaApi.canScrollPrev());
       setCanScrollNext(emblaApi.canScrollNext());
     };
-
     emblaApi.on('select', onSelect);
     onSelect();
   }, [emblaApi]);
-
   const scrollPrev = () => emblaApi?.scrollPrev();
   const scrollNext = () => emblaApi?.scrollNext();
-
-  return (
-    <div className="relative">
+  return <div className="relative">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex gap-6">
-          {clients.map((client, index) => (
-            <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0">
+          {clients.map((client, index) => <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0">
               <Card className="p-6 h-full bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
                 <div className="space-y-4">
                   {/* Logo */}
                   <div className="h-20 flex items-center justify-center bg-background/50 rounded-lg p-4">
-                    <img 
-                      src={client.logo} 
-                      alt={client.name}
-                      className="max-h-20 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity"
-                    />
+                    <img src={client.logo} alt={client.name} className="max-h-20 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity" />
                   </div>
 
                   {/* Company Info */}
@@ -96,7 +76,7 @@ const ClientCarousel = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                     {client.description}
                   </p>
 
@@ -109,34 +89,19 @@ const ClientCarousel = () => {
                   </div>
                 </div>
               </Card>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
 
       {/* Navigation Arrows */}
       <div className="flex justify-center gap-2 mt-8">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={scrollPrev}
-          disabled={!canScrollPrev}
-          className="rounded-full"
-        >
+        <Button variant="outline" size="icon" onClick={scrollPrev} disabled={!canScrollPrev} className="rounded-full">
           <ChevronLeft className="h-4 w-4" />
         </Button>
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={scrollNext}
-          disabled={!canScrollNext}
-          className="rounded-full"
-        >
+        <Button variant="outline" size="icon" onClick={scrollNext} disabled={!canScrollNext} className="rounded-full">
           <ChevronRight className="h-4 w-4" />
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ClientCarousel;
