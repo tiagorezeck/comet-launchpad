@@ -81,7 +81,7 @@ const Servicos = () => {
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
               title: 'Cultura Organizacional Forte',
-              description: 'Construímos valores sólidos, promovendo engajamento, confiança e pertencimento.'
+              description: 'Construímos valores sólidos, gerando confiança, engajamento e pertencimento.'
             }, {
               letter: 'O',
               icon: <Cog className="h-6 w-6" />,
@@ -91,17 +91,17 @@ const Servicos = () => {
               letter: 'M',
               icon: <Brain className="h-6 w-6" />,
               title: 'Mentalidade Vencedora e Liderança',
-              description: 'Formamos líderes preparados, decisores e que inspiram confiança através do exemplo.'
+              description: 'Formamos líderes decisores, que inspiram confiança através do exemplo.'
             }, {
               letter: 'E',
               icon: <Map className="h-6 w-6" />,
               title: 'Estratégia, Planejamento e Gestão',
-              description: 'Definimos caminhos claros, unindo visão estratégica e indicadores para resultados concretos.'
+              description: 'Definimos caminhos estratégicos, alinhando visão e indicadores para resultados reais.'
             }, {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
               title: 'Treinamento e Evolução Contínua',
-              description: 'Desenvolvemos pessoas com competências comportamentais e técnicas que transformam a empresa.'
+              description: 'Desenvolvemos competências comportamentais e técnicas que transformam a empresa.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
