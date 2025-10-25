@@ -145,15 +145,15 @@ const Sobre = () => {
               {[{
               icon: <Target className="h-12 w-12" />,
               title: 'Missão',
-              content: 'Desenvolver pessoas, organizar empresas e transformar negócios, despertando a energia que impulsiona o sucesso e inspira o futuro.'
+              content: 'Desenvolver pessoas, organizar empresas e transformar negócios, gerando energia que inspira o sucesso.'
             }, {
               icon: <Eye className="h-12 w-12" />,
               title: 'Visão',
-              content: 'Ser reconhecido como o principal parceiro de empresários na organização, crescimento e fortalecimento de seus negócios.'
+              content: 'Ser reconhecida, até 2030, como uma chama que inspira, engaja e guia pessoas a alcançarem novos universos de resultados em suas empresas.'
             }, {
               icon: <Heart className="h-12 w-12" />,
               title: 'Propósito',
-              content: 'Ser um cometa que acelera a transformação das empresas, impulsionando pessoas, líderes e organizações rumo a novos patamares.'
+              content: 'Ser o cometa que acelera a transformação humana e empresarial.'
             }].map((item, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300">
                   <div className="text-primary mb-6">
                     {item.icon}
