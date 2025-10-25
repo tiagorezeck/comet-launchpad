@@ -17,7 +17,7 @@ const Portfolio = () => {
     icon: <TrendingUp className="h-12 w-12" />
   }, {
     company: 'Farmacenter',
-    challenge: 'Financeiro sem controle,  Falta de planejamento, perde de vendas, gestores sem expertise na área, resultados inconsistentes.',
+    challenge: 'Financeiro sem controle, falta de planejamento, perde de vendas, gestores sem expertise na área, resultados inconsistentes.',
     solution: 'Mentoria estratégica para o gerenteos, estratégias comerciais, padronização de processos e implantação de controles financeiros.',
     results: ['Planejamento comercial estruturado', 'Lucratividade aumentou 20% em 3 meses', 'Processos padronizados de indicadores', 'Metas bem definidas e com clareza'],
     icon: <Users2 className="h-12 w-12" />
