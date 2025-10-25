@@ -81,7 +81,7 @@ const Servicos = () => {
               letter: 'C',
               icon: <Heart className="h-6 w-6" />,
               title: 'Cultura Organizacional Forte',
-              description: 'Construímos valores sólidos que promovem engajamento, confiança e pertencimento.'
+              description: 'Construímos valores sólidos, promovendo engajamento, confiança e pertencimento.'
             }, {
               letter: 'O',
               icon: <Cog className="h-6 w-6" />,
@@ -101,17 +101,17 @@ const Servicos = () => {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
               title: 'Treinamento e Evolução Contínua',
-              description: 'Desenvolvemos pessoas com competências técnicas e comportamentais que transformam a empresa.'
+              description: 'Desenvolvemos pessoas com competências comportamentais e técnicas que transformam a empresa.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
               title: 'Autonomia e Ações de Alta Performance',
-              description: 'Promovemos autonomia para que times encontre soluções, tomem decisões assertivas e execute com excelência.'
+              description: 'Promovemos autonomia para que times encontrem soluções, tomem decisões e atuem com excelência.'
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
               title: 'Sucesso e Resultados Sustentaveis',
-              description: 'Transformamos empresas através dos talentos, promovendo estabilidade, crescimento e resultados extraordinários.'
+              description: 'Transformamos empresas através dos talentos, promovendo crescimento e resultados sustentáveis.'
             }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
                   <div className="flex items-center gap-4 mb-4">
