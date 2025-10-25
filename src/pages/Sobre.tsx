@@ -61,7 +61,7 @@ const Sobre = () => {
               <div className="bg-card border-l-4 border-primary rounded-lg p-5 shadow-card hover:shadow-comet transition-all duration-300">
                 <h3 className="text-lg font-bold text-foreground mb-2">Os Resultados</h3>
                 <p className="text-sm text-muted-foreground">
-                 Em pouco tempo de existência, já <span className="text-primary font-semibold">transformamos empresas no Rio de Janeiro e em São Paulo,</span>. Mudando mentalidades, fortalecendo líderes e treinando times de alta performance.
+                 Em pouco tempo de existência, já <span className="text-primary font-semibold">transformamos empresas no Rio de Janeiro e em São Paulo.</span> Mudando mentalidades, fortalecendo líderes e treinando times de alta performance.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Sobre = () => {
                 "Empresas se transformam quando pessoas se desenvolvem: líderes preparados e times engajados fazem processos e resultados acontecerem."
               </p>
               <p className="text-sm text-muted-foreground text-center font-semibold">
-                — Tiago Rezeck
+                — Tiago Rezeck — 
               </p>
             </div>
           </div>
