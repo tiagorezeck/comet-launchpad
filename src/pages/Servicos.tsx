@@ -101,7 +101,7 @@ const Servicos = () => {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
               title: 'Treinamento e Evolução Contínua',
-              description: 'Desenvolvemos competências comportamentais e técnicas para o crescimento profissional.'
+              description: 'Desenvolvemos competências que impulsionam o crescimento pessoal e profissional.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
@@ -111,7 +111,7 @@ const Servicos = () => {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
               title: 'Sucesso e Resultados Sustentaveis',
-              description: 'Transformamos empresas através de pessoas, que buscam atingir resultados sustentáveis.'
+              description: 'Transformamos empresas através de pessoas, que atingem resultados sustentáveis.'
             }].map((pilar, index) => <div key={index} className="group bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                   {/* Letter Badge */}
                   <div className="flex items-center gap-4 mb-4">
