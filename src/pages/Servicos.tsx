@@ -101,12 +101,12 @@ const Servicos = () => {
               letter: 'T',
               icon: <GraduationCap className="h-6 w-6" />,
               title: 'Treinamento e Evolução Contínua',
-              description: 'Desenvolvemos nas pessoas, competências comportamentais e técnicas para o crescimento.'
+              description: 'Desenvolvemos competências comportamentais e técnicas para o crescimento profissional.'
             }, {
               letter: 'A',
               icon: <Zap className="h-6 w-6" />,
               title: 'Autonomia e Ações de Alta Performance',
-              description: 'Promovemos autonomia para que times encontrem soluções, tomem decisões e atuem com excelência.'
+              description: 'Promovemos autonomia para que times encontrem soluções, e atuem com excelência.'
             }, {
               letter: 'S',
               icon: <Trophy className="h-6 w-6" />,
