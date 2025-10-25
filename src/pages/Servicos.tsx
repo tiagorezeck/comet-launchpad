@@ -129,7 +129,7 @@ const Servicos = () => {
                   <h3 className="text-foreground mb-3 group-hover:text-primary transition-colors duration-300 text-base font-bold text-center">
                     {pilar.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-center text-xs">
+                  <p className="text-muted-foreground leading-relaxed text-center text-sm font-normal">
                     {pilar.description}
                   </p>
                 </div>)}
