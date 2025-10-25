@@ -12,7 +12,7 @@ const clients = [{
   logo: sistekLogo,
   name: 'Sistek IT Service',
   sector: 'Tecnologia',
-  description: 'Reestruturação organizacional completa, cultura, processo, normas e procedimentos, contratação de talentos, planejamento estratégico (comercial, financeiro, marketing, Rh) treinamentos e palestras e desenvolvimento de liderança.',
+  description: 'Reestruturação organizacional completa, cultura, processo, normas e procedimentos, contratação de talentos, planejamento estratégico (comercial, financeiro, marketing, RH) treinamentos e palestras e desenvolvimento de liderança.',
   metric: 'Transformação e Organização'
 }, {
   logo: refrimanosLogo,
