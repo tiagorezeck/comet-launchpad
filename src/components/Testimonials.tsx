@@ -1,11 +1,15 @@
 import { Star } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import avatar1 from '@/assets/testimonials/avatar-1.jpg';
+import guilherme from '@/assets/testimonials/guilherme.jpg';
 import avatar2 from '@/assets/testimonials/avatar-2.jpg';
 import amanda from '@/assets/testimonials/amanda.jpg';
 const testimonials = [{
-  photo: avatar1,
-  quote: 'O Instituto COMET transformou completamente nossa gestão. Processos claros, time alinhado e resultados que superam nossas expectativas. A metodologia COMETAS é realmente diferenciada.',
+  photo: guilherme,
+  quote: 'A Consultoria chegou em um momento delicado para a Sistek, durante uma grande reformulação da empresa. Iniciamos implantando novos métodos organizacionais, ajustando processos e estruturando regras claras que trouxeram disciplina e um novo padrão de funcionamento. Foi um período desafiador, com resistência e até algumas baixas, mas com o tempo o time entendeu a importância das mudanças e passou a se engajar cada vez mais. Na segunda fase da consultoria, os avanços se tornaram visíveis: a empresa ganhou clareza, melhor organização e resultados mais consistentes.
+
+Já na Mentoria de Gestão, enfrentei meu maior desafio: deixar o papel técnico e aprender a agir como gestor. Foi um processo profundo de mudança de mentalidade, aprender a delegar, decidir com mais estratégia e menos impulso, e compreender que a liderança começa pelo autodesenvolvimento.
+
+Sou muito grato ao Tiago Rezeck por toda a dedicação e pelo impacto que esse trabalho trouxe. Recomendo de coração a quem deseja transformar sua empresa e está disposto a encarar o desafio de evoluir como pessoa e gestor.',
   name: 'Guilherme Garcia',
   role: 'Sócio - Diretor Executivo',
   company: 'Sistek It Service',
