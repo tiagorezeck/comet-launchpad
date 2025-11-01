@@ -5,22 +5,14 @@ import guto from '@/assets/testimonials/guto.jpg';
 import amanda from '@/assets/testimonials/amanda.jpg';
 const testimonials = [{
   photo: guilherme,
-  quote: 'A Consultoria chegou em um momento delicado para a Sistek, durante uma grande reformulação da empresa. Iniciamos implantando novos métodos organizacionais, ajustando processos e estruturando regras claras que trouxeram disciplina e um novo padrão de funcionamento. Foi um período desafiador, com resistência e até algumas baixas, mas com o tempo o time entendeu a importância das mudanças e passou a se engajar cada vez mais. Na segunda fase da consultoria, os avanços se tornaram visíveis: a empresa ganhou clareza, melhor organização e resultados mais consistentes.
-
-Já na Mentoria de Gestão, enfrentei meu maior desafio: deixar o papel técnico e aprender a agir como gestor. Foi um processo profundo de mudança de mentalidade, aprender a delegar, decidir com mais estratégia e menos impulso, e compreender que a liderança começa pelo autodesenvolvimento.
-
-Sou muito grato ao Tiago Rezeck por toda a dedicação e pelo impacto que esse trabalho trouxe. Recomendo de coração a quem deseja transformar sua empresa e está disposto a encarar o desafio de evoluir como pessoa e gestor.',
+  quote: 'A Consultoria chegou em um momento delicado para a Sistek, durante uma grande reformulação da empresa. Iniciamos implantando novos métodos organizacionais, ajustando processos e estruturando regras claras que trouxeram disciplina e um novo padrão de funcionamento. Foi um período desafiador, com resistência e até algumas baixas, mas com o tempo o time entendeu a importância das mudanças e passou a se engajar cada vez mais. Na segunda fase da consultoria, os avanços se tornaram visíveis: a empresa ganhou clareza, melhor organização e resultados mais consistentes. Já na Mentoria de Gestão, enfrentei meu maior desafio: deixar o papel técnico e aprender a agir como gestor. Foi um processo profundo de mudança de mentalidade, aprender a delegar, decidir com mais estratégia e menos impulso, e compreender que a liderança começa pelo autodesenvolvimento. Sou muito grato ao Tiago Rezeck por toda a dedicação e pelo impacto que esse trabalho trouxe. Recomendo de coração a quem deseja transformar sua empresa e está disposto a encarar o desafio de evoluir como pessoa e gestor.',
   name: 'Guilherme Garcia',
   role: 'Sócio - Diretor Executivo',
   company: 'Sistek It Service',
   rating: 5
 }, {
   photo: guto,
-  quote: 'A consultoria foi um verdadeiro divisor de águas para a nossa farmácia. Quando o Tiago chegou, enfrentávamos desafios típicos do varejo: time desmotivado, atendimento irregular e resultados abaixo do esperado. Com o acompanhamento próximo e o treinamento de vendas, começamos a ver uma transformação real — tanto na postura do time quanto nos resultados do negócio.
-
-As vendas cresceram de forma consistente, o atendimento se tornou mais profissional e a satisfação dos clientes aumentou. Além disso, com a orientação da consultoria, realizamos a contratação de uma colaboradora estratégica, que fortaleceu ainda mais nossa operação e ajudou a manter o ritmo de crescimento.
-
-Recomendo o trabalho do Tiago Rezeck a qualquer empresa do varejo que queira fortalecer seu time, aprimorar processos e alcançar resultados reais. Um trabalho comprometido, humano e que deixa um legado duradouro.',
+  quote: 'A consultoria foi um verdadeiro divisor de águas para a nossa farmácia. Quando o Tiago chegou, enfrentávamos desafios típicos do varejo: time desmotivado, atendimento irregular e resultados abaixo do esperado. Com o acompanhamento próximo e o treinamento de vendas, começamos a ver uma transformação real — tanto na postura do time quanto nos resultados do negócio. As vendas cresceram de forma consistente, o atendimento se tornou mais profissional e a satisfação dos clientes aumentou. Além disso, com a orientação da consultoria, realizamos a contratação de uma colaboradora estratégica, que fortaleceu ainda mais nossa operação e ajudou a manter o ritmo de crescimento. Recomendo o trabalho do Tiago Rezeck a qualquer empresa do varejo que queira fortalecer seu time, aprimorar processos e alcançar resultados reais. Um trabalho comprometido, humano e que deixa um legado duradouro.',
   name: 'Guto',
   role: 'Gerente',
   company: 'Farmacenter',
