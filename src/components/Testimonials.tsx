@@ -1,7 +1,7 @@
 import { Star } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import guilherme from '@/assets/testimonials/guilherme.jpg';
-import avatar2 from '@/assets/testimonials/avatar-2.jpg';
+import guto from '@/assets/testimonials/guto.jpg';
 import amanda from '@/assets/testimonials/amanda.jpg';
 const testimonials = [{
   photo: guilherme,
@@ -15,11 +15,15 @@ Sou muito grato ao Tiago Rezeck por toda a dedicação e pelo impacto que esse t
   company: 'Sistek It Service',
   rating: 5
 }, {
-  photo: avatar2,
-  quote: 'Depois da consultoria, conseguimos aumentar nossa produtividade em 45% e reduzir conflitos internos. O Tiago tem uma visão estratégica impressionante e foco em resultados reais.',
-  name: 'Paulo Barcelos',
-  role: 'Analista de TI',
-  company: 'Indústria Moderna',
+  photo: guto,
+  quote: 'A consultoria foi um verdadeiro divisor de águas para a nossa farmácia. Quando o Tiago chegou, enfrentávamos desafios típicos do varejo: time desmotivado, atendimento irregular e resultados abaixo do esperado. Com o acompanhamento próximo e o treinamento de vendas, começamos a ver uma transformação real — tanto na postura do time quanto nos resultados do negócio.
+
+As vendas cresceram de forma consistente, o atendimento se tornou mais profissional e a satisfação dos clientes aumentou. Além disso, com a orientação da consultoria, realizamos a contratação de uma colaboradora estratégica, que fortaleceu ainda mais nossa operação e ajudou a manter o ritmo de crescimento.
+
+Recomendo o trabalho do Tiago Rezeck a qualquer empresa do varejo que queira fortalecer seu time, aprimorar processos e alcançar resultados reais. Um trabalho comprometido, humano e que deixa um legado duradouro.',
+  name: 'Guto',
+  role: 'Gerente',
+  company: 'Farmacenter',
   rating: 5
 }, {
   photo: amanda,
