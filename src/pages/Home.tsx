@@ -35,7 +35,7 @@ const Home = () => {
                 
                 <p className="text-lg text-muted-foreground leading-relaxed md:text-base text-justify">Consultoria estratégica, mentoria de liderança e treinamento de times de alta performance com Desenvolvimento Humano e Organizacional (DHO) para acelerar o crescimento da sua empresa.</p>
 
-                <p className="text-primary font-semibold text-xl text-left">🎯 O parceiro estratégico que sua empresa de pequeno e médio porte precisa para alavancar resultados.</p>
+                <p className="text-primary font-semibold text-xl text-justify">🎯 O parceiro estratégico que sua empresa de pequeno e médio porte precisa para alavancar resultados.</p>
               </div>
 
               {/* Stats */}
