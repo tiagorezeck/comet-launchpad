@@ -8,7 +8,7 @@ const testimonials = [{
   quote: 'A consultoria chegou em um momento delicado para a Sistek, durante uma grande reformulação interna. Ajustamos processos, implantamos novos métodos organizacionais e estruturamos regras claras que trouxeram disciplina e um novo padrão de funcionamento. No início houve resistência e até algumas baixas, mas com o tempo o time compreendeu a importância das mudanças e passou a se engajar, refletindo em mais clareza, organização e resultados consistentes. Na mentoria de gestão, enfrentei meu maior desafio: deixar o papel técnico e aprender a agir como gestor. Foi um processo profundo, mudança de mentalidade, aprender a delegar, toamr decisões com mais estratégia e desenvolver minha liderança através do autoconhecimento. Sou muito grato ao Rezeck pelo impacto que esse trabalho trouxe. Recomendo a quem busca evoluir como gestor e transformar sua empresa de forma verdadeira e duradoura.',
   name: 'Guilherme Garcia',
   role: 'Sócio - Diretor Executivo',
-  company: 'Sistek It Servicet
+  company: 'Sistek It Servicet',
   rating: 5
 }, {
   photo: guto,
