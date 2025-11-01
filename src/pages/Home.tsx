@@ -2,11 +2,14 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import ClientCarousel from '@/components/ClientCarousel';
 import Testimonials from '@/components/Testimonials';
+import DiagnosticoPopup from '@/components/DiagnosticoPopup';
 import { Link } from 'react-router-dom';
 import { Rocket, Target, Users, Calendar, MessageCircle, Clock } from 'lucide-react';
 import heroBusiness from '@/assets/hero-businessa.jpg';
 const Home = () => {
   return <div className="min-h-screen">
+      {/* Popup de Diagnóstico */}
+      <DiagnosticoPopup />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
         {/* Background Image with Overlay */}
