@@ -161,7 +161,7 @@ const Contato = () => {
                         Localização
                       </h3>
                       <p className="text-muted-foreground">
-                        São Paulo, SP - Brasil<br />
+                        Volta Redonda, RJ - Brasil<br />
                         Atendimento presencial e remoto
                       </p>
                     </div>
@@ -240,15 +240,15 @@ const Contato = () => {
                 },
                 {
                   q: 'Atendem empresas de que porte?',
-                  a: 'Atendemos desde pequenas empresas até médias empresas, com soluções personalizadas para cada porte.',
+                  a: 'Nosso foco é atendemos pequenas empresas e médias empresas que buscam crescimento, mas temos serviços com soluções personalizadas para todos os porte.',
                 },
                 {
                   q: 'O atendimento é presencial ou remoto?',
-                  a: 'Oferecemos ambas as modalidades. Podemos atender presencialmente em São Paulo ou remotamente em todo o Brasil.',
+                  a: 'Oferecemos ambas as modalidades. Podemos atender presencialmente no Rio de Janeiro, Florianópolis, Curitiba e em São Paulo, ou remotamente em todo o Brasil.',
                 },
                 {
                   q: 'Qual o investimento nos serviços?',
-                  a: 'O investimento varia conforme o serviço e as necessidades da empresa. Fazemos uma proposta personalizada após a primeira reunião.',
+                  a: 'O investimento varia conforme o serviço e as necessidades da empresa. Fazemos uma proposta personalizada após a realização de um diagnóstico profundo da empresa.',
                 },
               ].map((faq, index) => (
                 <div 
