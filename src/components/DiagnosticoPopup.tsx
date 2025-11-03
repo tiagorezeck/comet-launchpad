@@ -115,25 +115,33 @@ ${desafiosTexto}
   if (enviado) {
     return (
       <Dialog open={open} onOpenChange={handleClose}>
-        <DialogContent className="max-w-2xl bg-card border-2 border-primary/40 shadow-glow">
+        <DialogContent className="max-w-2xl bg-gradient-to-br from-slate-950 via-purple-950/20 to-slate-950 border border-primary/30 shadow-[0_0_80px_rgba(139,92,246,0.4)]">
+          {/* Starfield background effect */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute w-1 h-1 bg-white rounded-full top-[15%] left-[25%] animate-pulse"></div>
+            <div className="absolute w-1 h-1 bg-white rounded-full top-[35%] left-[75%] animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute w-0.5 h-0.5 bg-white rounded-full top-[65%] left-[20%] animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute w-1 h-1 bg-primary/60 rounded-full top-[50%] left-[85%] animate-pulse blur-sm" style={{ animationDelay: '0.8s' }}></div>
+          </div>
+
           <button
             onClick={handleClose}
-            className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+            className="absolute right-3 top-3 rounded-full p-1.5 bg-white/10 backdrop-blur-sm opacity-70 hover:opacity-100 hover:bg-white/20 transition-all z-50 border border-white/20"
           >
-            <X className="h-4 w-4" />
+            <X className="h-4 w-4 text-white" />
             <span className="sr-only">Fechar</span>
           </button>
 
-          <div className="text-center py-8 space-y-6">
-            <div className="text-6xl mb-4">✅</div>
-            <DialogTitle className="text-3xl font-bold text-foreground">
+          <div className="text-center py-8 space-y-5 relative">
+            <div className="text-6xl mb-2">✅</div>
+            <DialogTitle className="text-3xl font-bold text-white">
               Pronto! Seu pedido foi recebido.
             </DialogTitle>
-            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            <p className="text-base text-gray-300 max-w-xl mx-auto">
               Em até 48h, Tiago Rezeck entrará em contato pessoalmente via WhatsApp com seu diagnóstico gratuito.
             </p>
-            <div className="pt-4">
-              <p className="text-base text-muted-foreground">
+            <div className="pt-2">
+              <p className="text-sm text-gray-400">
                 Enquanto isso, conheça nossos cases e conteúdos exclusivos aqui no site da COMET.
               </p>
             </div>
@@ -141,7 +149,7 @@ ${desafiosTexto}
               variant="hero" 
               size="lg" 
               onClick={handleClose}
-              className="mt-4"
+              className="mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-all border-0"
             >
               Conhecer mais sobre a COMET
             </Button>
@@ -153,146 +161,173 @@ ${desafiosTexto}
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-card border-2 border-primary/40 shadow-glow">
+      <DialogContent className="max-w-6xl max-h-[95vh] overflow-hidden bg-gradient-to-br from-slate-950 via-purple-950/20 to-slate-950 border border-primary/30 shadow-[0_0_80px_rgba(139,92,246,0.3)]">
+        {/* Starfield background effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute w-1 h-1 bg-white rounded-full top-[10%] left-[20%] animate-pulse"></div>
+          <div className="absolute w-1 h-1 bg-white rounded-full top-[30%] left-[80%] animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute w-0.5 h-0.5 bg-white rounded-full top-[60%] left-[15%] animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute w-1 h-1 bg-white rounded-full top-[80%] left-[70%] animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute w-0.5 h-0.5 bg-white rounded-full top-[20%] left-[50%] animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute w-1 h-1 bg-primary/60 rounded-full top-[40%] left-[90%] animate-pulse blur-sm" style={{ animationDelay: '0.3s' }}></div>
+          <div className="absolute w-1 h-1 bg-primary/60 rounded-full top-[70%] left-[30%] animate-pulse blur-sm" style={{ animationDelay: '1.2s' }}></div>
+        </div>
+
         <button
           onClick={handleClose}
-          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground z-50"
+          className="absolute right-3 top-3 rounded-full p-1.5 bg-white/10 backdrop-blur-sm opacity-70 hover:opacity-100 hover:bg-white/20 transition-all z-50 border border-white/20"
         >
-          <X className="h-4 w-4" />
+          <X className="h-4 w-4 text-white" />
           <span className="sr-only">Fechar</span>
         </button>
 
-        <DialogHeader className="space-y-4 text-center pb-6">
-          <div className="flex justify-center items-center gap-2 text-primary font-bold text-sm">
-            <span className="text-2xl">🎂</span>
-            <span>MÊS DA COMET</span>
-          </div>
-          
-          <DialogTitle className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
-            🪐 Você entrou no nosso espaço — e acaba de ganhar um{' '}
-            <span className="bg-gradient-comet bg-clip-text text-transparent">
-              presente especial
-            </span>
-          </DialogTitle>
-
-          <p className="text-xl font-semibold text-primary">
-            🎁 Receba um Diagnóstico Empresarial Gratuito
-          </p>
-
-          <div className="text-base text-muted-foreground space-y-2 max-w-2xl mx-auto">
-            <p>
-              A COMET acredita que todo grande resultado começa com um bom diagnóstico.
-            </p>
-            <p>
-              Descubra onde sua empresa pode evoluir e receba um presente que pode mudar seu negócio.
-            </p>
-            <p className="font-medium text-primary">
-              Leva menos de 1 minuto para preencher.
-            </p>
-          </div>
-        </DialogHeader>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Campos básicos */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="space-y-2">
-              <Label htmlFor="nome" className="text-foreground">
-                Nome completo <span className="text-primary">*</span>
-              </Label>
-              <Input
-                id="nome"
-                value={nome}
-                onChange={(e) => setNome(e.target.value)}
-                placeholder="Seu nome completo"
-                required
-                className="bg-background border-border"
-              />
+        <div className="relative overflow-y-auto max-h-[90vh] px-6 py-4 space-y-4">
+          <DialogHeader className="space-y-2 text-center">
+            <div className="flex justify-center items-center gap-2 font-bold text-xs">
+              <span className="text-xl">🎂</span>
+              <span className="text-primary">MÊS DA COMET</span>
             </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="cargo" className="text-foreground">
-                Cargo / Função <span className="text-primary">*</span>
-              </Label>
-              <Input
-                id="cargo"
-                value={cargo}
-                onChange={(e) => setCargo(e.target.value)}
-                placeholder="Ex: CEO, Gerente, Diretor"
-                required
-                className="bg-background border-border"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="whatsapp" className="text-foreground">
-                WhatsApp (com DDD) <span className="text-primary">*</span>
-              </Label>
-              <Input
-                id="whatsapp"
-                value={whatsapp}
-                onChange={(e) => setWhatsapp(e.target.value)}
-                placeholder="(24) 99999-9999"
-                required
-                className="bg-background border-border"
-              />
-            </div>
-          </div>
-
-          {/* Desafios */}
-          <div className="space-y-4">
-            <Label className="text-lg font-semibold text-foreground">
-              Quais são hoje as suas maiores dificuldades ou prioridades?
-              <span className="text-sm font-normal text-muted-foreground ml-2">
-                (Marque uma ou várias opções)
+            
+            <DialogTitle className="text-2xl md:text-3xl font-bold text-white leading-tight">
+              🪐 Você entrou no nosso espaço — ganhe um{' '}
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                presente especial
               </span>
-            </Label>
+            </DialogTitle>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {desafios.map((desafio) => (
-                <div key={desafio} className="flex items-start space-x-2 p-3 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors">
-                  <Checkbox
-                    id={desafio}
-                    checked={desafiosSelecionados.includes(desafio)}
-                    onCheckedChange={() => handleDesafioToggle(desafio)}
-                    className="mt-0.5"
-                  />
-                  <label
-                    htmlFor={desafio}
-                    className="text-sm text-foreground leading-tight cursor-pointer"
-                  >
-                    {desafio}
-                  </label>
-                </div>
-              ))}
+            <p className="text-base font-semibold text-primary">
+              🎁 Diagnóstico Empresarial Gratuito
+            </p>
+
+            <div className="text-sm text-gray-300 space-y-1 max-w-2xl mx-auto">
+              <p>
+                Todo grande resultado começa com um bom diagnóstico. Descubra onde sua empresa pode evoluir.
+              </p>
+              <p className="font-medium text-primary text-xs">
+                ⏱️ Menos de 1 minuto
+              </p>
             </div>
-          </div>
+          </DialogHeader>
 
-          {/* Outros */}
-          <div className="space-y-2">
-            <Label htmlFor="outros" className="text-foreground">
-              Outros desafios (opcional)
-            </Label>
-            <Textarea
-              id="outros"
-              value={outros}
-              onChange={(e) => setOutros(e.target.value)}
-              placeholder="Descreva outros desafios específicos..."
-              className="bg-background border-border min-h-[80px]"
-            />
-          </div>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Campos básicos */}
+            <div className="grid md:grid-cols-3 gap-3">
+              <div className="space-y-1.5">
+                <Label htmlFor="nome" className="text-white text-sm">
+                  Nome completo <span className="text-primary">*</span>
+                </Label>
+                <Input
+                  id="nome"
+                  value={nome}
+                  onChange={(e) => setNome(e.target.value)}
+                  placeholder="Seu nome"
+                  required
+                  className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-primary/50 focus:ring-primary/30 h-9"
+                />
+              </div>
 
-          {/* Botão de envio */}
-          <div className="flex justify-center pt-4">
-            <Button
-              type="submit"
-              variant="hero"
-              size="xl"
-              className="text-lg font-bold animate-pulse hover:animate-none hover:scale-105 transition-transform"
-            >
-              💡 Quero meu presente da COMET
-            </Button>
-          </div>
-        </form>
+              <div className="space-y-1.5">
+                <Label htmlFor="cargo" className="text-white text-sm">
+                  Cargo <span className="text-primary">*</span>
+                </Label>
+                <Input
+                  id="cargo"
+                  value={cargo}
+                  onChange={(e) => setCargo(e.target.value)}
+                  placeholder="Ex: CEO, Gerente"
+                  required
+                  className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-primary/50 focus:ring-primary/30 h-9"
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="whatsapp" className="text-white text-sm">
+                  WhatsApp <span className="text-primary">*</span>
+                </Label>
+                <Input
+                  id="whatsapp"
+                  value={whatsapp}
+                  onChange={(e) => setWhatsapp(e.target.value)}
+                  placeholder="(24) 99999-9999"
+                  required
+                  className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-primary/50 focus:ring-primary/30 h-9"
+                />
+              </div>
+            </div>
+
+            {/* Desafios */}
+            <div className="space-y-2.5">
+              <Label className="text-base font-semibold text-white">
+                Maiores dificuldades ou prioridades?
+                <span className="text-xs font-normal text-gray-400 ml-2">
+                  (marque quantas quiser)
+                </span>
+              </Label>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
+                {desafios.map((desafio) => (
+                  <div key={desafio} className="flex items-start space-x-2 p-2 rounded-md bg-white/5 border border-white/10 hover:border-primary/40 hover:bg-white/10 transition-all backdrop-blur-sm">
+                    <Checkbox
+                      id={desafio}
+                      checked={desafiosSelecionados.includes(desafio)}
+                      onCheckedChange={() => handleDesafioToggle(desafio)}
+                      className="mt-0.5 border-white/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                    />
+                    <label
+                      htmlFor={desafio}
+                      className="text-xs text-gray-200 leading-tight cursor-pointer"
+                    >
+                      {desafio}
+                    </label>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Outros */}
+            <div className="space-y-1.5">
+              <Label htmlFor="outros" className="text-white text-sm">
+                Outros desafios (opcional)
+              </Label>
+              <Textarea
+                id="outros"
+                value={outros}
+                onChange={(e) => setOutros(e.target.value)}
+                placeholder="Descreva outros desafios..."
+                className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-primary/50 focus:ring-primary/30 min-h-[60px] resize-none"
+              />
+            </div>
+
+            {/* Botão de envio */}
+            <div className="flex justify-center pt-2">
+              <Button
+                type="submit"
+                variant="hero"
+                size="lg"
+                className="text-base font-bold bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-all border-0"
+              >
+                💡 Quero meu presente da COMET
+              </Button>
+            </div>
+          </form>
+        </div>
+
+        <style>{`
+          .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+          }
+          .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+          }
+          .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(139, 92, 246, 0.5);
+            border-radius: 3px;
+          }
+          .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(139, 92, 246, 0.7);
+          }
+        `}</style>
       </DialogContent>
     </Dialog>
   );
