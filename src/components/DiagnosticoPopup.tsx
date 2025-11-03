@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -45,9 +47,16 @@ export default function DiagnosticoPopup({ onOpenChange }: DiagnosticoPopupProps
   const [desafiosSelecionados, setDesafiosSelecionados] = useState<string[]>([]);
   const [outros, setOutros] = useState('');
   const [enviado, setEnviado] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
     // Verificar se o popup já foi fechado nos últimos 7 dias
     const closedAt = localStorage.getItem(STORAGE_KEY);
     if (closedAt) {
@@ -63,10 +72,12 @@ export default function DiagnosticoPopup({ onOpenChange }: DiagnosticoPopupProps
     }, 5000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [mounted]);
 
   const handleClose = () => {
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    }
     setOpen(false);
     onOpenChange?.(false);
   };
