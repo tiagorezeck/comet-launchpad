@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -127,53 +127,53 @@ ${desafiosTexto}
   };
 
   if (enviado) {
-    return (
-      <Dialog open={open} onOpenChange={handleClose}>
-        <DialogContent className="max-w-xl bg-card border-2 border-primary/40 shadow-glow relative overflow-hidden">
-          <div 
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage: `url(${spaceBackground})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
-          <button
-            onClick={handleClose}
-            className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground z-50"
-          >
-            <X className="h-4 w-4" />
-            <span className="sr-only">Fechar</span>
-          </button>
+  return (
+    <Dialog open={open} onOpenChange={handleClose}>
+      <DialogContent className="max-w-xl bg-card border-2 border-primary/40 shadow-glow relative overflow-hidden z-[100]">
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: `url(${spaceBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <button
+          onClick={handleClose}
+          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground z-50"
+        >
+          <X className="h-4 w-4" />
+          <span className="sr-only">Fechar</span>
+        </button>
 
-          <div className="text-center py-6 space-y-4 relative z-10">
-            <div className="text-5xl">✅</div>
-            <DialogTitle className="text-2xl font-bold text-foreground">
-              Pronto! Seu pedido foi recebido.
-            </DialogTitle>
-            <p className="text-base text-muted-foreground max-w-md mx-auto">
-              Em até 48h, Tiago Rezeck entrará em contato pessoalmente via WhatsApp com seu diagnóstico gratuito.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Enquanto isso, conheça nossos cases e conteúdos exclusivos aqui no site da COMET.
-            </p>
-            <Button 
-              variant="hero" 
-              size="lg" 
-              onClick={handleClose}
-              className="mt-2"
-            >
-              Conhecer mais sobre a COMET
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
-    );
+        <div className="text-center py-6 space-y-4 relative z-10">
+          <div className="text-5xl">✅</div>
+          <DialogTitle className="text-2xl font-bold text-foreground">
+            Pronto! Seu pedido foi recebido.
+          </DialogTitle>
+          <DialogDescription className="text-base text-muted-foreground max-w-md mx-auto">
+            Em até 48h, Tiago Rezeck entrará em contato pessoalmente via WhatsApp com seu diagnóstico gratuito.
+          </DialogDescription>
+          <p className="text-sm text-muted-foreground">
+            Enquanto isso, conheça nossos cases e conteúdos exclusivos aqui no site da COMET.
+          </p>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            onClick={handleClose}
+            className="mt-2"
+          >
+            Conhecer mais sobre a COMET
+          </Button>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
   }
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-card border-2 border-primary/40 shadow-glow relative">
+      <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-card border-2 border-primary/40 shadow-glow relative z-[100]">
         <div 
           className="absolute inset-0 opacity-15"
           style={{
@@ -204,9 +204,9 @@ ${desafiosTexto}
               </span>
             </DialogTitle>
 
-            <p className="text-base font-semibold text-primary">
+            <DialogDescription className="text-base font-semibold text-primary">
               🎁 Receba um Diagnóstico Empresarial Gratuito
-            </p>
+            </DialogDescription>
 
             <div className="text-xs text-muted-foreground space-y-1 max-w-2xl mx-auto">
               <p>
