@@ -12,9 +12,6 @@ interface DiagnosticoPopupProps {
   onOpenChange?: (open: boolean) => void;
 }
 
-const STORAGE_KEY = 'comet_diagnostico_closed';
-const DAYS_TO_HIDE = 7;
-
 const desafios = [
   'Falta de dinheiro / fluxo de caixa',
   'Falta de clareza estratégica',
@@ -47,15 +44,6 @@ export default function DiagnosticoPopup({ onOpenChange }: DiagnosticoPopupProps
   const { toast } = useToast();
 
   useEffect(() => {
-    // Verificar se o popup já foi fechado nos últimos 7 dias
-    const closedAt = localStorage.getItem(STORAGE_KEY);
-    if (closedAt) {
-      const daysSinceClosed = (Date.now() - parseInt(closedAt)) / (1000 * 60 * 60 * 24);
-      if (daysSinceClosed < DAYS_TO_HIDE) {
-        return;
-      }
-    }
-
     // Mostrar popup após 5 segundos
     const timer = setTimeout(() => {
       setOpen(true);
@@ -65,7 +53,6 @@ export default function DiagnosticoPopup({ onOpenChange }: DiagnosticoPopupProps
   }, []);
 
   const handleClose = () => {
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
     setOpen(false);
     onOpenChange?.(false);
   };
