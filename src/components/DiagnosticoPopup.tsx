@@ -189,7 +189,7 @@ ${desafiosTexto}
             </div>
             
             <DialogTitle className="text-2xl md:text-3xl font-bold text-white leading-tight">
-              🪐 Você entrou no nosso espaço — ganhe um{' '}
+              🪐 Você entrou no nosso espaço e ganhou um{' '}
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
                 presente especial
               </span>
