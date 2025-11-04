@@ -11,17 +11,20 @@ const Parceiros = () => {
     logo: automacLogo,
     name: 'Automac',
     description: 'Especializada em soluções de automação e sistemas integrados de gestão empresarial para empresas dos setores de food e varejo, oferecendo tecnologias e ferramentas que otimizam vendas, processos e eficiência operacional.',
-    specialty: 'Automação e Sistemas de Gestão'
+    specialty: 'Automação e Sistemas de Gestão',
+    website: 'https://automacdigitron.com.br/'
   }, {
     logo: jessLogo,
     name: 'Jess Knoll',
     description: 'Especialista em comportamento humano, desenvolvimento pessoal e profissional, atuando com mapeamento de perfil comportamental e testes psicométricos para apoiar organizações e equipes a alcançarem melhores resultados.',
-    specialty: 'Desenvolvimento Humano'
+    specialty: 'Desenvolvimento Humano',
+    website: 'https://jessknoll.com.br/'
   }, {
     logo: farmerLogo,
     name: 'Farmer',
     description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados e potencializar os resultados de vendas.',
-    specialty: 'Marketing Digital'
+    specialty: 'Marketing Digital',
+    website: 'https://farmermkt.com.br/'
   }];
   return <div className="min-h-screen">
       {/* Hero */}
@@ -76,6 +79,13 @@ const Parceiros = () => {
                       <p className="text-muted-foreground text-justify text-sm font-light">
                         {partner.description}
                       </p>
+                      <div className="mt-6 text-center">
+                        <Button variant="comet" asChild className="w-full">
+                          <a href={partner.website} target="_blank" rel="noopener noreferrer">
+                            Conheça nosso parceiro
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>)}

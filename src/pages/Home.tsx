@@ -14,7 +14,7 @@ const Home = () => {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img src={heroBusiness} alt="Consultoria Empresarial" className="w-full h-full object-cover" />
+          <img src={heroBusiness} alt="Consultoria Empresarial" className="w-full h-full object-cover object-center md:object-right" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70"></div>
         </div>
 
