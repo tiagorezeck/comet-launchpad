@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Handshake, CheckCircle2, Sparkles } from 'lucide-react';
 import parceirosHero from '@/assets/hero/parceiros-hero.jpg';
-import automacLogo from '@/assets/partners/automac.png';
-import jessLogo from '@/assets/partners/jess.png';
+import automacLogo from '@/assets/partners/automac1.png';
+import jessLogo from '@/assets/partners/jk1.png';
 import farmerLogo from '@/assets/partners/farmer.png';
 import tresLogo from '@/assets/partners/tres.png';
 const Parceiros = () => {
