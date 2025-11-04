@@ -26,6 +26,9 @@ wordpress-theme/
 ├── page.php           (Template de páginas)
 ├── single.php         (Template de posts individuais)
 ├── front-page.php     (Template da página inicial)
+├── page-parceiros.php (Template da página Parceiros)
+├── template-parts/
+│   └── diagnostico-popup.php (Popup de diagnóstico gratuito)
 ├── js/
 │   └── scripts.js     (JavaScript do tema)
 └── README.txt         (Este arquivo)
@@ -45,6 +48,14 @@ Após ativar o tema:
    - Vá em Aparência > Personalizar > Identidade do site
    - Faça upload do logo COMET (use o arquivo comet-logo.png)
    - Ajuste o tamanho conforme necessário
+
+2.1 CONFIGURAR FAVICON (ÍCONE DO SITE):
+   - Ainda em Aparência > Personalizar > Identidade do site
+   - Role até "Ícone do Site"
+   - Clique em "Selecionar ícone do site"
+   - Faça upload da imagem logocometa.png
+   - O WordPress criará automaticamente os tamanhos necessários (32x32, 192x192, 180x180)
+   - Clique em "Publicar" para salvar
 
 3. CONFIGURAR INFORMAÇÕES DE CONTATO:
    - Vá em Aparência > Personalizar
@@ -94,9 +105,16 @@ Crie as seguintes páginas no WordPress:
 3. Serviços
 4. Portfólio
 5. Vendas
-6. Parceiros
+6. Parceiros (será automaticamente estilizada com o template page-parceiros.php)
 7. Vlog
 8. Contato (adicione o formulário de contato)
+
+IMPORTANTE - Página Parceiros:
+- Ao criar a página "Parceiros", o template especial será aplicado automaticamente
+- Para adicionar os logos dos parceiros:
+  * Acesse a pasta wordpress-theme/assets/partners/
+  * Faça upload das imagens: automac.png, jess.png, farmer.png
+  * Ou edite o arquivo page-parceiros.php para apontar para suas imagens
 
 == CUSTOM POST TYPES ==
 
@@ -150,6 +168,10 @@ O tema usa as seguintes cores principais (variáveis CSS):
 ✓ Smooth scroll
 ✓ SEO otimizado
 ✓ Performance otimizada
+✓ Popup de diagnóstico gratuito (aparece após 5s na home)
+✓ Template especial para página de Parceiros
+✓ Hero responsivo com imagem posicionada corretamente em mobile
+✓ Favicon com múltiplos tamanhos
 
 == SUPORTE ==
 
@@ -165,6 +187,11 @@ contato@institutocomet.com.br
 * Templates para todas as páginas principais
 * Custom post types para Serviços e Depoimentos
 * Sistema de personalização via Customizer
+* Popup de diagnóstico gratuito com formulário integrado ao WhatsApp
+* Template especial para página Parceiros com botões de CTA
+* Hero section responsivo com object-position otimizado
+* Sistema de favicon com múltiplos tamanhos (32x32, 192x192, 180x180)
+* Ajustes de scroll automático para topo ao trocar páginas (nativo do WordPress)
 
 == CRÉDITOS ==
 

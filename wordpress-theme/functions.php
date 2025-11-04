@@ -37,6 +37,9 @@ function comet_theme_setup() {
         'flex-width'  => true,
     ));
     
+    // Suporte a ícone do site (favicon)
+    add_theme_support('custom-header');
+    
     // Registrar menus
     register_nav_menus(array(
         'primary' => __('Menu Principal', 'comet'),

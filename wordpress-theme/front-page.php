@@ -7,15 +7,18 @@
 
 get_header();
 
+// Include popup de diagnóstico
+get_template_part('template-parts/diagnostico-popup');
+
 $whatsapp = get_theme_mod('comet_whatsapp', '5524999382195');
 ?>
 
 <!-- Hero Section -->
 <section class="hero-section" style="position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--color-background);">
     <!-- Background Image -->
-    <div style="position: absolute; inset: 0; z-index: 0;">
+    <div class="hero-image-wrapper" style="position: absolute; inset: 0; z-index: 0;">
         <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('full', array('style' => 'width: 100%; height: 100%; object-fit: cover;')); ?>
+            <?php the_post_thumbnail('full', array('class' => 'hero-image', 'style' => 'width: 100%; height: 100%; object-fit: cover; object-position: center;')); ?>
         <?php endif; ?>
         <div style="position: absolute; inset: 0; background: linear-gradient(to right, var(--color-background), rgba(13, 18, 23, 0.95), rgba(13, 18, 23, 0.7));"></div>
     </div>
@@ -218,6 +221,10 @@ $whatsapp = get_theme_mod('comet_whatsapp', '5524999382195');
     
     .hero-section .stats {
         grid-template-columns: 1fr !important;
+    }
+    
+    .hero-image {
+        object-position: right center !important;
     }
 }
 </style>
