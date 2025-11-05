@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Video, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram, X } from 'lucide-react';
 import { useState } from 'react';
-import vlogHero from '@/assets/hero/vlog-hero.jpg';
+import vlogHero from '@/assets/hero/vlog.png';
 import mandela from '@/assets/hero/mandela.png';
 import sinergia from '@/assets/hero/sinergia.png';
 
