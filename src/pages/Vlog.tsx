@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { Video, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram } from 'lucide-react';
+import { Video, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram, X } from 'lucide-react';
 import { useState } from 'react';
 import vlogHero from '@/assets/hero/vlog-hero.jpg';
 import mandela from '@/assets/hero/mandela.png';
@@ -18,9 +18,10 @@ const Vlog = () => {
       id: 1,
       videoId: 'r2OufFGKCfI',
       youtubeUrl: 'https://www.youtube.com/watch?v=r2OufFGKCfI',
-      title: 'Exemplo de liderança',
+      title: 'Exemplo de liderança (Mandela)',
       category: 'Liderança',
-      description: 'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
+      description:
+        'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
       thumbnail: mandela,
       icon: <Users className="h-6 w-6" />,
     },
@@ -28,19 +29,21 @@ const Vlog = () => {
       id: 2,
       videoId: 'ounvyEof0hU',
       youtubeUrl: 'https://www.youtube.com/watch?v=ounvyEof0hU',
-      title: 'Disciplina',
+      title: 'Disciplina (Bernardinho)',
       category: 'Liderança',
-      description: 'Descubra por que a disciplina é tão difícil de criar e como grandes líderes como Bernardinho desenvolvem esse hábito essencial.',
+      description:
+        'Disciplina: insights práticos sobre consistência e construção de resultados a partir da rotina e do treino disciplinado.',
       thumbnail: 'https://img.youtube.com/vi/ounvyEof0hU/maxresdefault.jpg',
-      icon: <Users className="h-6 w-6" />,
+      icon: <TrendingUp className="h-6 w-6" />,
     },
     {
       id: 3,
       videoId: 'dujBDi10ZNk',
       youtubeUrl: 'https://www.youtube.com/watch?v=dujBDi10ZNk',
-      title: 'Sinergia no Time',
+      title: 'Sinergia - como unir forças no time',
       category: 'Cultura',
-      description: 'Como criar sinergia efetiva entre equipes e alcançar resultados que vão além da soma individual dos esforços.',
+      description:
+        'Como criar sinergia efetiva entre equipes e alcançar resultados que vão além da soma individual dos esforços.',
       thumbnail: sinergia,
       icon: <Lightbulb className="h-6 w-6" />,
     },
