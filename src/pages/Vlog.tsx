@@ -170,8 +170,9 @@ const Vlog = () => {
                     {/* Play Button */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-primary rounded-full p-4 group-hover:scale-110 transition-transform shadow-glow">
-                        <Play className="h-8 w-8 text-white fill-white" a href="https://www.youtube.com/@institutocomet" target="_blank" >
-                        
+                        <a href="https://www.youtube.com/@institutocomet" target="_blank" rel="noopener noreferrer">
+                          <Play className="h-8 w-8 text-white fill-white" />
+                        </a>                        
                       </div>
                     </div>
 
