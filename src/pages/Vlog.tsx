@@ -21,7 +21,7 @@ const Vlog = () => {
       title: 'Exemplo de liderança',
       category: 'Liderança',
       description: 'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
-      thumbnail: mandela',
+      thumbnail: mandela,
       icon: <Users className="h-6 w-6" />,
     },
     {
@@ -41,7 +41,7 @@ const Vlog = () => {
       title: 'Sinergia no Time',
       category: 'Cultura',
       description: 'Como criar sinergia efetiva entre equipes e alcançar resultados que vão além da soma individual dos esforços.',
-      thumbnail: sinergia',
+      thumbnail: sinergia,
       icon: <Lightbulb className="h-6 w-6" />,
     },
     {
