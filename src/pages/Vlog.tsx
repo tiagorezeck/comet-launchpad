@@ -1,74 +1,76 @@
 import { Button } from '@/components/ui/button';
 import ContactForm from '@/components/ContactForm';
-import { Video, Play, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram } from 'lucide-react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Video, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram } from 'lucide-react';
 import { useState } from 'react';
 import vlogHero from '@/assets/hero/vlog-hero.jpg';
 
 const Vlog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [openVideoId, setOpenVideoId] = useState<string | null>(null);
 
   const categories = ['Todos', 'Liderança', 'Gestão', 'Alta Performance', 'Processos', 'Cultura'];
 
   const videos = [
     {
       id: 1,
-      title: 'Como Desenvolver Líderes de Alta Performance',
+      videoId: 'r2OufFGKCfI',
+      youtubeUrl: 'https://www.youtube.com/watch?v=r2OufFGKCfI',
+      title: 'Exemplo de liderança (Mandela)',
       category: 'Liderança',
-      description: 'Descubra as 5 competências essenciais que todo líder precisa dominar para alcançar resultados extraordinários.',
-      thumbnail: 'https://i.ytimg.com/an_webp/sWp7FYbCnjo/mqdefault_6s.webp?du=3000&sqp=CMTNqsgG&rs=AOn4CLDKDw7Sur68wBr9x12qlz2HgPSLbQ',
-      duration: '12:34',
-      views: '2.5K',
+      description: 'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
+      thumbnail: 'https://img.youtube.com/vi/r2OufFGKCfI/maxresdefault.jpg',
       icon: <Users className="h-6 w-6" />,
     },
     {
       id: 2,
-      title: 'Mapeamento de Processos: Por Onde Começar',
-      category: 'Processos',
-      description: 'Um guia prático para iniciar o mapeamento de processos na sua empresa e ganhar eficiência operacional.',
-      thumbnail: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
-      duration: '15:20',
-      views: '3.1K',
-      icon: <Target className="h-6 w-6" />,
+      videoId: 'ounvyEof0hU',
+      youtubeUrl: 'https://www.youtube.com/watch?v=ounvyEof0hU',
+      title: 'Disciplina (Bernardinho)',
+      category: 'Liderança',
+      description: 'Descubra por que a disciplina é tão difícil de criar e como grandes líderes como Bernardinho desenvolvem esse hábito essencial.',
+      thumbnail: 'https://img.youtube.com/vi/ounvyEof0hU/maxresdefault.jpg',
+      icon: <Users className="h-6 w-6" />,
     },
     {
       id: 3,
-      title: '3 Erros Fatais na Gestão de Empresas',
-      category: 'Gestão',
-      description: 'Evite os erros mais comuns que impedem empresas de crescer e descubra como superá-los.',
-      thumbnail: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800',
-      duration: '10:45',
-      views: '4.2K',
-      icon: <TrendingUp className="h-6 w-6" />,
+      videoId: 'dujBDi10ZNk',
+      youtubeUrl: 'https://www.youtube.com/watch?v=dujBDi10ZNk',
+      title: 'Sinergia',
+      category: 'Cultura',
+      description: 'Como criar sinergia efetiva entre equipes e alcançar resultados que vão além da soma individual dos esforços.',
+      thumbnail: 'https://img.youtube.com/vi/dujBDi10ZNk/maxresdefault.jpg',
+      icon: <Lightbulb className="h-6 w-6" />,
     },
     {
       id: 4,
-      title: 'Como Criar uma Cultura de Alta Performance',
+      videoId: 'qUeYnJlUFJw',
+      youtubeUrl: 'https://www.youtube.com/watch?v=qUeYnJlUFJw',
+      title: 'Cultura',
       category: 'Cultura',
-      description: 'Estratégias comprovadas para transformar a cultura da sua empresa e engajar times.',
-      thumbnail: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800',
-      duration: '18:15',
-      views: '3.8K',
+      description: 'Entenda os tipos de cultura organizacional e como elas impactam o desempenho e engajamento dos colaboradores.',
+      thumbnail: 'https://img.youtube.com/vi/qUeYnJlUFJw/maxresdefault.jpg',
       icon: <Lightbulb className="h-6 w-6" />,
     },
     {
       id: 5,
-      title: 'Indicadores de Performance: O Que Medir',
-      category: 'Alta Performance',
-      description: 'Aprenda quais KPIs são essenciais para monitorar a saúde do seu negócio e tomar decisões estratégicas.',
-      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
-      duration: '14:30',
-      views: '2.9K',
-      icon: <Target className="h-6 w-6" />,
+      videoId: 'mcQYKxmR1DE',
+      youtubeUrl: 'https://www.youtube.com/watch?v=mcQYKxmR1DE',
+      title: 'Erros na gestão',
+      category: 'Gestão',
+      description: 'Identifique e corrija os erros mais comuns na gestão empresarial que impedem o crescimento sustentável.',
+      thumbnail: 'https://img.youtube.com/vi/mcQYKxmR1DE/maxresdefault.jpg',
+      icon: <TrendingUp className="h-6 w-6" />,
     },
     {
       id: 6,
-      title: 'Liderança Situacional: Adaptando seu Estilo',
-      category: 'Liderança',
-      description: 'Como adaptar seu estilo de liderança para diferentes situações e colaboradores.',
-      thumbnail: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800',
-      duration: '16:00',
-      views: '3.5K',
-      icon: <Users className="h-6 w-6" />,
+      videoId: 'ejO_TBUWnPE',
+      youtubeUrl: 'https://www.youtube.com/watch?v=ejO_TBUWnPE',
+      title: 'KPIs',
+      category: 'Alta Performance',
+      description: 'Aprenda a definir e usar indicadores-chave de performance para monitorar resultados e tomar decisões estratégicas.',
+      thumbnail: 'https://img.youtube.com/vi/ejO_TBUWnPE/maxresdefault.jpg',
+      icon: <Target className="h-6 w-6" />,
     },
   ];
 
@@ -159,27 +161,15 @@ const Vlog = () => {
                   className="bg-card rounded-xl border border-border shadow-card hover:shadow-comet transition-all duration-300 hover:-translate-y-2 overflow-hidden group"
                 >
                   {/* Thumbnail */}
-                  <div className="relative aspect-video overflow-hidden bg-muted">
+                  <div 
+                    className="relative aspect-video overflow-hidden bg-muted cursor-pointer"
+                    onClick={() => setOpenVideoId(video.videoId)}
+                  >
                     <img 
                       src={video.thumbnail} 
                       alt={video.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    
-                    {/* Play Button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-primary rounded-full p-4 group-hover:scale-110 transition-transform shadow-glow">
-                        <a href="https://www.youtube.com/@institutocomet" target="_blank" rel="noopener noreferrer">
-                          <Play className="h-8 w-8 text-white fill-white" />
-                        </a>                        
-                      </div>
-                    </div>
-
-                    {/* Duration */}
-                    <div className="absolute bottom-3 right-3 bg-black/80 text-white text-xs font-semibold px-2 py-1 rounded">
-                      {video.duration}
-                    </div>
 
                     {/* Category Badge */}
                     <div className="absolute top-3 left-3">
@@ -204,15 +194,28 @@ const Vlog = () => {
                       {video.description}
                     </p>
 
-                    <div className="flex items-center justify-between text-xs text-muted-foreground mb-4">
-                      <span>{video.views} visualizações</span>
+                    <div className="flex flex-col gap-2">
+                      <Button 
+                        variant="comet" 
+                        size="sm" 
+                        className="w-full"
+                        onClick={() => setOpenVideoId(video.videoId)}
+                      >
+                        Assistir Vídeo
+                      </Button>
+                      
+                      <Button variant="outline" size="sm" className="w-full" asChild>
+                        <a 
+                          href={video.youtubeUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          <Youtube className="h-4 w-4" />
+                          Assistir no YouTube
+                        </a>
+                      </Button>
                     </div>
-
-                    <Button variant="comet" size="sm" className="w-full" asChild>
-                      <a href="#contact-form">
-                        Gostou? Vamos aplicar no seu negócio
-                      </a>
-                    </Button>
                   </div>
                 </div>
               ))}
@@ -268,6 +271,26 @@ const Vlog = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      <Dialog open={!!openVideoId} onOpenChange={() => setOpenVideoId(null)}>
+        <DialogContent className="max-w-5xl w-[95vw] h-[80vh] p-0">
+          <div className="w-full h-full">
+            {openVideoId && (
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${openVideoId}?autoplay=1`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
