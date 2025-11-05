@@ -21,7 +21,7 @@ const Vlog = () => {
       title: 'Exemplo de liderança',
       category: 'Liderança',
       description: 'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
-      thumbnail: 'https://img.youtube.com/vi/r2OufFGKCfI/maxresdefault.jpg',
+      thumbnail: 'mandela',
       icon: <Users className="h-6 w-6" />,
     },
     {
