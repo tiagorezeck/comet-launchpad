@@ -4,6 +4,8 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Video, TrendingUp, Users, Target, Lightbulb, Youtube, Instagram } from 'lucide-react';
 import { useState } from 'react';
 import vlogHero from '@/assets/hero/vlog-hero.jpg';
+import mandela from '@/assets/hero/mandela.png';
+import sinergia from '@/assets/hero/sinergia.png';
 
 const Vlog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -16,7 +18,7 @@ const Vlog = () => {
       id: 1,
       videoId: 'r2OufFGKCfI',
       youtubeUrl: 'https://www.youtube.com/watch?v=r2OufFGKCfI',
-      title: 'Exemplo de liderança (Mandela)',
+      title: 'Exemplo de liderança',
       category: 'Liderança',
       description: 'Aprenda com Nelson Mandela os princípios fundamentais de liderança inspiradora que transformam equipes e organizações.',
       thumbnail: 'https://img.youtube.com/vi/r2OufFGKCfI/maxresdefault.jpg',
@@ -26,7 +28,7 @@ const Vlog = () => {
       id: 2,
       videoId: 'ounvyEof0hU',
       youtubeUrl: 'https://www.youtube.com/watch?v=ounvyEof0hU',
-      title: 'Disciplina (Bernardinho)',
+      title: 'Disciplina',
       category: 'Liderança',
       description: 'Descubra por que a disciplina é tão difícil de criar e como grandes líderes como Bernardinho desenvolvem esse hábito essencial.',
       thumbnail: 'https://img.youtube.com/vi/ounvyEof0hU/maxresdefault.jpg',
@@ -36,7 +38,7 @@ const Vlog = () => {
       id: 3,
       videoId: 'dujBDi10ZNk',
       youtubeUrl: 'https://www.youtube.com/watch?v=dujBDi10ZNk',
-      title: 'Sinergia',
+      title: 'Sinergia no Time',
       category: 'Cultura',
       description: 'Como criar sinergia efetiva entre equipes e alcançar resultados que vão além da soma individual dos esforços.',
       thumbnail: 'https://img.youtube.com/vi/dujBDi10ZNk/maxresdefault.jpg',
@@ -47,7 +49,7 @@ const Vlog = () => {
       videoId: 'qUeYnJlUFJw',
       youtubeUrl: 'https://www.youtube.com/watch?v=qUeYnJlUFJw',
       title: 'Cultura',
-      category: 'Cultura',
+      category: 'Cultura Organizacional',
       description: 'Entenda os tipos de cultura organizacional e como elas impactam o desempenho e engajamento dos colaboradores.',
       thumbnail: 'https://img.youtube.com/vi/qUeYnJlUFJw/maxresdefault.jpg',
       icon: <Lightbulb className="h-6 w-6" />,
