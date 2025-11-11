@@ -29,7 +29,7 @@ const Parceiros = () => {
   }, {
     logo: bragaLogo,
     name: 'Braga da Silva Advogados',
-    description: 'Escritório brasileiro especializado em Direito Corporativo, Tributário, Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua em empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
+    description: 'Escritório especializado em Direito Corporativo, Tributário, Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua em empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
     specialty: 'Direito Corporativo e Tributário',
     website: 'https://www.linkedin.com/in/luiz-roberto-braga-da-silva-a8480a24/'
   }];
