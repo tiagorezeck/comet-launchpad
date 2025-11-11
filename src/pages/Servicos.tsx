@@ -65,7 +65,7 @@ const Servicos = () => {
             <div className="text-center mb-16">
               <div className="mb-6">
                 <h2 className="text-6xl md:text-7xl font-black tracking-wider mb-4">
-                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg text-5xl">METODOLOGIA COMET</span>
+                  <span className="bg-gradient-comet bg-clip-text text-transparent drop-shadow-lg text-4xl">METODOLOGIA COMET</span>
                 </h2>
                 <div className="h-1 w-32 mx-auto bg-gradient-comet rounded-full shadow-glow"></div>
               </div>
