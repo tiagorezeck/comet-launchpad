@@ -23,13 +23,13 @@ const Parceiros = () => {
   }, {
     logo: farmerLogo,
     name: 'Farmer',
-    description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados e potencializar os resultados de vendas.',
+    description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados, aumentando as oportunidades e potencializando os resultados de vendas.',
     specialty: 'Marketing Digital',
     website: 'https://farmermkt.com.br/'
   }, {
     logo: bragaLogo,
     name: 'Braga da Silva Advogados',
-    description: 'Escritório brasileiro especializado em Direito Corporativo, Tributário e Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua para grandes empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
+    description: 'Escritório brasileiro especializado em Direito Corporativo, Tributário, Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua em empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
     specialty: 'Direito Corporativo e Tributário',
     website: 'https://www.linkedin.com/in/luiz-roberto-braga-da-silva-a8480a24/'
   }];
