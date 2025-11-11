@@ -125,7 +125,7 @@ const Parceiros = () => {
 
                 <div className="pt-6 text-center">
                   <Button variant="hero" size="lg" asChild>
-                    <a href="#contact-form">Quero transformar sua empresa!</a>
+                    <a href="#contact-form">Quero transformar minha empresa!</a>
                   </Button>
                 </div>
               </div>
