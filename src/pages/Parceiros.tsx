@@ -6,6 +6,7 @@ import automacLogo from '@/assets/partners/automac1.png';
 import jessLogo from '@/assets/partners/jk1.png';
 import farmerLogo from '@/assets/partners/farmer.png';
 import tresLogo from '@/assets/partners/tres.png';
+import bragaLogo from '@/assets/partners/braga.png';
 const Parceiros = () => {
   const partners = [{
     logo: automacLogo,
@@ -25,6 +26,12 @@ const Parceiros = () => {
     description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados e potencializar os resultados de vendas.',
     specialty: 'Marketing Digital',
     website: 'https://farmermkt.com.br/'
+  }, {
+    logo: bragaLogo,
+    name: 'Braga da Silva Advogados',
+    description: 'Escritório brasileiro especializado em Direito Corporativo, Tributário e Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua para grandes empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
+    specialty: 'Direito Corporativo e Tributário',
+    website: 'https://www.linkedin.com/in/luiz-roberto-braga-da-silva-a8480a24/'
   }];
   return <div className="min-h-screen">
       {/* Hero */}
@@ -60,12 +67,12 @@ const Parceiros = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {partners.map((partner, index) => <div key={index} className="bg-card rounded-xl border border-border shadow-card overflow-hidden hover:shadow-comet transition-all duration-300 hover:-translate-y-1">
                   <div className="p-8">
                     {/* Logo */}
-                    <div className="h-24 flex items-center justify-center bg-background/50 rounded-lg p-6 mb-6">
-                      <img src={partner.logo} alt={partner.name} className="max-h-20 max-w-full object-contain" />
+                    <div className="h-36 flex items-center justify-center bg-background/50 rounded-lg p-6 mb-6">
+                      <img src={partner.logo} alt={partner.name} className="max-h-32 max-w-full object-contain" />
                     </div>
 
                     {/* Info */}
