@@ -125,7 +125,7 @@ const Parceiros = () => {
 
                 <div className="pt-6 text-center">
                   <Button variant="hero" size="lg" asChild>
-                    <a href="#contact-form">Descubra como o projeto TRÊS pode transformar sua empresa</a>
+                    <a href="#contact-form">Quero transformar sua empresa!</a>
                   </Button>
                 </div>
               </div>
