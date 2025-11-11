@@ -23,13 +23,13 @@ const Parceiros = () => {
   }, {
     logo: farmerLogo,
     name: 'Farmer',
-    description: 'Agência especializada em marketing digital, tráfego pago e estratégias inteligentes de crescimento online, ajudando empresas a aumentarem sua visibilidade, atrair mais leads qualificados, gerando mais oportunidades e potencializando os resultados de vendas.',
+    description: 'Agência especializada em marketing digital, tráfego pago e estratégias de crescimento online, ajudando empresas a aumentarem visibilidade, atrair mais leads qualificados e potencializar os resultados de vendas.',
     specialty: 'Marketing Digital',
     website: 'https://farmermkt.com.br/'
   }, {
     logo: bragaLogo,
     name: 'Braga da Silva Advogados',
-    description: 'Escritório especializado em Direito Corporativo, Tributário, Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua em empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
+    description: 'Escritório brasileiro especializado em Direito Corporativo, Tributário e Fusões e Aquisições, com sócios reconhecidos internacionalmente. Atua para grandes empresas nacionais e estrangeiras, oferecendo consultoria estratégica, planejamento tributário e estruturações dos mais diversos negócios.',
     specialty: 'Direito Corporativo e Tributário',
     website: 'https://www.linkedin.com/in/luiz-roberto-braga-da-silva-a8480a24/'
   }];
@@ -125,9 +125,7 @@ const Parceiros = () => {
 
                 <div className="pt-6 text-center">
                   <Button variant="hero" size="lg" asChild>
-                    <a href="#contact-form">
-                      Descubra como TRÊS pode transformar sua empresa
-                    </a>
+                    <a href="#contact-form">Descubra como o projeto TRÊS pode transformar sua empresa</a>
                   </Button>
                 </div>
               </div>
