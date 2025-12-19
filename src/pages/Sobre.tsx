@@ -145,11 +145,11 @@ const Sobre = () => {
               {[{
               icon: <Target className="h-12 w-12" />,
               title: 'Missão',
-              content: 'Desenvolver pessoas, organizar empresas, transformar negócios.'
+              content: 'Desenvolver pessoas, organizar empresas e transformar negócios, impulsionando o movimento rumo ao sucesso.'
             }, {
               icon: <Eye className="h-12 w-12" />,
               title: 'Visão',
-              content: 'Ser reconhecida, até 2030, como uma luz que guia pessoas a alcançarem novos universos de resultados nas empresas.'
+              content: 'Ser reconhecida como a consultoria que, como um cometa, rompe barreiras, impulsiona pessoas e empresas ao movimento, atingindo novos universos de resultados reais..'
             }, {
               icon: <Heart className="h-12 w-12" />,
               title: 'Propósito',
