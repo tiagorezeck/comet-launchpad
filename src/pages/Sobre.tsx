@@ -153,7 +153,7 @@ const Sobre = () => {
             }, {
               icon: <Heart className="h-12 w-12" />,
               title: 'Propósito',
-              content: 'Ser o cometa que acelera a transformação humana e empresarial.'
+              content: 'impulsionar pessoas e empresas ao movimento, ao brilho e ao ápice dos seus resultados.'
             }].map((item, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border shadow-card hover:shadow-comet transition-all duration-300">
                   <div className="text-primary mb-6">
                     {item.icon}
