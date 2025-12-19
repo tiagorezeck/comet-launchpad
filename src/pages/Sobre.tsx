@@ -149,7 +149,7 @@ const Sobre = () => {
             }, {
               icon: <Eye className="h-12 w-12" />,
               title: 'Visão',
-              content: 'Ser reconhecida como a consultoria que, como um cometa, rompe barreiras, impulsiona pessoas e empresas ao movimento, atingindo novos universos de resultados reais..'
+              content: 'Ser reconhecida até 2030 como a consultoria que abre um universo de oportunidades e impulsiona pessoas e empresas a dominarem seu espaço.'
             }, {
               icon: <Heart className="h-12 w-12" />,
               title: 'Propósito',
